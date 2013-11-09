@@ -21,3 +21,5 @@ nbproject
 *.sublime-workspace
 
 mocks
+content/images
+content/data
