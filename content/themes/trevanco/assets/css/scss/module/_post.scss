@@ -1,7 +1,7 @@
 .post {
 	overflow: hidden;
 	padding: 2em 0 1em 0;
-	border-bottom: solid .064em #e9e9e9;
+	border-bottom: solid .064em $light-grey;
 
 	@include breakpoint(med) {
 		padding: 4em 0 0 0;
@@ -21,7 +21,7 @@
 		display: block;
 		padding: 0 1.5em;
 		float: left;
-		color: #999;
+		color: $med-grey;
 		text-align: center;
 	}
 }
@@ -33,7 +33,7 @@
 
 	@include breakpoint(med) {
 		width: 80%;
-		border-left: solid .064em #e9e9e9;
+		border-left: solid .064em $light-grey;
 		padding: 0 0 0 5%;
 	}
 
@@ -54,8 +54,8 @@ time {
 	height: 4em;
 	display: block;
 	float: left;
-	color: #fff;
-	background: #ffc40d;
+	color: $white;
+	background: $secondary;
 	@include border-top-radius(2em);
 	@include border-bottom-radius(2em);
 
@@ -79,7 +79,7 @@ time {
 
 .post-info {
 	color: #999;
-	font-family: 'Lato', sans-serif;
+	font-family: $secondary-font;
 	margin: 0 0 .5em 0;
 	font-size: .938em;
 	line-height: 1em;
@@ -95,13 +95,13 @@ time {
 	width: 100%;
 	padding: 2em 1.5em 0 1.5em;
 	margin: 2em 0 1em 0;
-	border-top: solid .064em #e9e9e9;
+	border-top: solid .064em $light-grey;
 
 	@include breakpoint(med) {
 		margin: 0 0 0 7em;
 		width: 80%;
 		padding: 3em 0 1.5em 5%;
-		border-left: solid .064em #e9e9e9;
+		border-left: solid .064em $light-grey;
 	}
 
 	@include breakpoint(lrg) {

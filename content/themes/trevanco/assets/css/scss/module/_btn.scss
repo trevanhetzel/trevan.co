@@ -1,6 +1,6 @@
 .btn {
-	background: #ffc40d;
-	color: #fff;
+	background: $secondary;
+	color: $white;
 	margin: 0 auto;
 	display: block;
 	padding: .5em 1.5em;
@@ -14,7 +14,7 @@
 	@include border-bottom-radius(3px);
 
 	&:hover {
-		background: #d43d12;
+		background: $primary;
 	}
 
 	@include breakpoint(med) {

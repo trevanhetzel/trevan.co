@@ -8,8 +8,8 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Lato', sans-serif;
-    color: #333332;
-    background: #fff;
+    color: $black;
+    background: $white;
 }
 
 * { @include box-sizing(border-box); }
@@ -26,13 +26,13 @@ h1 {
     font-size: 1.75em;
     margin: 0;
     font-weight: 900;
-    color: #18191b;
+    color: $dark-grey;
 
     a {
-        color: #18191b;
+        color: $dark-grey;
 
         &:hover {
-            color: #d43d12;
+            color: $primary;
             text-decoration: none;
         }
     }
@@ -45,6 +45,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin-top: 1.5em;
+    color: $dark-grey;
 
     @include breakpoint(med) {
         font-size: 2em;
@@ -54,6 +55,7 @@ h2 {
 h3 {
     font-size: 1.25em;
     margin-top: 1.25em;
+    color: $dark-grey;
 
     @include breakpoint(med) {
         font-size: 1.5em;
@@ -65,7 +67,7 @@ strong {
 }
 
 a {
-    color: #e3ac02;
+    color: $link;
     text-decoration: none;
     @include transition(color .2s ease-in-out);
 
@@ -77,7 +79,7 @@ a {
 p {
     font-size: 1em;
     line-height: 1.5em;
-    font-family: 'Droid Serif', serif;
+    font-family: $primary-font;
 
     @include breakpoint(sml) {
         font-size: 1.188em;
@@ -95,7 +97,7 @@ blockquote {
     margin-left: 0;
     padding-left: 1.75em;
     font-size: 1em;
-    font-family: 'Lato', sans-serif;
+    font-family: $secondary-font;
 
     p {
         line-height: 1.438em;
@@ -119,7 +121,7 @@ ul,
 ol {
     font-size: 1em;
     line-height: 1.5em;
-    font-family: 'Droid Serif', serif;
+    font-family: $primary-font;
 
     @include breakpoint(sml) {
         font-size: 1.188em;

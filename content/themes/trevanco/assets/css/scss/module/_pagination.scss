@@ -27,8 +27,8 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    background: #ffc40d;
-    color: #fff;
+    background: $secondary;
+    color: $white;
     @include transition(background .3s ease);
     @include border-top-radius(3px);
     @include border-bottom-radius(3px);
@@ -61,5 +61,5 @@
 .older-posts:hover,
 .newer-posts:hover {
     text-decoration: none;
-    background: #d43d12;
+    background: $primary;
 }

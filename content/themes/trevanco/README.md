@@ -4,7 +4,11 @@ My custom theme for [Ghost](http://github.com/tryghost/ghost/)
 
 ## Usage
 
-I'm using the [Bourbon](http://bourbon.io/) library with a [SMACSS](http://smacss.com/) file structure. Pretty much all you need to know!
+I'm using the [Bourbon](http://bourbon.io/) library with a [SMACSS](http://smacss.com/) file structure.
+
+The JS libraries I'm using ([Highlight](http://highlightjs.org/) & [Reading Time](https://github.com/michael-lynch/reading-time)) are in ```assets/js/lib/```
+
+Pretty much all you need to know!
 
 ## Copyright & License
 

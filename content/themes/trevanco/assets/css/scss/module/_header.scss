@@ -13,13 +13,13 @@ header {
 	font-size: 1.188em;
 	text-transform: uppercase;
 	float: left;
-	color: #fff;
+	color: $white;
 
 	a {
-		color: #fff;
+		color: $white;
 
 		&:hover {
-			color: #ffc40d;
+			color: $secondary;
 		}
 	}
 
@@ -45,7 +45,7 @@ header {
 // 	line-height: 2em;
 
 // 	a {
-// 		color: #fff;
+// 		color: $white;
 // 		display: inline-block;
 // 		padding: .25em .5em;
 // 		margin: 0 1em;
@@ -57,7 +57,7 @@ header {
 
 // 		&:hover {
 //             text-decoration: none;
-//             color: #ffc40d;
+//             color: $secondary;
 //         }
 // 	}
 
