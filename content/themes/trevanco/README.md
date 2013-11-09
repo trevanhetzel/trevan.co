@@ -4,11 +4,13 @@ My custom theme for [Ghost](http://github.com/tryghost/ghost/)
 
 ## Usage
 
-I'm using the [Bourbon](http://bourbon.io/) library with a [SMACSS](http://smacss.com/) file structure.
+I'm using the [Bourbon](http://bourbon.io/) library with a [SMACSS](http://smacss.com/) file structure. All the CSS was built mobile-first.
+
+Colors can be changed site-wide in ```assets/css/scss/variables/```. Same with fonts, although you'll also need to update the reference to Google Fonts in ```default.hbs```.
 
 The JS libraries I'm using ([Highlight](http://highlightjs.org/) & [Reading Time](https://github.com/michael-lynch/reading-time)) are in ```assets/js/lib/```
 
-Pretty much all you need to know!
+As far as browser support, I've tested in IE8+, Android, iOS, and all the major desktop browsers. IE8 gets a single column version because it doesn't support media queries and the site was built mobile first. If you need support for IE8, I'd just throw in a reference to [Respond.js](https://github.com/scottjehl/Respond) or follow a method like [Sparkbox's](http://seesparkbox.com/foundry/structuring_and_serving_styles_for_older_browsers).
 
 ## Copyright & License
 
