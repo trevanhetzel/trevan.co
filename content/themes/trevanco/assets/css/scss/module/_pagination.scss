@@ -1,0 +1,73 @@
+.pagination {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 2em 1.5em;
+    margin: 0 0 2em 0;
+    font-size: 1em;
+    text-align: center;
+
+    @include breakpoint(med) {
+        margin: 1em 0 0 7em;
+        width: 80%;
+        padding: 3em 0 6em 5%;
+    }
+
+    @include breakpoint(lrg) {
+        width: 89%;
+        padding-right: 2em;
+    }
+}
+
+.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #ffc40d;
+    color: #fff;
+    @include transition(background .3s ease);
+    @include border-top-radius(3px);
+    @include border-bottom-radius(3px);
+
+    @include breakpoint(med) {
+        padding: 1em 2.5em;
+    }
+}
+
+.older-posts {
+    right: 1em;;
+
+    @include breakpoint(lrg) {
+        right: 0;
+    }
+}
+
+.page-number {
+    display: none;
+    font-size: 1em;
+
+
+    @include breakpoint(med) {
+        display: inline-block;
+        padding: 1em 0;
+        font-size: 1.063em;
+    }
+}
+
+.newer-posts {
+    left: 1em;;
+
+    @include breakpoint(lrg) {
+        left: 0;
+    }
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+    text-decoration: none;
+    background: #d43d12;
+}

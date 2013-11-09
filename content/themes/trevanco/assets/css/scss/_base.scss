@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin: 0;
     font-weight: 900;
     color: #18191b;
@@ -42,13 +42,22 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+
+    @include breakpoint(med) {
+        font-size: 2em;
+    }
+}
+
 h3 {
     margin-top: 0;
     font-weight: normal;
 }
 
 strong {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 a {
@@ -62,9 +71,14 @@ a {
 }
 
 p {
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 1.5em;
-    font-family: 'Andada', serif;
+    font-family: 'Droid Serif', serif;
+
+    @include breakpoint(sml) {
+        font-size: 1.188em;
+        line-height: 1.5em;
+    }
 
     @include breakpoint(med) {
         font-size: 1.375em;
@@ -76,10 +90,23 @@ blockquote {
     border-left: .688em solid #e9e9e9;
     margin-left: 0;
     padding-left: 1.75em;
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'Lato', sans-serif;
 
     p {
         line-height: 1.438em;
     }
+
+    @include breakpoint(sml) {
+        font-size: 1em;
+    }
+
+    @include breakpoint(med) {
+        font-size: 1.25em;
+    }
+}
+
+code {
+    @include border-top-radius(3px);
+    @include border-bottom-radius(3px);
 }

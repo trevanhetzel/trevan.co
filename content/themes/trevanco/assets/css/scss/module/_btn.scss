@@ -1,0 +1,23 @@
+.btn {
+	background: #ffc40d;
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	padding: .5em 1.5em;
+	font-size: .938em;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	outline: none;
+	@include transition(background .3s ease);
+	@include border-top-radius(3px);
+	@include border-bottom-radius(3px);
+
+	&:hover {
+		background: #d43d12;
+	}
+
+	@include breakpoint(med) {
+		padding: 1em 3em;
+	}
+}

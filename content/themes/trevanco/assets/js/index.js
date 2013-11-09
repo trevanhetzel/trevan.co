@@ -8,10 +8,15 @@
 
     $(document).ready(function(){
 
-        // On the home page, move the blog icon inside the header 
-        // for better relative/absolute positioning.
+    	// Initialize syntax highlighting
+    	hljs.initHighlightingOnLoad();
 
-        //$("#blog-logo").prependTo("#site-head-content");
+    	// Initialize Reading Time plugin
+        $('.post--content').each(function() {
+            $(this).readingTime({
+            	readingTimeTarget: '.post-reading-time'
+            });
+        });
 
     });
 
