@@ -1,8 +1,16 @@
 # Trevan's theme
 
-My custom theme for [Ghost](http://github.com/tryghost/ghost/), built from the Capser theme
+My custom theme for [Ghost](http://github.com/tryghost/ghost/)
+
+## Usage
+
+I'm using the [Bourbon](http://bourbon.io/) library with a [SMACSS](http://smacss.com/) file structure. Pretty much all you need to know!
 
 ## Copyright & License
+
+Do whatever you want with my theme. Just don't steal my content. Cool?
+
+----
 
 Copyright (C) 2013 Trevan Hetzel - Released under the MIT License.
 

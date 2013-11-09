@@ -12,7 +12,7 @@ body {
     background: #fff;
 }
 
-* { box-sizing: border-box; }
+* { @include box-sizing(border-box); }
 
 .left {
     float: left;

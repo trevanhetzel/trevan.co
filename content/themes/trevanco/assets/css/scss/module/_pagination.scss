@@ -8,9 +8,9 @@
     text-align: center;
 
     @include breakpoint(med) {
-        margin: 1em 0 0 7em;
+        margin: 0 0 0 7em;
         width: 80%;
-        padding: 3em 0 6em 5%;
+        padding: 3em 0 3em 5%;
     }
 
     @include breakpoint(lrg) {
@@ -39,11 +39,7 @@
 }
 
 .older-posts {
-    right: 1em;;
-
-    @include breakpoint(lrg) {
-        right: 0;
-    }
+    right: 1em;
 }
 
 .page-number {
@@ -59,11 +55,7 @@
 }
 
 .newer-posts {
-    left: 1em;;
-
-    @include breakpoint(lrg) {
-        left: 0;
-    }
+    left: 1em;
 }
 
 .older-posts:hover,

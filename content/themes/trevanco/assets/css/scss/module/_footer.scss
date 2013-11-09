@@ -20,6 +20,7 @@
     @include breakpoint(med) {
     	font-size: 1.188em;
 		line-height: 1.438em;
+		margin: 0;
     }
 }
 
@@ -33,7 +34,7 @@
 
 	@include breakpoint(med) {
 		float: left;
-		margin: 0 2em 1em 0;
+		margin: 0 2em 0 0;
 		
 	}
 }
