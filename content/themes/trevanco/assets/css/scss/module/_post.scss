@@ -41,6 +41,11 @@
 		width: 88%;
 		padding-right: 2em;
 	}
+
+	img,
+	iframe {
+		max-width: 100%;
+	}
 }
 
 .post-single--content {
