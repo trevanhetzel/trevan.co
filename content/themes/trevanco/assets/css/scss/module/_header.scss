@@ -1,10 +1,10 @@
 header {
 	font-size: 1em;
 	font-weight: 300;
-	padding: .75em;
+	padding: 1.25em;
 
 	@include breakpoint(med) {
-		padding: 1.5em;
+		padding: 2em;
 	}
 }
 
@@ -17,9 +17,11 @@ header {
 
 	a {
 		color: $white;
+		@include transition(opacity .3s ease);
 
 		&:hover {
-			color: $secondary;
+			color: $white;
+			opacity: .75;
 		}
 	}
 

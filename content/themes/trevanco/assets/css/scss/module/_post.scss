@@ -59,8 +59,8 @@ time {
 	height: 4em;
 	display: block;
 	float: left;
-	color: $white;
-	background: $secondary;
+	color: #999;
+	border: 1px solid #999;
 	@include border-top-radius(2em);
 	@include border-bottom-radius(2em);
 

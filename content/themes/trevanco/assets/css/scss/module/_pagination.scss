@@ -27,11 +27,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    background: $secondary;
-    color: $white;
-    @include transition(background .3s ease);
-    @include border-top-radius(3px);
-    @include border-bottom-radius(3px);
+    color: $dark-grey;
 
     @include breakpoint(med) {
         padding: 1em 2.5em;
@@ -56,10 +52,4 @@
 
 .newer-posts {
     left: 1em;
-}
-
-.older-posts:hover,
-.newer-posts:hover {
-    text-decoration: none;
-    background: $primary;
 }

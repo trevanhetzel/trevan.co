@@ -1,5 +1,5 @@
 .btn {
-	background: $secondary;
+	background: #35c06a;
 	color: $white;
 	margin: 0 auto;
 	display: block;
@@ -14,7 +14,8 @@
 	@include border-bottom-radius(3px);
 
 	&:hover {
-		background: $primary;
+		background: darken(#35c06a, 7%);
+		text-decoration: none;
 	}
 
 	@include breakpoint(med) {
