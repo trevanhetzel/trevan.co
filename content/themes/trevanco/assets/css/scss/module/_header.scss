@@ -30,6 +30,46 @@ header {
 	}
 }
 
+.header--search {
+	display: none;
+
+	@include breakpoint(med) {
+		position: absolute;
+		right: 0;
+		top: -.5em;
+		width: 20%;
+		display: block;
+		background: lighten($primary, 6%);
+		border: solid .063em lighten($primary, 6%);
+		padding: .75em;
+		color: $white;
+		@include border-top-radius(3px);
+		@include border-bottom-radius(3px);
+		outline: none;
+		@include transition(border .3s ease);
+
+		&:focus {
+			border: solid .063em darken($primary, 10%);
+		}
+	}
+}
+
+::-webkit-input-placeholder, {
+   color: $white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $white;
+}
+
+:-ms-input-placeholder {  
+   color: $white;
+}
+
 // .header--nav {
 // 	list-style: none;
 // 	margin: 0;
