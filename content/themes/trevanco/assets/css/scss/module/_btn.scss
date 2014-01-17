@@ -1,5 +1,5 @@
 .btn {
-	background: #35c06a;
+	background: #82b964;
 	color: $white;
 	margin: 0 auto;
 	display: block;
@@ -14,7 +14,7 @@
 	@include border-bottom-radius(3px);
 
 	&:hover {
-		background: darken(#35c06a, 7%);
+		background: darken(#82b964, 7%);
 		text-decoration: none;
 	}
 
