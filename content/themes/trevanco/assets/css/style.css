@@ -384,7 +384,7 @@ h1 {
   h1 a {
     color: #18191b; }
     h1 a:hover {
-      color: #33363b;
+      color: #f37934;
       text-decoration: none; }
   @media (min-width: 48em) {
     h1 {
@@ -410,7 +410,7 @@ strong {
   font-weight: 700; }
 
 a {
-  color: #82b964;
+  color: #f37934;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
@@ -521,7 +521,8 @@ header {
   font-size: 1.188em;
   text-transform: uppercase;
   float: left;
-  color: white; }
+  color: white;
+  text-shadow: 0px 0px 0 #225baf,-1px 1px 0 #225baf,-2px 2px 0 #225baf,-3px 3px 0 #225baf,-4px 4px 0 #225baf,-5px 5px 0 #225baf,-6px 6px 0 #225baf,-7px 7px 0 #225baf,-8px 8px 0 #225baf,-9px 9px 0 #225baf,-10px 10px 0 #225baf,-11px 11px 0 #225baf,-12px 12px 0 #225baf,-13px 13px 0 #225baf,-14px 14px 0 #225baf,-15px 15px 0 #225baf,-16px 16px 0 #225baf,-17px 17px 0 #225baf,-18px 18px 0 #225baf,-19px 19px 0 #225baf,-20px 20px 0 #225baf,-21px 21px 0 #225baf,-22px 22px 0 #225baf,-23px 23px 0 #225baf,-24px 24px 0 #225baf,-25px 25px 0 #225baf,-26px 26px 0 #225baf,-27px 27px 0 #225baf,-28px 28px 0 #225baf,-29px 29px 0 #225baf,-30px 30px 0 #225baf,-31px 31px 0 #225baf,-32px 32px 0 #225baf,-33px 33px 0 #225baf,-34px 34px 0 #225baf,-35px 35px 0 #225baf,-36px 36px 0 #225baf,-37px 37px 0 #225baf,-38px 38px 0 #225baf,-39px 39px 0 #225baf,-40px 40px 0 #225baf,-41px 41px 0 #225baf,-42px 42px 0 #225baf,-43px 43px 0 #225baf,-44px 44px 0 #225baf,-45px 45px 0 #225baf,-46px 46px 0 #225baf,-47px 47px 0 #225baf,-48px 48px 0 #225baf,-49px 49px 0 #225baf,-50px 50px 0 #225baf,-51px 51px 0 #225baf,-52px 52px 0 #225baf,-53px 53px 0 #225baf,-54px 54px 0 #225baf,-55px 55px 0 #225baf,-56px 56px 0 #225baf,-57px 57px 0 #225baf,-58px 58px 0 #225baf,-59px 59px 0 #225baf,-60px 60px 0 #225baf,-61px 61px 0 #225baf,-62px 62px 0 #225baf,-63px 63px 0 #225baf,-64px 64px 0 #225baf,-65px 65px 0 #225baf,-66px 66px 0 #225baf,-67px 67px 0 #225baf,-68px 68px 0 #225baf,-69px 69px 0 #225baf,-70px 70px 0 #225baf,-71px 71px 0 #225baf,-72px 72px 0 #225baf,-73px 73px 0 #225baf,-74px 74px 0 #225baf,-75px 75px 0 #225baf,-76px 76px 0 #225baf,-77px 77px 0 #225baf,-78px 78px 0 #225baf,-79px 79px 0 #225baf,-80px 80px 0 #225baf,-81px 81px 0 #225baf,-82px 82px 0 #225baf,-83px 83px 0 #225baf,-84px 84px 0 #225baf,-85px 85px 0 #225baf,-86px 86px 0 #225baf,-87px 87px 0 #225baf,-88px 88px 0 #225baf,-89px 89px 0 #225baf,-90px 90px 0 #225baf,-91px 91px 0 #225baf,-92px 92px 0 #225baf,-93px 93px 0 #225baf,-94px 94px 0 #225baf,-95px 95px 0 #225baf,-96px 96px 0 #225baf,-97px 97px 0 #225baf,-98px 98px 0 #225baf,-99px 99px 0 #225baf,-100px 100px 0 #225baf,-101px 101px 0 #225baf,-102px 102px 0 #225baf,-103px 103px 0 #225baf,-104px 104px 0 #225baf,-105px 105px 0 #225baf,-106px 106px 0 #225baf,-107px 107px 0 #225baf,-108px 108px 0 #225baf,-109px 109px 0 #225baf,-110px 110px 0 #225baf,-111px 111px 0 #225baf,-112px 112px 0 #225baf,-113px 113px 0 #225baf,-114px 114px 0 #225baf,-115px 115px 0 #225baf,-116px 116px 0 #225baf,-117px 117px 0 #225baf,-118px 118px 0 #225baf,-119px 119px 0 #225baf,-120px 120px 0 #225baf,-121px 121px 0 #225baf,-122px 122px 0 #225baf,-123px 123px 0 #225baf,-124px 124px 0 #225baf,-125px 125px 0 #225baf,-126px 126px 0 #225baf,-127px 127px 0 #225baf,-128px 128px 0 #225baf,-129px 129px 0 #225baf,-130px 130px 0 #225baf,-131px 131px 0 #225baf,-132px 132px 0 #225baf,-133px 133px 0 #225baf,-134px 134px 0 #225baf,-135px 135px 0 #225baf,-136px 136px 0 #225baf,-137px 137px 0 #225baf,-138px 138px 0 #225baf,-139px 139px 0 #225baf,-140px 140px 0 #225baf,-141px 141px 0 #225baf,-142px 142px 0 #225baf,-143px 143px 0 #225baf,-144px 144px 0 #225baf,-145px 145px 0 #225baf,-146px 146px 0 #225baf,-147px 147px 0 #225baf,-148px 148px 0 #225baf,-149px 149px 0 #225baf,-150px 150px 0 #225baf,-151px 151px 0 #225baf,-152px 152px 0 #225baf,-153px 153px 0 #225baf,-154px 154px 0 #225baf,-155px 155px 0 #225baf,-156px 156px 0 #225baf,-157px 157px 0 #225baf,-158px 158px 0 #225baf,-159px 159px 0 #225baf,-160px 160px 0 #225baf,-161px 161px 0 #225baf,-162px 162px 0 #225baf,-163px 163px 0 #225baf,-164px 164px 0 #225baf,-165px 165px 0 #225baf,-166px 166px 0 #225baf,-167px 167px 0 #225baf,-168px 168px 0 #225baf,-169px 169px 0 #225baf,-170px 170px 0 #225baf,-171px 171px 0 #225baf,-172px 172px 0 #225baf,-173px 173px 0 #225baf,-174px 174px 0 #225baf,-175px 175px 0 #225baf,-176px 176px 0 #225baf,-177px 177px 0 #225baf,-178px 178px 0 #225baf,-179px 179px 0 #225baf,-180px 180px 0 #225baf,-181px 181px 0 #225baf,-182px 182px 0 #225baf,-183px 183px 0 #225baf,-184px 184px 0 #225baf,-185px 185px 0 #225baf,-186px 186px 0 #225baf,-187px 187px 0 #225baf,-188px 188px 0 #225baf,-189px 189px 0 #225baf,-190px 190px 0 #225baf,-191px 191px 0 #225baf,-192px 192px 0 #225baf,-193px 193px 0 #225baf,-194px 194px 0 #225baf,-195px 195px 0 #225baf,-196px 196px 0 #225baf,-197px 197px 0 #225baf,-198px 198px 0 #225baf,200px 200px 0 transparent; }
   .header--title a {
     color: white;
     -webkit-transition: opacity 0.3s ease;
@@ -543,8 +544,8 @@ header {
       top: -.5em;
       width: 20%;
       display: block;
-      background: #41454b;
-      border: solid 0.063em #41454b;
+      background: #4783de;
+      border: solid 0.063em #4783de;
       padding: .75em;
       color: white;
       border-top-left-radius: 3px;
@@ -556,7 +557,7 @@ header {
       -moz-transition: border 0.3s ease;
       transition: border 0.3s ease; }
       .header--search:focus {
-        border: solid 0.063em #1b1d20; } }
+        border: solid 0.063em #205bb3; } }
 
 ::-webkit-input-placeholder {
   color: white; }
@@ -769,7 +770,7 @@ time {
   left: 1em; }
 
 .btn {
-  background: #82b964;
+  background: #f37934;
   color: white;
   margin: 0 auto;
   display: block;
@@ -787,7 +788,7 @@ time {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px; }
   .btn:hover {
-    background: #6fac4e;
+    background: #f16312;
     text-decoration: none; }
   @media (min-width: 48em) {
     .btn {
@@ -837,7 +838,10 @@ pre .coffeescript .javascript, pre .javascript .xml, pre .tex .formula, pre .xml
   background: #f0f0ed; }
 
 .is-dark {
-  background: #33363b; }
+  background: #2d72d9; }
+
+.is-secondary {
+  background: #225baf; }
 
 .inline--left {
   float: left;

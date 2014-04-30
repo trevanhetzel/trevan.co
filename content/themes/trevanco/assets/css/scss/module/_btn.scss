@@ -1,5 +1,5 @@
 .btn {
-	background: #82b964;
+	background: $link;
 	color: $white;
 	margin: 0 auto;
 	display: block;
@@ -14,7 +14,7 @@
 	@include border-bottom-radius(3px);
 
 	&:hover {
-		background: darken(#82b964, 7%);
+		background: darken($link, 7%);
 		text-decoration: none;
 	}
 

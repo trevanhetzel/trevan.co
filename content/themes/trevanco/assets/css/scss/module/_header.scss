@@ -14,6 +14,7 @@ header {
 	text-transform: uppercase;
 	float: left;
 	color: $white;
+	@include long-shadow(text, #225baf, 200, false, false, left);
 
 	a {
 		color: $white;
