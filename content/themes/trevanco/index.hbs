@@ -1,6 +1,5 @@
 {{!< default}}
 
-
 {{#foreach posts}}
 <article class="post">
 	<div class="post--meta">
@@ -16,6 +15,7 @@
             posted on <strong>{{date format="MMM DD, YYYY"}}</strong>
             {{#if tags}}in <strong>{{tags}}</strong>{{/if}}
 		</p>
+		
     	<h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
 
         <p>{{excerpt}}...</p>
