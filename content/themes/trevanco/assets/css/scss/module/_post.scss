@@ -38,8 +38,12 @@
 	}
 
 	@include breakpoint(lrg) {
-		width: 88%;
+		width: 84%;
 		padding-right: 2em;
+	}
+
+	@include breakpoint(xlrg) {
+		width: 88%;
 	}
 
 	img,

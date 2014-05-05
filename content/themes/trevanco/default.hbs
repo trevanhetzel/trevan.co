@@ -23,40 +23,72 @@
 </head>
 <body class="{{body_class}}">
 
-    <header class="header wrap is-dark">
-        <div class="cont">
-            <h1 class="header--title">
-                <a href="../../">Trevan Hetzel</a>
-            </h1>
+    <input type="checkbox" class="nav--checkbox" id="nav--checkbox">
+    <label for="nav--checkbox" class="nav--trigger icon-menu"></label>
+    <label for="nav--checkbox" class="body--trigger"></label>
 
-            <form id="cse-search-box" action="http://google.com">
-                <input type="hidden" name="cx" value="014782429687318977338:jd8gbahni4w">
-                <input type="hidden" name="ie" value="UTF-8">
-                <input type="search" name="q" class="header--search" placeholder="Search...">
-            </form>
-        </div>
-    </header>
-
-    <div class="cont cont-skinny">
-        <main role="main">
-
-            {{{body}}}
-
-        </main>
-    </div>
-
-    <section class="wrap is-light about">
-        <section class="cont">
-            <img src="/assets/images/trevan.jpg" class="about--img">
-            <p class="about--p">I’m a 22 year old web designer, developer, startup enthusiast and visual design engineer at <a href="http://appendto.com/team/trevan-hetzel/">appendTo</a>. I freelance a little under the <a href="http://hetzelcreative.com">Hetzel Creative</a> brand, and am building <a href="http://sidecarhq.com">Sidecar</a>. You can check out some of my work <a href="http://hetzelcreative.com/work/">here</a>, follow me on <a href="http://twitter.com/trevanhetzel">Twitter</a>, or connect on <a href="http://www.linkedin.com/profile/view?id=93424362&trk">LinkedIn</a>. I’m thankful that I get to do what I love every day to ultimately fulfill God’s purpose for my life, which is my definition of success. Also, I like to <a href="https://www.goodreads.com/user/show/14897481-trevan-hetzel">read books</a>.</p>
-        </section>
+    <section class="off-canvas">
+        <form id="cse-search-box" action="http://google.com">
+            <input type="hidden" name="cx" value="014782429687318977338:jd8gbahni4w">
+            <input type="hidden" name="ie" value="UTF-8">
+            <input type="search" name="q" class="header--search off-canvas--search">
+            <button type="submit" class="icon-search off-canvas--icon"></button>
+        </form>
     </section>
 
-    <footer class="wrap is-secondary footer">
-        <div class="cont">
-            <p class="footer--p">&copy; 2014 Trevan Hetzel | Published with <a href="http://ghost.org">Ghost</a> | <a href="https://github.com/trevanhetzel/trevan.co/tree/master/content/themes/trevanco">Source code</a></p>
+    <div class="wrapper">
+        <header class="header wrap is-dark">
+            <div class="cont">
+                <h1 class="header--title">
+                    <a href="../../">Trevan Hetzel</a>
+                </h1>
+
+                <form id="cse-search-box" action="http://google.com">
+                    <input type="hidden" name="cx" value="014782429687318977338:jd8gbahni4w">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input type="search" name="q" class="header--search">
+                    <button type="submit" class="icon-search"></button>
+                </form>
+            </div>
+        </header>
+
+        <div class="cont cont-skinny">
+            <main role="main" class="main">
+
+                {{{body}}}
+
+            </main>
+
+            <aside class="sidebar">
+                <h2 class="sidebar--title">Topics</h2>
+
+                <ul class="tags">
+                </ul>
+
+                <div class="sidebar--profile">
+                    <img src="/assets/images/trevan.jpg" class="about--img">
+                    <h2 class="sidebar--title about--title">About me</h2>
+
+                    <p class="about--p">I’m Trevan Hetzel, a front-end web developer, designer, startup enthusiast and visual design engineer at <a href="http://appendto.com/team/trevan-hetzel/">appendTo</a>. I freelance a little under the <a href="http://hetzelcreative.com">Hetzel Creative</a> brand. I’m thankful that I get to do what I love every day to ultimately fulfill God’s purpose for my life, which is my definition of success. Also, I like to <a href="https://www.goodreads.com/user/show/14897481-trevan-hetzel">read books</a>.</p>
+
+                    <ul class="about--social">
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-github"></a></li>
+                        <li><a href="#" class="icon-dribbble"></a></li>
+                        <li><a href="#" class="icon-linkedin"></a></li>
+                        <li><a href="#" class="icon-stackoverflow"></a></li>
+                        <li><a href="#" class="icon-mail-alt"></a></li>
+                    </ul>
+                </div>
+            </aside>
         </div>
-    </footer>
+
+        <footer class="wrap is-secondary footer">
+            <div class="cont">
+                <p class="footer--p">&copy; 2014 Trevan Hetzel | Published with <a href="http://ghost.org">Ghost</a> | <a href="https://github.com/trevanhetzel/trevan.co/tree/master/content/themes/trevanco">Source code</a></p>
+            </div>
+        </footer>
+    </div>
 
     {{ghost_foot}}
 

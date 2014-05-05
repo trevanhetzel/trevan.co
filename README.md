@@ -2,9 +2,7 @@
 
 Ghost is a free, open, simple blogging platform that's available to anyone who wants to use it. Lovingly created and maintained by [John O'Nolan](http://twitter.com/JohnONolan) + [Hannah Wolfe](http://twitter.com/ErisDS) + an amazing group of [contributors](https://github.com/TryGhost/Ghost/contributors).
 
-Visit the project's website at <http://ghost.org>!
-
-Full documentation is available at <http://docs.ghost.org>.
+Visit the project's website at <http://ghost.org> &bull; docs on <http://docs.ghost.org>.
 
 ## Getting Involved
 
@@ -24,7 +22,7 @@ If you just want to get a Ghost blog running in the fastest time possible, this 
 
 For detailed instructions for various platforms visit the [Ghost Installation Guide](http://docs.ghost.org/installation/). If you get stuck, help is available on [our forum](http://ghost.org/forum/).
 
-1. Install [Node.js](http://nodejs.org) - Ghost requires **Node v0.10.***
+1. Install [Node.js](http://nodejs.org) - Ghost requires **Node v0.10.**
 1. Download the latest Ghost package from [Ghost.org](http://ghost.org/download). 
    **If you cloned the GitHub repository you should follow the instructions [for developers](https://github.com/TryGhost/Ghost#getting-started-guide-for-developers).**
 1. Create a new directory where you would like to run the code, and unzip the package to that location.
@@ -41,24 +39,28 @@ Check out the [Documentation](http://docs.ghost.org/) for more detailed instruct
 
 If you're a theme, app or core developer, or someone comfortable getting up and running from a `git clone`, this method is for you.
 
-If you clone the GitHub repository, you will need to build a number of assets, such as SASS and JavaScript templates. This requires you to have Ruby and a number of other pre-requisites.
-Full instructions can be found in the [Contributing Guide](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md) under the heading "[Working on Ghost Core](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md#working-on-ghost-core)".
+If you clone the GitHub repository, you will need to build a number of assets using grunt. 
+
+#### Quickstart:
+
+1. `npm install -g grunt-cli`
+1. `npm install`
+1. `grunt init` (and `grunt prod` if you want to run Ghost in production mode)
+1. `npm start`
+
+Full instructions & troubleshooting tips can be found in the [Contributing Guide](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md) under the heading "[Working on Ghost Core](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md#working-on-ghost-core)".
 
 Check out the [Documentation](http://docs.ghost.org/) for more detailed instructions, or get in touch via the [forum](http://ghost.org/forum) if you get stuck.
 
-### Updating with the latest changes
+If you want to use [Ghost as a NPM module there is a Wiki entry](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-a-NPM-module) where you can find instructions on how to get set up.
 
-Documentation on updating can be found in the [Ghost Guide](http://docs.ghost.org/installation/upgrading/)
+### Upgrading to The Latest Version
+
+Upgrade instructions are in the [Ghost Guide](http://docs.ghost.org/installation/upgrading/)
 
 ### Logging in For The First Time
 
-Once you have the Ghost server up and running, you should be able to navigate to `http://localhost:2368/ghost/` from a web browser, where you will be prompted for a login.
-
-1.  Click on the "register new user" link
-2.  Enter your user details
-3.  Return to the login screen and use those details to log in.
-
-Note - this is still very alpha. Not everything works yet.
+Once you have the Ghost server up and running, you should be able to navigate to `http://localhost:2368/ghost/` from a web browser, where you will be prompted to register a new user. Once you have entered your desired credentials you will be automatically logged in to the admin area.
 
 
 ## Community
@@ -89,11 +91,4 @@ Constructed with the following guidelines:
 
 ## Copyright & License
 
-Copyright (C) 2014 The Ghost Foundation - Released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright (c) 2013-2014 Ghost Foundation - Released under the [MIT license](LICENSE).

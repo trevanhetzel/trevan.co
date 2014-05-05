@@ -20,6 +20,11 @@
 	@import 'variables/fonts';
 
 /*	==========================================================================
+	Fonts
+	========================================================================== */
+	@import 'fonts';
+
+/*	==========================================================================
 	Base
 	========================================================================== */
 	@import 'base';
@@ -35,6 +40,8 @@
 	@import 'module/mixins';
 	@import 'module/header';
 	@import 'module/footer';
+	@import 'module/off-canvas';
+	@import 'module/sidebar';
 	@import 'module/post';
 	@import 'module/pagination';
 	@import 'module/btn';

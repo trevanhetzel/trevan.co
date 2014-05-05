@@ -1,0 +1,132 @@
+.sidebar {
+	position: fixed;
+	float: right;
+	right: -17.5em;
+	padding: 4em 2em 1em;
+	width: 17.5em;
+	@include transition(right .3s ease);
+
+	@include breakpoint(med) {
+		position: static;
+		right: auto;
+		width: 25%;
+		padding: 4em 2.5em 0 0;
+	}
+}
+
+.sidebar--title {
+	margin: 0;
+	font-size: 1.5em;
+	color: $white;
+
+	@include breakpoint(med) {
+		color: $black;
+	}
+}
+
+.tags {
+	list-style: none;
+	margin: 1em 0 0;
+	padding: 0;
+
+	li {
+		font-size: .625em;
+		margin: 0 0 .25em;
+	}
+
+	a {
+		display: inline-block;
+		padding: .5em .75em;
+		line-height: 1em;
+		@include border-top-radius(3px);
+		@include border-bottom-radius(3px);
+		background: $light-grey;
+		color: $dark-grey;
+		min-width: 8em;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.tags--count {
+	float: right;
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: .875em;
+}
+
+// Profile
+.sidebar--profile {
+	margin: 2em 0 0;
+}
+
+.about--img {
+	float: left;
+	margin: 1em 0 0;
+	width: 3em;
+	@include border-top-radius(50%);
+	@include border-bottom-radius(50%);
+}
+
+.about--title {
+	margin: 1em 0 0 .75em;
+	float: left;
+}
+
+.about--social {
+	float: left;
+	margin: 1em 0 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		float: left;
+		font-size: 1.225em;
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $link;
+				text-decoration: none;
+			}
+		}
+	}
+
+	@include breakpoint(med) {
+		li {
+			a {
+				color: $black;
+			}
+		}
+	}
+
+	@include breakpoint(lrg) {
+		li {
+			font-size: 1.5em;
+			margin-right: .25em;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.about--p {
+	float: left;
+	font-family: $secondary-font;
+	font-size: 1em;
+	line-height: 1.25em;
+	text-align: left;
+	margin: 1em 0 0;
+	color: $white;
+
+    @include breakpoint(med) {
+    	font-size: 1.063em;
+		line-height: 1.438em;
+		color: $black;
+    }
+}

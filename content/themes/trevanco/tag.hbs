@@ -1,0 +1,28 @@
+{{!< default}}
+
+{{#foreach posts}}
+<article class="post">
+    <div class="post--meta">
+        <time datetime="{{date format='YYYY-MM-DD'}}">
+            <span class="day">{{date format="DD"}}</span>
+            <span class="month">{{date format="MMM"}}</span>
+        </time>
+    </div>
+    
+    <div class="post--content">
+        <p class="post-info">
+            A <strong><span class="post-reading-time"></span></strong> read
+            posted on <strong>{{date format="MMM DD, YYYY"}}</strong>
+            {{#if tags}}in <strong>{{tags}}</strong>{{/if}}
+        </p>
+        
+        <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+
+        <p>{{excerpt}}...</p>
+
+        <a href="{{url}}" class="btn" style="float: left">Continue Reading</a>  
+    </div>
+</article>
+{{/foreach}}
+
+{{pagination}}

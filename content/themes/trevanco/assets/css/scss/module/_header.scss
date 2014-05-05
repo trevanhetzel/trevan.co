@@ -34,25 +34,60 @@ header {
 .header--search {
 	display: none;
 
+	background: lighten($primary, 6%);
+	border: solid .063em lighten($primary, 6%);
+	padding: .75em 2.25em .75em .75em;
+	color: $white;
+	@include border-top-radius(3px);
+	@include border-bottom-radius(3px);
+	outline: none;
+	@include transition(border .3s ease);
+
+	&:focus {
+		border: solid .063em darken($primary, 10%);
+
+		& + .icon-search {
+			opacity: 1;
+		}
+	}
+
 	@include breakpoint(med) {
 		position: absolute;
 		right: 0;
 		top: -.5em;
-		width: 20%;
+		width: 15%;
 		display: block;
-		background: lighten($primary, 6%);
-		border: solid .063em lighten($primary, 6%);
-		padding: .75em;
-		color: $white;
-		@include border-top-radius(3px);
-		@include border-bottom-radius(3px);
-		outline: none;
-		@include transition(border .3s ease);
-
-		&:focus {
-			border: solid .063em darken($primary, 10%);
-		}
 	}
+}
+
+.off-canvas--search {
+	display: block;
+	margin: 2em 2em 0;
+}
+
+.icon-search {
+	display: none;	
+	background: none;
+	border: none;
+	outline: none;
+	opacity: .5;
+	position: absolute;
+	top: .325em;
+	right: .5em;
+	font-family: "trevanco";
+	content: "\e809";
+	color: $white;
+	@include transition(opacity .3s ease);
+
+	@include breakpoint(med) {
+		display: block;
+	}
+}
+
+.off-canvas--icon {
+	display: block;
+	top: 2.75em;
+	right: 2em;
 }
 
 ::-webkit-input-placeholder, {

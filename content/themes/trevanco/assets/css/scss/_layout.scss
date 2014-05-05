@@ -13,3 +13,12 @@
 .cont-skinny {
 	max-width: 85.375em;
 }
+
+.main {
+	float: left;
+	width: 100%;
+
+	@include breakpoint(med) {
+		width: 70%;
+	}
+}
