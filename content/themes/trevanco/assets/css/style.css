@@ -822,26 +822,55 @@ header {
   padding: 0; }
   .tags li {
     font-size: .625em;
-    margin: 0 0 .25em; }
+    margin: 0 0 .625em; }
   .tags a {
+    position: relative;
     display: inline-block;
-    padding: .5em .75em;
+    padding: .5em .25em .5em 0;
     line-height: 1em;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background: #e9e9e9;
     color: #18191b;
-    min-width: 8em; }
+    min-width: 8em;
+    overflow: hidden; }
+    .tags a:before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #e9e9e9; }
+    .tags a:after {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      bottom: 0;
+      left: -100%;
+      height: 1px;
+      width: 100%;
+      background-color: #f37934;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f37934), color-stop(100%, #e9e9e9));
+      background-image: -webkit-linear-gradient(left, #f37934, #e9e9e9);
+      background-image: linear-gradient(to right,#f37934, #e9e9e9);
+      -webkit-transition: left 0.3s ease;
+      -moz-transition: left 0.3s ease;
+      transition: left 0.3s ease; }
     .tags a:hover {
       text-decoration: none; }
+      .tags a:hover:after {
+        left: 0; }
 
 .tags--count {
   float: right;
+  margin: -.25em 0 0;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: .875em; }
+  font-size: .875em;
+  background: #e9e9e9;
+  padding: .25em;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .sidebar--profile {
   margin: 2em 0 0; }

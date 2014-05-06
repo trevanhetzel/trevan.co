@@ -25,7 +25,8 @@
         function displayTags (data) {
             var tags = data.data.tags,
                 postsTags = data.data.posts_tags,
-                ptArray = [];
+                ptArray = [],
+                totalTagCount = ptArray.length;
 
             for (var postTag in postsTags) {
                 var pId = postsTags[postTag].post_id,
@@ -34,6 +35,16 @@
                 ptArray.push({
                     "post": pId,
                     "tag": tId
+                });
+            }
+
+            for (var tag in tags) {
+                var tagId = tags[tag].id;
+
+                $.each(ptArray, function (index, entry) {
+                    if (tagId == entry.tag) {
+                        totalTagCount++;
+                    }
                 });
             }
 
@@ -49,12 +60,54 @@
                     }
                 });
 
+                var percent = (tagCount / totalTagCount).toFixed(1),
+                    basePerc = 64,
+                    percGroup = null;
+
+                switch (percent) {
+                    case "0.1":
+                        percGroup = basePerc + 3 + "%";
+                        break;
+
+                    case "0.2":
+                        percGroup = basePerc + 7 + "%";
+                        break;
+
+                    case "0.3":
+                        percGroup = basePerc + 11 + "%";
+                        break;
+
+                    case "0.4":
+                        percGroup = basePerc + 15 + "%";
+                        break;
+
+                    case "0.5":
+                        percGroup = basePerc + 19 + "%";
+                        break;
+
+                    case "0.6":
+                        percGroup = basePerc + 23 + "%";
+                        break;
+
+                    case "0.7":
+                        percGroup = basePerc + 29 + "%";
+                        break;
+
+                    case "0.8":
+                        percGroup = basePerc + 31 + "%";
+                        break;
+
+                    case "0.9":
+                        percGroup = basePerc + 35 + "%";
+                }
+
                 if (!(tagId == 1 || tagId == 2 || tagId == 3 || tagId == 4)) {
                     $tagList
-                        .append('<li><a href="/tag/' + tagSlug + '">' + tagName +
-                        '<span class="tags--count">(' + tagCount + ')</span></li>');
+                        .append('<li><a href="/tag/' + tagSlug + '" style="width:' + percGroup + '"">' + tagName +
+                        '<span class="tags--count">' + tagCount + '</span></li>');
                 }
             }
+
         }
 
         // Request the JSON & set/get to/from localStorage
