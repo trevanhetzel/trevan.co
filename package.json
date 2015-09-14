@@ -1,0 +1,17 @@
+{
+  "name": "trevan.co",
+  "title": "trevan.co",
+  "version": "3.0.0",
+  "description": "Trevan Hetzel's blog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trevanhetzel/trevan.co.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~0.7.3",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.5.1",
+    "webpack": "~1.12.1"
+  }
+}
