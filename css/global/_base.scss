@@ -29,8 +29,18 @@ body {
 }
 
 .wrapper {
-  max-width: 62.5em;
-  margin: 0 auto;
+  max-width: 75em;
+  margin: 2em auto;
+  padding: 0 1.5em;
+
+  @include breakpoint(small) {
+    margin: 3em auto;
+  }
+
+  @include breakpoint(medium) {
+    margin: 4em auto;
+    padding: 0 2.5em;
+  }
 }
 
 h1 {
@@ -91,7 +101,7 @@ p {
   line-height: 1.5em;
   font-family: $primary-font;
 
-  @include breakpoint(small) {
+  @include breakpoint(xs) {
     @include font-size(19);
     line-height: 1.5em;
   }

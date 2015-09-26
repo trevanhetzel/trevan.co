@@ -1,0 +1,29 @@
+{% for post in posts %}
+  <section class="article">
+    <time class="article-time" datetime="2015-05-16">
+      <span class="day">16</span>
+      <span class="month">May</span>
+    </time>
+
+    <div class="article-content">
+      <p class="article-info">
+        Posted on <strong>May 16, 2015</strong>
+        in <strong>WordPress, Performance</strong>
+      </p>
+
+      <h1><a href="{{ post.slug }}">{{ post.title }}</a></h1>
+
+      <div class="article-excerpt">
+        {% if post.excerpt %}
+          <p>{{ post.excerpt }}</p>
+        {% else %}
+          {{ post.content|apply_filters('wp_trim_excerpt') }}
+        {% endif %}
+      </div>
+
+      <a href="#" class="btn">Continue Reading</a>
+    </div>
+  </section>
+{% else %}
+  <li>Sorry, no posts matched your criteria</li>
+{% endfor %}

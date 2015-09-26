@@ -1,0 +1,24 @@
+.btn {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: .5em 1.5em;
+  background: $link;
+  color: $white;
+  @include font-size(15);
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  transition: background .3s ease;
+  border-radius: 3px;
+
+  &:hover {
+    background: darken($link, 7%);
+    text-decoration: none;
+  }
+
+  @include breakpoint(medium) {
+    padding: 1em 3em;
+  }
+}

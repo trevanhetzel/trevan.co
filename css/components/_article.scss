@@ -1,0 +1,91 @@
+.article {
+  margin: 0 0 2em;
+  padding: 0 0 2em;
+  border-bottom: solid 0.064em $light-grey;
+  @include clearfix;
+
+  @include breakpoint(small) {
+    margin: 0 0 3em;
+    padding: 0 0 3em;
+  }
+
+  @include breakpoint(medium) {
+    margin: 0 0 6em;
+    padding: 0;
+    border-bottom: 0;
+  }
+}
+
+.article-time {
+  display: none;
+  float: left;
+  width: 4em;
+  height: 4em;
+  color: $med-grey;
+  text-align: center;
+  border: 1px solid $med-grey;
+  border-radius: 50%;
+
+  .day {
+    display: block;
+    width: 100%;
+    @include font-size(27);
+    font-weight: 700;
+    padding-top: .2em;
+  }
+
+  .month {
+    display: block;
+    width: 100%;
+    @include font-size(15);
+    font-weight: 700;
+    margin-top: -.25em;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
+
+.article-content {
+  position: relative;
+
+  @include breakpoint(medium) {
+    overflow: hidden;
+    margin: 0 0 0 6em;
+    padding: 0 0 0 2.5em;
+    border-left: 1px solid $light-grey;
+  }
+}
+
+.article-info {
+  color: $med-grey;
+  font-family: $secondary-font;
+  margin: 0 0 .5em 0;
+  @include font-size(15);
+  line-height: 1em;
+
+  @include breakpoint(medium) {
+    @include font-size(17);
+    line-height: 1.25em;
+  }
+}
+
+.article-excerpt {
+  margin: 1em 0;
+  columns: 320px 2;
+  column-gap: 2em;
+
+  p {
+    margin: 0;
+  }
+
+  @include breakpoint(small) {
+    margin: 1.5em 0;
+  }
+
+  @include breakpoint(medium) {
+    column-gap: 3em;
+  }
+}

@@ -13,7 +13,7 @@
     @media (min-width: 60em) { @content; } // 768px
   }
   @else if $size == small {
-    @media (min-width: 46em)  { @content; } // 480px
+    @media (min-width: 47em)  { @content; } // 480px
   }
   @else if $size == xs {
     @media (min-width: 30em)  { @content; } // 480px
