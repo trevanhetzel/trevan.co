@@ -1,24 +1,30 @@
-header {
-  font-size: 1em;
-  font-weight: 300;
+.header {
+  position: relative;
   padding: 1.25em;
+  background: $primary;
+  overflow: hidden;
 
-  @include breakpoint(med) {
+  @include breakpoint(medium) {
     padding: 2em;
   }
 }
 
-.header--title {
-  font-weight: 700;
-  font-size: 1.188em;
-  text-transform: uppercase;
+.header__inner {
+  max-width: 62.5em;
+  margin: 0 auto;
+}
+
+.header__title {
   float: left;
+  font-weight: 700;
+  @include font-size(19);
+  text-transform: uppercase;
   color: $white;
-  @include long-shadow(text, #225baf, 200, false, false, left);
+  @include long-shadow($secondary, 200);
 
   a {
     color: $white;
-    @include transition(opacity .3s ease);
+    transition: opacity .3s;
 
     &:hover {
       color: $white;
@@ -26,82 +32,116 @@ header {
     }
   }
 
-  @include breakpoint(med) {
-    font-size: 1.5em;
+  @include breakpoint(medium) {
+    @include font-size(24);
   }
 }
 
-.header--search {
+.header__nav {
   display: none;
+  float: right;
+  margin: 0;
+  list-style: none;
+  line-height: 1;
 
-  background: lighten($primary, 6%);
-  border: solid .063em lighten($primary, 6%);
-  padding: .75em 2.25em .75em .75em;
-  color: $white;
-  @include border-top-radius(3px);
-  @include border-bottom-radius(3px);
-  outline: none;
-  @include transition(border .3s ease);
+  @include breakpoint(small) {
+    display: block;
+  }
+}
 
-  &:focus {
-    border: solid .063em darken($primary, 10%);
+.header__nav__item {
+  display: inline;
+  @include font-size(16);
+  font-family: $secondary-font;
+  line-height: 1.6;
 
-    & + .icon-search {
-      opacity: 1;
+  &:last-child a {
+    margin-right: 0;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 .5em;
+    padding: 0 .5em;
+    color: $white;
+    font-weight: 400;
+    transition: color .2s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: $secondary;
     }
   }
 
-  @include breakpoint(med) {
-    position: absolute;
-    right: 0;
-    top: -.5em;
-    width: 15%;
-    display: block;
+  @include breakpoint(medium) {
+    @include font-size(18);
+
+    a {
+      margin: 0 1em;
+    }
   }
 }
 
-.off-canvas--search {
+// Hamburger icon
+.header__hamburger {
   display: block;
-  margin: 2em 2em 0;
-}
-
-.icon-search {
-  display: none;  
-  background: none;
-  border: none;
-  outline: none;
-  opacity: .5;
   position: absolute;
-  top: .325em;
-  right: .5em;
-  font-family: "trevanco";
-  content: "\e809";
-  color: $white;
-  @include transition(opacity .3s ease);
+  top: 50%;
+  right: 1.25em;
+  transform: translateY(-50%);
+  width: 1.825em;
+  height: 2em;
 
-  @include breakpoint(med) {
+  span {
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background: $white;
+    border-radius: 1px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: $white;
+      border-radius: 1px;
+    }
+
+    &::before {
+      top: -10px;
+    }
+
+    &::after {
+      bottom: -10px;
+    }
+  }
+
+  @include breakpoint(small) {
+    display: none;
   }
 }
 
-.off-canvas--icon {
-  display: block;
-  top: 2.75em;
-  right: 2em;
-}
 
-::-webkit-input-placeholder, {
-   color: $white;
-}
+// Search icon
+.header__search {
+  position: absolute;
+  top: 1.375em;
+  right: 4.5em;
+  float: right;
 
-:-moz-placeholder {
-   color: $white;
-}
+  @include breakpoint(small) {
+    position: static;
+    margin: .125em 0 0 1.5em;
+  }
 
-::-moz-placeholder {
-   color: $white;
-}
-
-:-ms-input-placeholder {  
-   color: $white;
+  @include breakpoint(medium) {
+    margin: .25em 0 0 2.5em;
+  }
 }

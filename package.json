@@ -7,8 +7,18 @@
     "type": "git",
     "url": "git://github.com/trevanhetzel/trevan.co.git"
   },
+  "dependencies": {
+    "jquery": "",
+    "backbone": ""
+  },
   "devDependencies": {
+    "browserify": "",
     "gulp": "~3.9.0",
-    "webpack": "~1.12.1"
+    "gulp-autoprefixer": "",
+    "gulp-sass": "",
+    "gulp-uglify": "",
+    "vinyl-buffer": "",
+    "vinyl-source-stream": "~1.1.0",
+    "twig": ""
   }
 }
