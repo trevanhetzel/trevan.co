@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <span class="loader"></span>
   <header class="header">
     <div class="header__inner">
       <h1 class="header__title">
