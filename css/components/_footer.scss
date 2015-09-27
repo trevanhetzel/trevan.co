@@ -1,0 +1,21 @@
+.footer {
+  padding: 1em;
+  color: $white;
+  background: $secondary;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    padding: 2em;
+  }
+}
+
+.footer__p {
+  margin: 0;
+  padding: 0;
+  font-family: $secondary-font;
+  @include font-size(15);
+
+   @include breakpoint(medium) {
+      @include font-size(16);
+    }
+}
