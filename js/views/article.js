@@ -29,6 +29,9 @@ module.exports = Backbone.View.extend({
       success: function (data) {
         var result = data.toJSON();
         self.render(result[0]);
+
+        // Set page title
+        document.title = result[0].title + ' - Trevan Hetzel';
       }
     });
   },

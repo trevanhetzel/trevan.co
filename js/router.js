@@ -2,8 +2,15 @@
 
 var $ = require('jquery');
 var Backbone = require('backbone');
+
+// Require views
 var HomeView = require('./views/home');
 var ArticleView = require('./views/article');
+var ProjectsView = require('./views/projects');
+var SpeakingView = require('./views/speaking');
+var AboutView = require('./views/about');
+
+// Require collections
 var PostsCollection = require('./collections/posts');
 
 Backbone.$ = $;
@@ -23,18 +30,26 @@ module.exports = Backbone.Router.extend({
 
   home: function () {
     var homeView = new HomeView({collection: new PostsCollection});
+
+    document.title = 'Trevan Hetzel';
   },
 
   projects: function () {
-    console.log('project');
+    var projectsView = new ProjectsView();
+
+    document.title = 'Projects - Trevan Hetzel';
   },
 
   speaking: function () {
-    console.log('speaking');
+    var speakingView = new SpeakingView();
+
+    document.title = 'Speaking - Trevan Hetzel';
   },
 
   about: function () {
-    console.log('about');
+    var aboutView = new AboutView();
+
+    document.title = 'About - Trevan Hetzel';
   },
 
   article: function (slug) {
