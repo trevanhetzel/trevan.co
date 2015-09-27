@@ -19,7 +19,7 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__title">
-        <a href="<?php echo esc_url( home_url() ); ?>">Trevan Hetzel</a>
+        <a href="/">Trevan Hetzel</a>
       </h1>
 
       <svg class="header__search" version="1.1" x="0px" y="0px" width="20.9px" height="21px" viewBox="0 0 20.9 21" enable-background="new 0 0 20.9 21" xml:space="preserve">
@@ -34,7 +34,7 @@
           <a href="/projects">Projects</a>
         </li>
         <li class="header__nav__item">
-          <a href="http://hetzelcreative.com">Consulting</a>
+          <a href="http://hetzelcreative.com" data-bypass>Consulting</a>
         </li>
         <li class="header__nav__item">
           <a href="/speaking">Speaking</a>

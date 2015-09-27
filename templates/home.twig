@@ -17,11 +17,11 @@
         {% if post.excerpt %}
           <p>{{ post.excerpt }}</p>
         {% else %}
-          {{ post.content|apply_filters('wp_trim_excerpt') }}
+          <p>{{ post.content|apply_filters('wp_trim_excerpt') }}</p>
         {% endif %}
       </div>
 
-      <a href="#" class="btn">Continue Reading</a>
+      <a href="{{ post.slug }}" class="btn">Continue Reading</a>
     </div>
   </section>
 {% else %}

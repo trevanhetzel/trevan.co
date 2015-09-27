@@ -1,0 +1,36 @@
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: none;
+  transition: background .2s;
+  pointer-events: none;
+}
+
+.loading {
+  &::before {
+    background: rgba($white, 1);
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity .2s;
+  width: 20px;
+  height: 20px;
+  background: $primary;
+
+  .loading & {
+    opacity: 1;
+  }
+}

@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 2;
   padding: 1.25em 0;
   background: $primary;
   overflow: hidden;
@@ -30,6 +31,7 @@
   a {
     color: $white;
     transition: opacity .3s;
+    outline: none;
 
     &:hover {
       color: $white;
@@ -71,6 +73,7 @@
     color: $white;
     font-weight: 400;
     transition: color .2s ease;
+    outline: none;
 
     &:hover {
       text-decoration: none;

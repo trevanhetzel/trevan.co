@@ -9,10 +9,11 @@ var transition = require('../mixins/page_transition');
 Backbone.$ = $;
 
 module.exports = Backbone.View.extend({
-  initialize: function () {
+  initialize: function (options) {
     this.$el = $('.wrapper');
+    this.slug = options.slug;
     this.fetch();
-    
+
     transition.start();
   },
 
@@ -22,23 +23,24 @@ module.exports = Backbone.View.extend({
     this.collection.fetch({
       processData: true,
       data: $.param({
-        action: 'return_all'
+        action: 'return_one',
+        slug: self.slug
       }),
       success: function (data) {
         var result = data.toJSON();
-        self.render(result);
+        self.render(result[0]);
       }
     });
   },
 
   render: function (data) {
     var template = twig({
-      href: '/wp-content/themes/trevan/templates/home.twig',
+      href: '/wp-content/themes/trevan/templates/article.twig',
       async: false
     });
-    
+
     // render the template
-    var postsHTML = template.render({posts: data});
+    var postsHTML = template.render({post: data});
     this.$el.html(postsHTML);
 
     transition.end();
