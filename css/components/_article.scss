@@ -16,6 +16,16 @@
   }
 }
 
+.article--single {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+
+  .article-content {
+    border-bottom: 1px solid $light-grey;
+  }
+}
+
 .article-time {
   display: none;
   float: left;

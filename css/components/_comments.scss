@@ -1,0 +1,19 @@
+.comments {
+  padding: 2em 0 0;
+
+  .btn {
+    float: none;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(small) {
+    padding: 3em 0 0;
+  }
+
+  @include breakpoint(medium) {
+    overflow: hidden;
+    margin: 0 0 0 6em;
+    padding: 3em 0 3em 2.5em;
+    border-left: 1px solid $light-grey;
+  }
+}

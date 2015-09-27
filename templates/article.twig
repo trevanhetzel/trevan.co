@@ -1,4 +1,4 @@
-<section class="article">
+<section class="article article--single">
   <time class="article-time" datetime="2015-05-16">
     <span class="day">16</span>
     <span class="month">May</span>
@@ -10,10 +10,31 @@
       in <strong>WordPress, Performance</strong>
     </p>
 
-    <h1><a href="{{ post.slug }}">{{ post.title }}</a></h1>
+    <h1>{{ post.title }}</h1>
 
     <div class="article-text">
       <p>{{ post.content }}</p>
     </div>
+  </div>
+
+  <div class="comments">
+    <div id="disqus_thread">
+      <form onsubmit="my.loadDisqus();return false;" class="formBlock">
+        <input class="btn" type="submit" value="Load Comments">
+      </form>
+    </div>
+
+    <script>
+      var disqus_shortname = "hetzel";
+      var disqus_identifier = '{{post.id}}';
+      var my = my || {};
+      my.loadDisqus = function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      };
+    </script>
   </div>
 </section>
