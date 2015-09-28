@@ -28,6 +28,7 @@ module.exports = Backbone.View.extend({
       }),
       success: function (data) {
         var result = data.toJSON();
+
         self.render(result[0]);
 
         // Set page title

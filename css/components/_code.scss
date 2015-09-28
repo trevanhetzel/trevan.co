@@ -1,0 +1,25 @@
+pre {
+  margin: 0 0 2em;
+  padding: 1em;
+  border-radius: 3px;
+  color: $black;
+  font-family: Consolas,"Lucida Console",monospace;
+  background: $off-white;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  code {
+    font-family: Consolas,"Lucida Console",monospace;
+    @include font-size(13);
+    color: $black;
+  }
+
+  @include breakpoint(small) {
+    line-height: 1.4;
+
+    code {
+      @include font-size(15);
+    }
+  }
+}
