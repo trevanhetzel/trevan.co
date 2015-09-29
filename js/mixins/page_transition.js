@@ -12,6 +12,6 @@ module.exports = {
   },
 
   end: function () {
-    $('body').removeClass('loading');
+    $('body').removeClass();
   }
 }

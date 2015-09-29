@@ -4,6 +4,10 @@
   border-bottom: solid 0.064em $light-grey;
   @include clearfix;
 
+  &:last-child {
+    margin: 0;
+  }
+
   @include breakpoint(small) {
     margin: 0 0 3em;
     padding: 0 0 3em;

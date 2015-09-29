@@ -5,10 +5,11 @@ var Backbone = require('backbone');
 
 // Require views
 var HomeView = require('./views/home');
-var ArticleView = require('./views/article');
 var ProjectsView = require('./views/projects');
 var SpeakingView = require('./views/speaking');
 var AboutView = require('./views/about');
+var SearchView = require('./views/search');
+var ArticleView = require('./views/article');
 
 // Require collections
 var PostsCollection = require('./collections/posts');
@@ -25,6 +26,7 @@ module.exports = Backbone.Router.extend({
     'projects': 'projects',
     'speaking': 'speaking',
     'about': 'about',
+    'search': 'search',
     ':slug': 'article'
   },
 
@@ -50,6 +52,12 @@ module.exports = Backbone.Router.extend({
     var aboutView = new AboutView();
 
     document.title = 'About - Trevan Hetzel';
+  },
+
+  search: function () {
+    var searchView = new SearchView();
+
+    document.title = 'Search - Trevan Hetzel';
   },
 
   article: function (slug) {

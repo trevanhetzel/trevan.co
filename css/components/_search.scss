@@ -1,0 +1,34 @@
+.search--open {
+  .wrapper {
+    position: relative;
+    min-height: calc(100% - 203px);
+
+    @include breakpoint(small) {
+      min-height: calc(100% - 215px);
+    }
+
+    @include breakpoint(medium) {
+      min-height: calc(100% - 313px);
+    }
+  }
+}
+
+.search__input {
+  width: 100%;
+  padding: 0 0 20px;
+  @include font-size(26);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid $light-grey;
+  outline: none;
+
+  @include breakpoint(small) {
+    @include font-size(34);
+    padding: 0 0 26px;
+  }
+
+  @include breakpoint(medium) {
+    @include font-size(48);
+    padding: 0 0 32px;
+  }
+}
