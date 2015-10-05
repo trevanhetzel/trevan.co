@@ -37,13 +37,10 @@
           <a href="/">Articles</a>
         </li>
         <li class="header__nav__item">
-          <a href="/projects">Projects</a>
+          <a href="/about">About</a>
         </li>
         <li class="header__nav__item">
           <a href="http://hetzelcreative.com" data-bypass>Consulting</a>
-        </li>
-        <li class="header__nav__item">
-          <a href="/about">About</a>
         </li>
       </ul>
     </div>
