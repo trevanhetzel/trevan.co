@@ -9,6 +9,10 @@ var router = new Router();
 // Set silent to true to not load JS templates on page load
 Backbone.history.start({ pushState: true, silent: true });
 
+// Static search
+var search = require('./mixins/static_search');
+search.events();
+
 // Hi-jink all links to route using slashes
 $(document).on('click', 'a:not([data-bypass])', function (e) {
   if (! $(e.currentTarget).parents('#wpadminbar').length) {

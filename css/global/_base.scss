@@ -34,13 +34,25 @@ body {
   padding: 0 1.5em;
   @include clearfix;
 
+  .wrapper {
+    margin: 2em -1.5em;
+  }
+
   @include breakpoint(small) {
     margin: 3em auto;
+
+    .wrapper {
+      margin: 3em -1.5em;
+    }
   }
 
   @include breakpoint(medium) {
     margin: 4em auto;
     padding: 0 2.5em;
+
+    .wrapper {
+      margin: 4em -2.5em;
+    }
   }
 }
 

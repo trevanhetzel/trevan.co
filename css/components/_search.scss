@@ -1,21 +1,21 @@
 .search--open {
   .wrapper {
     position: relative;
-    min-height: calc(100% - 203px);
+    min-height: calc(100% - 12.688em);
 
     @include breakpoint(small) {
-      min-height: calc(100% - 215px);
+      min-height: calc(100% - 13.438em);
     }
 
     @include breakpoint(medium) {
-      min-height: calc(100% - 313px);
+      min-height: calc(100% - 19.563em);
     }
   }
 }
 
 .search__input {
   width: 100%;
-  padding: 0 0 20px;
+  padding: 0 0 .769em;
   @include font-size(26);
   background: none;
   border: 0;
@@ -24,11 +24,12 @@
 
   @include breakpoint(small) {
     @include font-size(34);
-    padding: 0 0 26px;
+    padding: 0 0 .765em;
   }
 
   @include breakpoint(medium) {
     @include font-size(48);
-    padding: 0 0 32px;
+    padding: 0 0 .667em;
   }
 }
+

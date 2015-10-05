@@ -56,6 +56,7 @@ module.exports = Backbone.Router.extend({
 
   search: function () {
     var searchView = new SearchView();
+    searchView.render();
 
     document.title = 'Search - Trevan Hetzel';
   },

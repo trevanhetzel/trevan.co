@@ -10,8 +10,15 @@ add_action( 'wp_ajax_nopriv_return_one', 'return_one' );
 
 // Return all posts
 function return_all () {
+  if ($_GET['s']) {
+    $searchTerm = $_GET['s'];
+  } else {
+    $searchTerm = '';
+  }
+
   $posts = get_posts( array(
-    'posts_per_page' => 10
+    'posts_per_page' => 10,
+    's' => $searchTerm
   ));
 
   $result = array();
