@@ -50,18 +50,27 @@ function return_all () {
 
 // Return single post
 function return_one () {
-  $posts = get_posts( array(
+  $post = get_posts( array(
     'name' => $_GET['slug'],
     'posts_per_page' => 1
   ));
 
   $result = array();
 
-  if ($posts) {
+  if ($post) {
+    $categories = get_the_category($post[0]->ID);
+
+    $cats = array();
+
+    foreach ($categories as $key=>$category) {
+      $cats[$key] = $category->name;
+    }
+
     $result[] = array(
-      'title' => $posts[0]->post_title,
-      'slug' => $posts[0]->post_name,
-      'content' => apply_filters('the_content', $posts[0]->post_content)
+      'title' => $post[0]->post_title,
+      'slug' => $post[0]->post_name,
+      'content' => apply_filters('the_content', $post[0]->post_content),
+      'categories' => $cats
     );
   }
 
