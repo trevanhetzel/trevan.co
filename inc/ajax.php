@@ -24,10 +24,19 @@ function return_all () {
   $result = array();
   
   foreach ($posts as $post) {
+    $categories = get_the_category($post->ID);
+
+    $cats = array();
+
+    foreach ($categories as $key=>$category) {
+      $cats[$key] = $category->name;
+    }
+
     $result[] = array(
       'title' => $post->post_title,
       'slug' => $post->post_name,
-      'excerpt' => apply_filters('wp_trim_excerpt', $post->post_content)
+      'excerpt' => apply_filters('wp_trim_excerpt', $post->post_content),
+      'categories' => $cats
     );
   }
 
