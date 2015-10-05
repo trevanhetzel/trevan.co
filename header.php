@@ -43,9 +43,6 @@
           <a href="http://hetzelcreative.com" data-bypass>Consulting</a>
         </li>
         <li class="header__nav__item">
-          <a href="/speaking">Speaking</a>
-        </li>
-        <li class="header__nav__item">
           <a href="/about">About</a>
         </li>
       </ul>
