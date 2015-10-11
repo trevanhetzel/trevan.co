@@ -1,12 +1,25 @@
 <section class="article article--single">
   <time class="article-time" datetime="2015-05-16">
-    <span class="day">16</span>
-    <span class="month">May</span>
+    <span class="day">
+      {% if post.day %}
+        {{ post.day }}
+      {% else %}
+        {{ post.post_date|date('j') }}
+      {% endif %}
+    </span>
+
+    <span class="month">
+      {% if post.month %}
+        {{ post.month }}
+      {% else %}
+        {{ post.post_date|date('M') }}
+      {% endif %}
+    </span>
   </time>
 
   <div class="article-content">
     <p class="article-info">
-      Posted on <strong>May 16, 2015</strong> in 
+      Posted on <strong>{{ post.date }}</strong> in 
       
       {% for cat in post.categories %}
         <strong class="article-info__cat">{{ cat }}</strong>

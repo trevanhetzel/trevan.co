@@ -1,13 +1,26 @@
 {% for post in posts %}
   <section class="article">
     <time class="article-time" datetime="2015-05-16">
-      <span class="day">16</span>
-      <span class="month">May</span>
+      <span class="day">
+        {% if post.day %}
+          {{ post.day }}
+        {% else %}
+          {{ post.post_date|date('j') }}
+        {% endif %}
+      </span>
+
+      <span class="month">
+        {% if post.month %}
+          {{ post.month }}
+        {% else %}
+          {{ post.post_date|date('M') }}
+        {% endif %}
+      </span>
     </time>
 
     <div class="article-content">
       <p class="article-info">
-        Posted on <strong>May 16, 2015</strong> in 
+        Posted on <strong>{{ post.date }}</strong> in 
         
         {% for cat in post.categories %}
           <strong class="article-info__cat">{{ cat }}</strong>
@@ -30,3 +43,17 @@
 {% else %}
   <li>Sorry, no posts matched your criteria</li>
 {% endfor %}
+
+<nav class="pagination" role="pagination">
+  {% if pagination.prev %}
+    <a class="newer-posts" href="{{ pagination.prev.link }}">← Newer Posts</a>
+  {% endif %}
+
+  {% for page in pagination.pages %}
+    <span class="page-number">Page {{ pagination.total }} of {{ loop.length }}</span>
+  {% endfor %}
+  
+  {% if pagination.next %}
+    <a class="older-posts" href="{{ pagination.next.link }}">Older Posts →</a>
+  {% endif %}
+</nav>

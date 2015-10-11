@@ -16,28 +16,36 @@ function return_all () {
     $searchTerm = '';
   }
 
-  $posts = get_posts( array(
+  $query = new WP_Query( array(
     'posts_per_page' => 10,
     's' => $searchTerm
   ));
 
   $result = array();
   
-  foreach ($posts as $post) {
-    $categories = get_the_category($post->ID);
+  if ($query->have_posts()) {
+    while ($query->have_posts()) {
+      $query->the_post();
+      global $post;
 
-    $cats = array();
+      $categories = get_the_category($post->ID);
 
-    foreach ($categories as $key=>$category) {
-      $cats[$key] = $category->name;
+      $cats = array();
+
+      foreach ($categories as $key=>$category) {
+        $cats[$key] = $category->name;
+      }
+
+      $result[] = array(
+        'title' => get_the_title(),
+        'slug' => $post->post_name,
+        'date' => get_the_date(),
+        'day' => get_the_date('j'),
+        'month' => get_the_date('M'),
+        'excerpt' => apply_filters('wp_trim_excerpt', $post->post_content),
+        'categories' => $cats
+      );
     }
-
-    $result[] = array(
-      'title' => $post->post_title,
-      'slug' => $post->post_name,
-      'excerpt' => apply_filters('wp_trim_excerpt', $post->post_content),
-      'categories' => $cats
-    );
   }
 
   if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
@@ -50,28 +58,36 @@ function return_all () {
 
 // Return single post
 function return_one () {
-  $post = get_posts( array(
+  $query = new WP_Query( array(
     'name' => $_GET['slug'],
     'posts_per_page' => 1
   ));
 
   $result = array();
 
-  if ($post) {
-    $categories = get_the_category($post[0]->ID);
+  if ($query->have_posts()) {
+    while ($query->have_posts()) {
+      $query->the_post();
+      global $post;
 
-    $cats = array();
+      $categories = get_the_category($post->ID);
 
-    foreach ($categories as $key=>$category) {
-      $cats[$key] = $category->name;
+      $cats = array();
+
+      foreach ($categories as $key=>$category) {
+        $cats[$key] = $category->name;
+      }
+
+      $result[] = array(
+        'title' => get_the_title(),
+        'slug' => $post->post_name,
+        'date' => get_the_date(),
+        'day' => get_the_date('j'),
+        'month' => get_the_date('M'),
+        'content' => apply_filters('the_content', $post->post_content),
+        'categories' => $cats
+      );
     }
-
-    $result[] = array(
-      'title' => $post[0]->post_title,
-      'slug' => $post[0]->post_name,
-      'content' => apply_filters('the_content', $post[0]->post_content),
-      'categories' => $cats
-    );
   }
 
   if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {

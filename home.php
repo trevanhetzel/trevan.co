@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
 <?php
-$data = Timber::get_context();
-$data['posts'] = Timber::get_posts();
-Timber::render('templates/home.twig', $data);
+$context = Timber::get_context();
+$context['posts'] = Timber::get_posts();
+$context['pagination'] = Timber::get_pagination();
+Timber::render('templates/home.twig', $context);
 ?>
 
 <?php get_footer(); ?>
