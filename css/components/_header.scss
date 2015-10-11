@@ -45,14 +45,20 @@
 }
 
 .header__nav {
-  display: none;
-  float: right;
-  margin: 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0 0;
+  padding: 0;
   list-style: none;
   line-height: 1;
 
-  @include breakpoint(small) {
+  @include breakpoint(33.125em) {
     display: block;
+    float: right;
+    width: auto;
+    margin: 0;
+    text-align: left;
   }
 }
 
@@ -68,16 +74,22 @@
 
   a {
     display: inline-block;
-    margin: 0 .5em;
     padding: 0 .5em;
     color: $white;
     font-weight: 400;
-    transition: color .2s ease;
+    transition: background .2s ease;
     outline: none;
+    border-radius: 3px;
 
     &:hover {
       text-decoration: none;
-      color: $secondary;
+      background: $secondary;
+    }
+  }
+
+  @include breakpoint(33.125em) {
+    a {
+      margin: 0 .5em;
     }
   }
 
@@ -91,60 +103,65 @@
 }
 
 // Hamburger icon
-.header__hamburger {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 1.25em;
-  transform: translateY(-50%);
-  width: 1.825em;
-  height: 2em;
+// .header__hamburger {
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   right: 1.25em;
+//   transform: translateY(-50%);
+//   width: 1.825em;
+//   height: 2em;
 
-  span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 4px;
-    background: $white;
-    border-radius: 1px;
+//   span {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     transform: translateY(-50%);
+//     width: 100%;
+//     height: 4px;
+//     background: $white;
+//     border-radius: 1px;
 
-    &::before,
-    &::after {
-      position: absolute;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 4px;
-      background: $white;
-      border-radius: 1px;
-    }
+//     &::before,
+//     &::after {
+//       position: absolute;
+//       left: 0;
+//       content: "";
+//       width: 100%;
+//       height: 4px;
+//       background: $white;
+//       border-radius: 1px;
+//     }
 
-    &::before {
-      top: -10px;
-    }
+//     &::before {
+//       top: -10px;
+//     }
 
-    &::after {
-      bottom: -10px;
-    }
-  }
+//     &::after {
+//       bottom: -10px;
+//     }
+//   }
 
-  @include breakpoint(small) {
-    display: none;
-  }
-}
+//   @include breakpoint(small) {
+//     display: none;
+//   }
+// }
 
 
 // Search icon
 .header__search {
   position: absolute;
   top: 1.375em;
-  right: 4.5em;
+  right: 1.25em;
   float: right;
+  transition: opacity .2s;
 
-  @include breakpoint(small) {
+  &:hover {
+    opacity: .5;
+  }
+
+  @include breakpoint(33.125em) {
     position: static;
     margin: .125em 0 0 1.5em;
   }

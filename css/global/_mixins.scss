@@ -18,6 +18,9 @@
   @else if $size == xs {
     @media (min-width: 30em)  { @content; } // 480px
   }
+  @else {
+    @media (min-width: $size)  { @content; } // 480px
+  }
 }
 
 /* ==========================================================================

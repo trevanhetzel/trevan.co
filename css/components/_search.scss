@@ -1,10 +1,22 @@
 .search--open {
   .wrapper {
     position: relative;
-    min-height: calc(100% - 12.688em);
+    min-height: calc(100% - 16.65em);
+
+    @include breakpoint(21.125em) {
+      min-height: calc(100% - 15.25em);
+    }
+
+    @include breakpoint(33.125em) {
+      min-height: calc(100% - 12.825em);
+    }
+
+    @include breakpoint(39.438em) {
+      min-height: calc(100% - 11.425em);
+    }
 
     @include breakpoint(small) {
-      min-height: calc(100% - 13.438em);
+      min-height: calc(100% - 13.425em);
     }
 
     @include breakpoint(medium) {
