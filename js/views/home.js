@@ -9,8 +9,9 @@ var transition = require('../mixins/page_transition');
 Backbone.$ = $;
 
 module.exports = Backbone.View.extend({
-  initialize: function () {
+  initialize: function (options) {
     this.$el = $('.wrapper');
+    this.page = options.page;
     this.fetch();
     
     transition.start();
@@ -22,23 +23,26 @@ module.exports = Backbone.View.extend({
     this.collection.fetch({
       processData: true,
       data: $.param({
-        action: 'return_all'
+        action: 'return_all',
+        page: self.page
       }),
       success: function (data) {
         var result = data.toJSON();
-        self.render(result);
+        var pagination = result[0].pagination;
+        delete result[0].pagination;
+        self.render(result[0], pagination);
       }
     });
   },
 
-  render: function (data) {
+  render: function (data, pagination) {
     var template = twig({
       href: '/wp-content/themes/trevan/templates/home.twig',
       async: false
     });
     
     // render the template
-    var postsHTML = template.render({posts: data});
+    var postsHTML = template.render({posts: data, pagination: pagination});
     this.$el.html(postsHTML);
 
     transition.end();

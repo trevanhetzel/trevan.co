@@ -1,0 +1,33 @@
+.pagination {
+  position: relative;
+  padding: 0 0 2em;
+  @include clearfix;
+
+  @include breakpoint(medium) {
+    margin: 0 0 0 8.5em;
+  }
+}
+
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: .5em 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $dark-grey;
+  @include font-size(14);
+
+  @include breakpoint(medium) {
+    @include font-size(16);
+  }
+}
+
+.older-posts {
+  right: 0;
+}
+
+.newer-posts {
+  left: 0;
+}

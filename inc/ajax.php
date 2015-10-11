@@ -10,15 +10,14 @@ add_action( 'wp_ajax_nopriv_return_one', 'return_one' );
 
 // Return all posts
 function return_all () {
-  if ($_GET['s']) {
-    $searchTerm = $_GET['s'];
-  } else {
-    $searchTerm = '';
-  }
+  $searchTerm = ($_GET['s']) ? $_GET['s'] : '';
+  $page = ($_GET['page']) ? $_GET['page'] : 1;
 
   $query = new WP_Query( array(
-    'posts_per_page' => 10,
-    's' => $searchTerm
+    'posts_per_page' => 5,
+    'post_type' => 'post',
+    's' => $searchTerm,
+    'paged' => $page
   ));
 
   $result = array();
@@ -46,6 +45,19 @@ function return_all () {
         'categories' => $cats
       );
     }
+
+    $totalPages = $query->max_num_pages;
+    $pagination = array();
+
+    if (($page - 1) > 0) {
+      $pagination['prev'] = array('link' => esc_url(home_url()) . '/page/' . ($page - 1));
+    }
+
+    if (($page + 1) <= $totalPages) {
+      $pagination['next'] = array('link' => esc_url(home_url()) . '/page/' . ($page + 1));
+    }
+
+    $result['pagination'] = $pagination;
   }
 
   if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {

@@ -46,14 +46,14 @@
 
 <nav class="pagination" role="pagination">
   {% if pagination.prev %}
-    <a class="newer-posts" href="{{ pagination.prev.link }}">← Newer Posts</a>
+    {% set url = pagination.prev.link|split('/') %}
+
+    <a href="{{ url[3] }}/{{ url[4] }}" class="newer-posts">← Newer Posts</a>
   {% endif %}
 
-  {% for page in pagination.pages %}
-    <span class="page-number">Page {{ pagination.total }} of {{ loop.length }}</span>
-  {% endfor %}
-  
   {% if pagination.next %}
-    <a class="older-posts" href="{{ pagination.next.link }}">Older Posts →</a>
+    {% set url = pagination.next.link|split('/') %}
+
+    <a href="{{ url[3] }}/{{ url[4] }}" class="older-posts">Older Posts →</a>
   {% endif %}
 </nav>

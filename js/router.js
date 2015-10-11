@@ -23,6 +23,7 @@ module.exports = Backbone.Router.extend({
 
   routes: {
     '': 'home',
+    'page/:page': 'page',
     'projects': 'projects',
     'speaking': 'speaking',
     'about': 'about',
@@ -31,9 +32,15 @@ module.exports = Backbone.Router.extend({
   },
 
   home: function () {
-    var homeView = new HomeView({collection: new PostsCollection});
+    var homeView = new HomeView({collection: new PostsCollection, page: 1});
 
     document.title = 'Trevan Hetzel';
+  },
+
+  page: function (page) {
+    var homeView = new HomeView({collection: new PostsCollection, page: page});
+
+    document.title = 'Page ' + page + ' - Trevan Hetzel';
   },
 
   projects: function () {
