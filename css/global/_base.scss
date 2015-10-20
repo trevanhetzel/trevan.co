@@ -144,3 +144,37 @@ blockquote {
 code {
   border-radius: 3px;
 }
+
+ul,
+ol {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: $primary-font;
+
+  @include breakpoint(small) {
+    font-size: 1.188em;
+    line-height: 1.5em;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 1.375em;
+    line-height: 1.75em;
+  }  
+
+  ul,
+  ol {
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: .5em;
+
+    @include breakpoint(small) {
+      font-size: .938em;
+      line-height: .938em;
+    }
+
+    @include breakpoint(medium) {
+      font-size: .938em;
+      line-height: .938em;
+    }  
+  }  
+}
