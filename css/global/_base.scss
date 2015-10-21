@@ -8,9 +8,13 @@ html {
 
 body {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   color: $black;
   background: $white;
+
+  .wf-active & {
+    font-family: $secondary-font;
+  }
 }
 
 ::selection {
@@ -112,7 +116,11 @@ a {
 
 p {
   line-height: 1.5em;
-  font-family: $primary-font;
+  font-family: serif;
+
+  .wf-active & {
+    font-family: $primary-font;
+  }
 
   @include breakpoint(xs) {
     @include font-size(19);
@@ -130,7 +138,11 @@ blockquote {
   margin-left: 0;
   padding-left: 1.75em;
   @include font-size(16);
-  font-family: $secondary-font;
+  font-family: sans-serif;
+
+  .wf-active & {
+    font-family: $secondary-font;
+  }
 
   p {
     line-height: 1.438em;
@@ -149,7 +161,11 @@ ul,
 ol {
   font-size: 1em;
   line-height: 1.5em;
-  font-family: $primary-font;
+  font-family: serif;
+
+  .wf-active & {
+    font-family: $primary-font;
+  }
 
   @include breakpoint(small) {
     font-size: 1.188em;

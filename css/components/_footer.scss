@@ -12,8 +12,12 @@
 .footer__p {
   margin: 0;
   padding: 0;
-  font-family: $secondary-font;
+  font-family: sans-serif;
   @include font-size(15);
+
+  .wf-active & {
+    font-family: $secondary-font;
+  }
 
    @include breakpoint(medium) {
       @include font-size(16);

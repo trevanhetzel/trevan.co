@@ -13,6 +13,21 @@ Backbone.history.start({ pushState: true, silent: true });
 var search = require('./mixins/static_search');
 search.events();
 
+// Load web fonts
+require('./vendor/webfontloader.js');
+
+WebFont.load({
+  google: {
+    families: [
+      'Droid Serif:400',
+      'Droid Serif:400italic',
+      'Droid Serif:700',
+      'Lato:400',
+      'Lato:700'
+    ]
+  }
+});
+
 // Hi-jink all links to route using slashes
 $(document).on('click', 'a:not([data-bypass])', function (e) {
   if (! $(e.currentTarget).parents('#wpadminbar').length) {
