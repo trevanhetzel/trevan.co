@@ -30,12 +30,11 @@
 
   a {
     color: $white;
-    transition: opacity .3s;
+    transition: color .3s;
     outline: none;
 
     &:hover {
-      color: $white;
-      opacity: .75;
+      color: rgba(255, 255, 255, .75);
     }
   }
 

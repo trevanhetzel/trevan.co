@@ -19,6 +19,12 @@ Backbone.$ = $;
 module.exports = Backbone.Router.extend({
   initialize: function () {
     this.$el = $('body');
+    this.bind('route', this.sendPageView);
+  },
+
+  sendPageView: function () {
+    var path = Backbone.history.getFragment();
+    ga('send', 'pageview', {page: "/" + path});
   },
 
   routes: {

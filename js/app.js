@@ -40,3 +40,8 @@ $(document).on('click', 'a:not([data-bypass])', function (e) {
     }
   }
 });
+
+// Google analytics
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-32067301-1', 'auto');
+ga('send', 'pageview');

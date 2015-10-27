@@ -20,6 +20,8 @@
 
   <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/app.css" rel="stylesheet">
 
+  <script async src='//www.google-analytics.com/analytics.js'></script>
+  
   <?php wp_head(); ?>
 </head>
 
