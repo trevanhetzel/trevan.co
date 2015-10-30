@@ -91,7 +91,7 @@ function return_one () {
       }
 
       $result[] = array(
-        'title' => get_the_title(),
+        'title' => html_entity_decode(get_the_title()),
         'slug' => $post->post_name,
         'date' => get_the_date(),
         'day' => get_the_date('j'),
