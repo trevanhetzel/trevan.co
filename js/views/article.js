@@ -31,8 +31,6 @@ module.exports = Backbone.View.extend({
 
         self.render(result[0]);
 
-        console.log(result[0]);
-
         // Set page title
         document.title = result[0].title + ' - Trevan Hetzel';
       }
