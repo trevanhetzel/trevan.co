@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="<?php global $page_description; echo $page_description; ?>">
+  <meta name="description" content="Trevan Hetzel's personal blog on front-end development, CSS, JavaScript, Backbone, WordPress and more">
 
   <title>
     <?php if(is_front_page()) {
