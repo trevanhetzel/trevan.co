@@ -21,14 +21,37 @@
 }
 
 .header__title {
+  position: relative;
   float: left;
   font-weight: 700;
   @include font-size(19);
   text-transform: uppercase;
   color: $white;
-  @include long-shadow($secondary, 200);
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 90px;
+    background: $secondary;
+    transform: skew(-45deg);
+  }
+
+  &::before {
+    top: 21px;
+    left: -41px;
+    width: 98%;
+  }
+
+  &::after {
+    top: 6px;
+    left: -44px;
+    width: 95%;
+  }
 
   a {
+    position: relative;
+    z-index: 2;
     color: $white;
     transition: color .3s;
     outline: none;
@@ -44,6 +67,8 @@
 }
 
 .header__nav {
+  position: relative;
+  z-index: 2;
   float: left;
   width: 100%;
   text-align: center;
