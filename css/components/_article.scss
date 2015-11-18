@@ -27,6 +27,53 @@
 
   .article-content {
     border-bottom: 1px solid $light-grey;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    table {
+      tr {
+        line-height: 1.5em;
+
+        @include breakpoint(xs) {
+          @include font-size(19);
+          line-height: 1.5em;
+        }
+
+        @include breakpoint(medium) {
+          @include font-size(22);
+          line-height: 1.75em;
+        }
+      }
+
+      td {
+        padding: .375em 1em;
+        border-bottom: 1px solid $light-grey;
+
+        &:first-child {
+          padding: .375em 1em .375em 0;
+        }
+
+        &:last-child {
+          padding: .375em 0 .35em 1em;
+          text-align: right;
+        }
+      }
+    }
+
+    small {
+      display: block;
+      margin: -.5em 0 .5em;
+      @include font-size(14);
+      font-style: italic;
+      color: $med-grey;
+
+      @include breakpoint(medium) {
+        @include font-size(16);
+      }
+    }
   }
 }
 
