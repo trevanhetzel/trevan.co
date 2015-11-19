@@ -31,10 +31,10 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__title">
-        <a href="/">Trevan Hetzel</a>
+        <a href="/" data-internal>Trevan Hetzel</a>
       </h1>
 
-      <a href="/search" class="header__search-trigger">
+      <a href="/search/" class="header__search-trigger" data-internal>
         <svg class="header__search" version="1.1" x="0px" y="0px" width="20.9px" height="21px" viewBox="0 0 20.9 21" enable-background="new 0 0 20.9 21" xml:space="preserve">
           <path fill="#FFFFFF" d="M20.8,19l-4.9-4.9c1.1-1.5,1.8-3.3,1.8-5.3c0-4.9-4-8.8-8.8-8.8C4,0,0,4,0,8.8s4,8.8,8.8,8.8 c1.9,0,3.7-0.6,5.2-1.7l4.9,4.9c0.2,0.2,0.5,0.2,0.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19z M2.6,8.8c0-3.4,2.8-6.2,6.2-6.2 S15,5.4,15,8.8c0,3.4-2.8,6.2-6.2,6.2S2.6,12.3,2.6,8.8z"/>
         </svg>
@@ -42,10 +42,10 @@
 
       <ul class="header__nav">
         <li class="header__nav__item">
-          <a href="/">Articles</a>
+          <a href="/" data-internal>Articles</a>
         </li>
         <li class="header__nav__item">
-          <a href="/about">About</a>
+          <a href="/about/" data-internal>About</a>
         </li>
         <li class="header__nav__item">
           <a href="http://hetzelcreative.com" data-bypass>Consulting</a>

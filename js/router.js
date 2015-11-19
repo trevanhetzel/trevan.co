@@ -29,12 +29,12 @@ module.exports = Backbone.Router.extend({
 
   routes: {
     '': 'home',
-    'page/:page': 'page',
-    'projects': 'projects',
-    'speaking': 'speaking',
-    'about': 'about',
-    'search': 'search',
-    ':slug': 'article'
+    'page/:page/': 'page',
+    'projects/': 'projects',
+    'speaking/': 'speaking',
+    'about/': 'about',
+    'search/': 'search',
+    ':slug/': 'article'
   },
 
   home: function () {

@@ -29,7 +29,7 @@ WebFont.load({
 });
 
 // Hi-jink all links to route using slashes
-$(document).on('click', 'a:not([data-bypass])', function (e) {
+$(document).on('click', 'a[data-internal]', function (e) {
   if (! $(e.currentTarget).parents('#wpadminbar').length) {
     var href = $(this).attr('href'),
       protocol = this.protocol + '//';

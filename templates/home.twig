@@ -27,7 +27,7 @@
         {% endfor %}
       </p>
 
-      <h1><a href="{{ post.slug }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ post.slug }}/" data-internal>{{ post.title }}</a></h1>
 
       <div class="article-excerpt">
         {% if post.excerpt %}
@@ -37,7 +37,7 @@
         {% endif %}
       </div>
 
-      <a href="{{ post.slug }}" class="btn">Continue Reading</a>
+      <a href="{{ post.slug }}/" class="btn" data-internal>Continue Reading</a>
     </div>
   </section>
 {% else %}
@@ -48,12 +48,12 @@
   {% if pagination.prev %}
     {% set url = pagination.prev.link|split('/') %}
 
-    <a href="{{ url[3] }}/{{ url[4] }}" class="newer-posts">← Newer Posts</a>
+    <a href="{{ url[3] }}/{{ url[4] }}/" class="newer-posts" data-internal>← Newer Posts</a>
   {% endif %}
 
   {% if pagination.next %}
     {% set url = pagination.next.link|split('/') %}
 
-    <a href="{{ url[3] }}/{{ url[4] }}" class="older-posts">Older Posts →</a>
+    <a href="{{ url[3] }}/{{ url[4] }}/" class="older-posts" data-internal>Older Posts →</a>
   {% endif %}
 </nav>
