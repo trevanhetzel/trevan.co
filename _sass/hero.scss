@@ -1,0 +1,140 @@
+.hero {
+	position: relative;
+	padding: 20px 30px 80px;
+	width: 1480px;
+	max-width: 100%;
+	margin: 0 auto;
+
+	@media (min-width: 820px) {
+		padding: 90px 30px 210px;
+	}
+
+	p {
+		max-width: 590px;
+	}
+
+	a {
+		margin-top: 20px;
+	}
+}
+
+
+.frame {
+	display: none;
+	position: absolute;
+	top: -110px;
+	left: 61%;
+	width: 31%;
+	max-width: 410px;
+	height: calc(100% + 110px);
+	transform: skew(25deg);
+	overflow: hidden;
+
+	img {
+		transform: skew(-25deg) translateX(-35%);
+		filter: saturate(1.2);
+		height: 100%;
+		width: auto;
+	}
+
+	@media (min-width: 1000px) {
+		display: block;
+	}
+
+	@media (min-width: 1264px) {
+		width: 32%;
+		left: 58%;
+	}
+}
+
+.leftBars {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 150px;
+	width: 5px;
+	background: #fff;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		content: "";
+		left: 5px;
+		width: 3px;
+		height: 400px;
+		background: #fff;
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		content: "";
+		left: 13px;
+		width: 3px;
+		height: 280px;
+		background: #fff;
+	}
+}
+
+.rightBars {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 150px;
+	width: 5px;
+	background: #fff;
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		content: "";
+		right: 5px;
+		width: 3px;
+		height: 400px;
+		background: #fff;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		content: "";
+		right: 13px;
+		width: 3px;
+		height: 280px;
+		background: #fff;
+	}
+}
+
+.hero-icons {
+	display: none;
+	align-items: center;
+	margin: 40px 0 0 auto;
+	padding: 0;
+	list-style: none;
+
+	svg {
+		fill: #000;
+		filter: grayscale(1);
+		transition: transform .2s;
+
+		&:hover {
+			filter: grayscale(0);
+			transform: scale(1.1);
+		}
+	}
+
+	&.white {
+		svg {
+			fill: #fff;
+		}
+	}
+
+	@media (min-width: 660px) {
+		display: flex;
+	}
+}
+
+.hero-icon {
+	margin: 0 12px;
+}
