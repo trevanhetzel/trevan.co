@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="date">Posted on {{ page.date | date: "%B %-d, %Y" }}</p>
+
+  <img src="{{page.featured_image}}" class="featured-image" />
+
+  <div class="content">
+    {{ content }}
+  </div>
+</div>

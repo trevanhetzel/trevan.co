@@ -1,0 +1,11 @@
+---
+layout: topics
+title: Topics
+---
+
+<h3>
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <span>{{ category_name }}</span>&nbsp;
+  {% endfor %}
+</h3>

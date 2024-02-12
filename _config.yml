@@ -33,6 +33,10 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 6
+permalink: /:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
