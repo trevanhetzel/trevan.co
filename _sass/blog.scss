@@ -4,7 +4,11 @@
   article {
     margin: 40px 0;
     padding: 0 0 20px;
-    border-bottom: 1px solid #636e72;
+    border-bottom: 1px solid #ddd;
+
+    h2 a:hover {
+      color: #636e72;
+    }
 
     .date {
       margin: 0 0 10px;

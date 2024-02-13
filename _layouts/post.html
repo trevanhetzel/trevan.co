@@ -10,7 +10,7 @@ layout: default
   <p class="date">
     Posted on {{ page.date | date: "%B %-d, %Y" }} in
     {% for category in page.categories %}
-      <a href="/topics/{{category}}">{{ category }}</a>
+      <a href="/topics/{{ category | first | slugify }}">{{ category }}</a>
     {% endfor %}
   </p>
   {% if page.featured_image %}

@@ -5,9 +5,16 @@ title: Topics
 
 <h1>Topics</h1>
 
-<h3>
+<h3 class="tag-cloud">
   {% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <span>{{ category_name }}</span>&nbsp;
+    <a
+      href="/topics/{{ category | first | slugify }}"
+      style="
+        font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%;
+        filter: grayscale(.{{ category | last | size }});
+      "
+    >
+      {{ category | first }} ({{ category | last | size }})&nbsp;
+    </a>
   {% endfor %}
 </h3>
