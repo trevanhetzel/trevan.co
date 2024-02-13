@@ -10,12 +10,19 @@ body {
 	box-sizing: inherit;
 }
 
+.page-wrapper {
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 a,
 a:visited {
 	color: inherit;
 	text-decoration: none;
 	transition: transform .2s;
-	
+	text-decoration: none;
 }
 
 .contain {

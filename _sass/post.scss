@@ -93,8 +93,8 @@
 	}
 
 	a {
+		display: inline-flex;
 		color: #fc4501;
-		text-decoration: underline;
 		transform: scale(1);
 
 		&:hover {

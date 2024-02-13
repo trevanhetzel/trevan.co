@@ -7,12 +7,17 @@ layout: default
     <div class="centered">
   {% endif %}
   <h1>{{ page.title }}</h1>
-  <p class="date">Posted on {{ page.date | date: "%B %-d, %Y" }}</p>
+  <p class="date">
+    Posted on {{ page.date | date: "%B %-d, %Y" }} in
+    {% for category in page.categories %}
+      <a href="/topics/{{category}}">{{ category }}</a>
+    {% endfor %}
+  </p>
   {% if page.featured_image %}
     </div>
-  {% endif %}
 
-  <img src="{{page.featured_image}}" class="featured-image" />
+    <img src="{{page.featured_image}}" class="featured-image" />
+  {% endif %}
 
   <div class="content">
     {{ content }}

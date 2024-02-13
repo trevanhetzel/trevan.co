@@ -3,6 +3,7 @@ title: 'Functional Medicine: Seeing is Believing'
 date: '2024-02-11'
 layout: post
 featured_image: '/assets/images/forest-path.jpg'
+categories: Wellness
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas dictum enim, sit amet cursus nibh iaculis quis. Morbi luctus nunc at mollis efficitur. Ut pellentesque nisi felis, eu egestas lectus ullamcorper vel. Proin et vulputate urna. Aliquam sollicitudin turpis venenatis, tempor tortor non, tempus ex. Donec nec fermentum tortor, ac rhoncus magna. Ut sit amet dui varius, dignissim mi in, molestie tellus. Sed a metus lorem. Sed eget pharetra sem. Curabitur accumsan enim non erat lacinia, id tincidunt nisi tempus. Nam vel massa massa. Vivamus malesuada turpis quis tellus tempor pharetra. Integer vulputate libero id magna finibus vehicula. Maecenas rutrum risus ut ultricies ullamcorper. Integer iaculis convallis semper.
