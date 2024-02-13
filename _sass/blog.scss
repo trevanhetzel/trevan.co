@@ -15,3 +15,14 @@
     }
   }
 }
+
+.blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: #636e72;
+    margin: 0;
+  }
+}

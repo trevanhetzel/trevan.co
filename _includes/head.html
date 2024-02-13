@@ -1,0 +1,45 @@
+{% assign title = page.title | default: site.title | strip_html | smartify %}
+{% assign description = page.description | default: site.description | markdownify | strip_html | strip_newlines %}
+{% assign image = page.image | default: site.image | absolute_url %}
+{% assign url = page.url | absolute_url %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title | smartify }}{% if page.title %}{{ title | prepend: ' &mdash; ' }}{% endif %}</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="{{ description }}" />
+
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:site_name" content="{{ site.title | smartify }}" />
+  <meta
+    property="og:description"
+    content="{{ description }}"
+  />
+  <meta property="og:image" content="{{ image }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="{{ url }}" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="{{ image }}" />
+  <meta name="twitter:image:alt" content="{{ site.title | smartify }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="{{ url }}" />
+  <link rel="icon" href="{{ site.url }}/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="{{ title }}" />
+</head>

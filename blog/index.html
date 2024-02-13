@@ -3,11 +3,15 @@ layout: default
 title: Blog
 pagination: 
   enabled: true
-  per_page: 20
+  per_page: 15
 ---
 
 <div class="page">
-  <h1>Blog</h1>
+  <div class="blog-title">
+    <h1>Blog</h1>
+
+    <h3>Page {{ paginator.page }} of {{ paginator.total_pages }}</h3>
+  </div>
 
   <section class="blog-list">
     {% for post in paginator.posts %}
