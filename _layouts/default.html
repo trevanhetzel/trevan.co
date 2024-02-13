@@ -26,10 +26,10 @@
   </head>
 
   <body>
-    <div class="header{{ page.isHome | if: '', ' orange' }}">
+    <div class="header">
       <a href="/">
         <div class="logo-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo{{ page.isHome | if: '', ' white' }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
             <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
               <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
                 <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
@@ -51,24 +51,24 @@
           </li>
 
           <li class="nav__item">
-            <a href="/">
+            <a href="/topics">
               Topics
             </a>
           </li>
   
           <li class="nav__item">
-            <a href="/">
+            <a href="/about">
               About
             </a>
           </li>
         </ul>
       </nav>
   
-      <ul class="header-icons{{ page.isHome | if: '', ' white' }}">
+      <!-- <ul class="header-icons">
         <li class="header-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
         </li>
-      </ul>
+      </ul> -->
     </div>
 
     {{ content }}

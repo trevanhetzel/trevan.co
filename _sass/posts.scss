@@ -29,6 +29,12 @@
   padding: 30px;
   border: 2px solid #000;
 
+  h2 {
+    a:hover {
+			color: #636e72;
+		}
+  }
+
   @media (min-width: 820px) {
     padding: 35px;
   }

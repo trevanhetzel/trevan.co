@@ -51,6 +51,10 @@
 		margin: 0 10px;
 		display: inline-block;
 
+		a:hover {
+			color: #636e72;
+		}
+
 		@media (min-width: 660px) {
 			margin: 0 20px;
 		}
