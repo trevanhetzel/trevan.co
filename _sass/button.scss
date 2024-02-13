@@ -31,13 +31,15 @@
 	}
 
 	&.secondary {
-		padding: 0 !important;
-		border: none !important;
 		color: #fc4501 !important;
 	}
 
 	&.alt {
 		margin: 0 auto;
 		background: #fff !important;
+	}
+
+	& + .button {
+		margin-left: 10px;
 	}
 }

@@ -35,8 +35,6 @@ plugins:
 
 permalink: /:title
 
-
-
 # Pagination Settings
 pagination:
   enabled: true
