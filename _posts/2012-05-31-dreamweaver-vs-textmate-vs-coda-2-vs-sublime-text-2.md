@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=23'
 permalink: /dreamweaver-vs-textmate-vs-coda-2-vs-sublime-text-2/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 [Jordan Hoff](http://jordanhoff.com/ "Jordan Hoff") was making fun of me the other day for using Dreamweaver as my text editor. I’ll admit, I may be a little behind on the technologies I use in my development process but I’m starting to get on the bandwagon and use the latest and greatest. Like Terminal and Git. I hate them, but am learning to use them. So I decided to take Jordan’s advice and buy a copy of [TextMate](http://macromates.com/ "TextMate") to up my coding game. I’ve always had an ideal coding environment in my head, but never really made the time to make it a priority in my development process. I’ve always stuck to using the code editor in Adobe Dreamweaver along with its FTP client. Which is super slow and time consuming. So after playing around with TextMate, I found some really cool features that I now can’t believe I was living without by using Dreamweaver. But it still wasn’t the ideal solution I was looking for. So I then downloaded [Coda 2](http://panic.com/coda/ "Coda 2") and [Sublime Text 2](http://www.sublimetext.com/ "Sublime Text 2") to compare and see if they had all the pieces to my coding puzzle.

@@ -8,7 +8,7 @@ guid: 'http://trevan.flywheelsites.com/?p=91'
 permalink: /on-freelancing-hosting-domains/
 categories:
     - 'Business &amp; Tech'
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I’ve freelanced for about 8 years now, either full-time at times or part-time (like now). While I don’t claim to know everything about selling your design/development services, I have learned a lot of lessons over those years. I realized a couple years ago where I stand on hosting and buying domain names for clients, so thought I’d share my stance on it here.

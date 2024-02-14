@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=75'
 permalink: /off-canvas-navigation-with-css-a-checkbox/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
     - CSS
 ---
 

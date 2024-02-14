@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=39'
 permalink: /connecting-models-in-rails-part-2/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 Last month, I [wrote about](http://trevan.co/connecting-two-models-in-ruby-on-rails-3/ "Connecting models in Ruby on Rails") the process I discovered to link two models together in Ruby on Rails using a HABTM association. Well, I’ve since learned and am on to bigger and better things, like connecting three models together in one view. So this post will not only hopefully serve as learning material for some other rails n00b, but it’s also going to help me grasp this concept even more by writing about it.

@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=65'
 permalink: /speed-up-image-spriting-with-compass/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
     - CSS
 ---
 

@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=69'
 permalink: /a-responsive-approach-to-image-scaling-with-css/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
     - CSS
 ---
 

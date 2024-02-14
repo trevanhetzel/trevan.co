@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=59'
 permalink: /slidebox-a-tiny-jquery-carousel-slider-image-lightbox/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I’ve open sourced a little jQuery plugin I wrote recently for use on a couple client projects. It’s an image carousel with lightbox-esque image enlargement. The demo, JavaScript file and instructions are on GitHub: https://github.com/trevanhetzel/slidebox/.

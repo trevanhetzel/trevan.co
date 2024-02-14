@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=73'
 permalink: /what-is-oocss/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
     - CSS
 ---
 

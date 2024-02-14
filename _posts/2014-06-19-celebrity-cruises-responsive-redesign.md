@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=77'
 permalink: /celebrity-cruises-responsive-redesign/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 For one of the first times since I started at [appendTo](http://appendto.com) a year ago, I can actually talk about a client project I was heavily involved in! In fact, I wrote a case study on some of the development practices we used to create the new [Celebrity.com](http://celebrity.com).

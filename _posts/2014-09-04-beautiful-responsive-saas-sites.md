@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=85'
 permalink: /beautiful-responsive-saas-sites/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I couldn’t sleep last night, so I decided for some reason to find the most beautiful, modern (usually “flat”) “product” sites I could find. Here are the top 15\* I found that serve the purpose of selling a SaaS application and are responsive.

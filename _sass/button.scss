@@ -32,6 +32,11 @@
 
 	&.secondary {
 		color: #fc4501 !important;
+		cursor: default;
+
+		&:hover {
+			border-color: #000;
+		}
 	}
 
 	&.alt {
@@ -41,5 +46,11 @@
 
 	& + .button {
 		margin-left: 10px;
+	}
+
+	&.disabled {
+		cursor: default;
+		border-color: #636e72;
+		color: #636e72 !important;
 	}
 }

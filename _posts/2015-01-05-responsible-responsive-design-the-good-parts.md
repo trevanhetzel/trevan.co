@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=87'
 permalink: /responsible-responsive-design-the-good-parts/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
     - CSS
 ---
 

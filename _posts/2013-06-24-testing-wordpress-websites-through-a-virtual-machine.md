@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=53'
 permalink: /testing-wordpress-websites-through-a-virtual-machine/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I’m a fan of [Browserstack](http://browserstack.com "Browserstack") for browser testing, but sometimes it’s just nice to not have to wait around for the Browserstack servers to load. And even more nice is the ability to debug in an actual browser without going through Browserstack’s lagging servers.

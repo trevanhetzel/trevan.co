@@ -40,8 +40,8 @@ pagination:
   enabled: true
   per_page: 6
   offset: 0
-  permalink: '/page/:num/'
-  title: ':title - page :num of :max'
+  permalink: '/:num/'
+  title: ':title'
   limit: 0
   sort_field: 'date'
   sort_reverse: true

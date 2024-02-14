@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=37'
 permalink: /connecting-two-models-in-ruby-on-rails-3/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 \*Over the past month or so I have been teaching myself to program. I chose to learn Ruby as my first non-HTML or Javascript language, using Ruby on Rails for the framework. As part of my learning process, I wrote myself a tutorial covering a roadblock I encountered: connecting two models together. I had generated a scaffold for Tutorials and a scaffold for Categories and I wanted to intertwine the two so I could assign tutorials to categories. A few tutorials got me started, but I spent hours upon hours trying to get it to work. Finally, after talking with the super intelligent and awesome guys at [Big Wheel Brigade](http://bigwheelbrigade.com "Talented Ruby on Rails developers") and [Noah Clark](http://noahc.net) getting me started on this Rails path, I came to understand (sort of) how to approach this problem.

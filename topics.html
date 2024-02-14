@@ -1,20 +1,22 @@
 ---
-layout: page
+layout: default
 title: Topics
 ---
 
-<h1>Topics</h1>
+<div class="page">
+  <h1>Topics</h1>
 
-<h3 class="tag-cloud">
-  {% for category in site.categories %}
-    <a
-      href="/topics/{{ category | first | slugify | replace:'-amp','' }}"
-      style="
-        font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%;
-        filter: grayscale(.{{ category | last | size }});
-      "
-    >
-      {{ category | first }} ({{ category | last | size }})&nbsp;
-    </a>
-  {% endfor %}
-</h3>
+  <h3 class="tag-cloud">
+    {% for category in site.categories %}
+      <a
+        href="/topics/{{ category | first | slugify | replace:'-amp','' }}"
+        style="
+          font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%;
+          filter: grayscale(.{{ category | last | size }});
+        "
+      >
+        {{ category | first }} ({{ category | last | size }})&nbsp;
+      </a>
+    {% endfor %}
+  </h3>
+</div>

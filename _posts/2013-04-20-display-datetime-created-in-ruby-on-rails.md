@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=49'
 permalink: /display-datetime-created-in-ruby-on-rails/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 Displaying the time and date something was created is a super simple thing to do in Rails, once you find out how! Took me a while to find the solution from Googling, so I figured I’d write a short little tutorial here on how to do it.

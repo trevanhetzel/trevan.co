@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=61'
 permalink: /my-crazy-idea-to-push-the-limits-of-css/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 CSS is for styling websites. JavaScript is for, amongst other things, interacting with DOM elements. We’ve long relied on JavaScript to come in when the extent of what can be done with CSS stops (think click events, DOM traversing, etc.). So wouldn’t it be super cool if we could push the limitations of CSS just a little bit further, so we don’t have to rely on JS for toggling classes, selecting DOM elements, and other things on the “presentational” layer? Kind of like closing the chasm between style and function.

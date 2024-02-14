@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=12'
 permalink: /dont-code-by-accident/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I’ve been a front-end developer for about 6 years now and feel like I pretty much understand every line of HTML or CSS that I write. However, now that I’m teaching myself a server-side programming language (Ruby on Rails), I find my self understanding only a measly portion of the code I’m writing. And that’s wrong.

@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=89'
 permalink: /observations-on-front-end-routing-wordpress/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 Front-end frameworks are becoming wildly popular as a means of focusing more attention on the client side and giving sites that single page application feel. There are tons of articles on routing and accessing and displaying data for whatever front-end framework you’re using. However, I’ve found there to be a lack of documentation and resources for using front-end frameworks with the most popular CMS in the world: WordPress.

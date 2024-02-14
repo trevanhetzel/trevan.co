@@ -25,4 +25,20 @@
     color: #636e72;
     margin: 0;
   }
+
+  &.stack {
+    flex-direction: column;
+
+    @media (min-width: 820px) {
+      flex-direction: row;
+    }
+
+    h3 {
+      margin: 10px 0 0;
+
+      @media (min-width: 820px) {
+        margin: 0;
+      }
+    }
+  }
 }

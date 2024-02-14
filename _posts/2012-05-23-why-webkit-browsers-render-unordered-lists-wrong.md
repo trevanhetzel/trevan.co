@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=19'
 permalink: /why-webkit-browsers-render-unordered-lists-wrong/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I oftentimes use unordered lists for the main navigation of websites. I’ll style them by floating them, removing the list-style and adding background images. However, I’ve been running into this issue lately where Webkit browsers (like Google Chrome and Rockmelt) don’t render the list properly. They display it stacked vertically, instead of on a single horizontal line like it should be and how most all other browsers display it. And it’s quite random too. If I refresh the page several times, it might render it properly. Or it might not. Regardless, it’s left me mind-boggled and I’ve tried everything I could to it from happening.

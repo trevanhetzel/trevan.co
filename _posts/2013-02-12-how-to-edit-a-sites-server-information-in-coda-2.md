@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=45'
 permalink: /how-to-edit-a-sites-server-information-in-coda-2/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 ![](/content/images/2013/Nov/disconnect_coda_site.png)

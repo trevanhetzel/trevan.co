@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=25'
 permalink: /how-to-set-up-the-perfect-local-wordpress-development-environment-on-a-mac/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 I use WordPress for the majority of my clients’ websites and, until recently, was doing separate installs of WordPress on my live server, under a subdomain. I finally sat down and learned how to take advantage of two of WordPress’s finer features: multisite and local installations. It was a snap to get WordPress up and running locally, but took me a little while to figure out the multisite feature. So I’ve documented the process that I took to get it working in hopes I can help at least one Mac user out there who wants to speed up their WordPress development by working locally.

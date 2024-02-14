@@ -1,14 +1,10 @@
 ---
 layout: default
-title: Blog
-pagination: 
-  enabled: true
-  per_page: 15
 ---
 
 <div class="page">
   <div class="blog-title">
-    <h1>Blog</h1>
+    <h1>{{ page.title }}</h1>
 
     <h3>Page {{ paginator.page }} of {{ paginator.total_pages }}</h3>
   </div>
@@ -32,23 +28,27 @@ pagination:
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | relative_url }}" class="button">&laquo; Prev</a>
       {% else %}
-        <span class="button">&laquo; Prev</span>
+        <span class="button disabled">&laquo; Prev</span>
       {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span class="button secondary">{{ page }}</span>
-        {% elsif page == 1 %}
-          <a href="{{ '/blog' | relative_url }}" class="button">{{ page }}</a>
+      {% for pg in (1..paginator.total_pages) %}
+        {% if pg == paginator.page %}
+          <span class="button secondary">{{ pg }}</span>
+        {% elsif pg == 1 %}
+          <a href="{{paginator.first_page_path}}" class="button">{{ pg }}</a>
         {% else %}
-          <a href="/blog/page/{{ page }}" class="button">{{ page }}</a>
+          {% if page.title == 'Blog' %}
+            <a href="/blog/{{ pg }}" class="button">{{ pg }}</a>
+          {% else %}
+            <a href="/{{ page.url | replace: '/', ' ' | truncatewords: 2 | remove:'...' | replace: ' ', '/' }}/{{ pg }}" class="button">{{ pg }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
 
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | relative_url }}" class="button">Next &raquo;</a>
       {% else %}
-        <span class="button">Next &raquo;</span>
+        <span class="button disabled">Next &raquo;</span>
       {% endif %}
     </div>
   {% endif %}

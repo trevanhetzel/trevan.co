@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=55'
 permalink: /hackily-degrade-css-flex-wrap/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 The [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/ "CSS3 Flexbox") (flexbox) will solve a lot of pain points for developing flexible box layouts. It’s going above and beyond what we’ve ever been able to do with standard positioning and floats, allowing you to easily code up multiple column responsive layouts that adjust position based on content and without media queries. I say **will solve** because browser support is not there yet. In my opinion, the most powerful property introduced with flexbox is flex-wrap, which when set to wrap or wrap-reverse, allows elements inside a flex container to flow to multiple lines. However, from my tinkering, I’ve found that only the latest versions of Chrome support the flex-wrap property, so we have to gracefully degrade our layouts to provide a similar layout in every other browser.

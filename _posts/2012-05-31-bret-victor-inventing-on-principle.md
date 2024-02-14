@@ -7,7 +7,7 @@ layout: post
 guid: 'http://trevan.flywheelsites.com/?p=21'
 permalink: /bret-victor-inventing-on-principle/
 categories:
-    - 'Code &amp; Design'
+    - 'Code & Design'
 ---
 
 [Bret Victor](http://worrydream.com "Bret Victor") has an amazing mind. He comes up with incredible solutions to problems we never even knew we had. He’s worked with companies like [Apple](http://apple.com "Apple") and [Alesis](http://www.alesis.com/en/index.php "Alesis"). This video is of an amazing presentation he gave on “Inventing on Principle”. You don’t have to be a programmer to appreciate the stuff he talks about!
