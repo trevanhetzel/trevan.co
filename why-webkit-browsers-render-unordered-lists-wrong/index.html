@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Trevan Hetzel</title>
+  <title>Trevan Hetzel &mdash; Why Webkit browsers render unordered lists wrong</title>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
   <meta name="handheldfriendly" content="true" />
   <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
 
-  <meta property="og:title" content="Trevan Hetzel" />
+  <meta property="og:title" content="Why Webkit browsers render unordered lists wrong" />
   <meta property="og:site_name" content="Trevan Hetzel" />
   <meta
     property="og:description"
@@ -26,16 +26,16 @@
   />
   <meta property="og:image" content="" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="/404.html" />
+  <meta property="og:url" content="/why-webkit-browsers-render-unordered-lists-wrong/" />
   <meta property="og:type" content="website" />
 
-  <meta name="twitter:title" content="Trevan Hetzel" />
+  <meta name="twitter:title" content="Why Webkit browsers render unordered lists wrong" />
   <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
   <meta name="twitter:image" content="" />
   <meta name="twitter:image:alt" content="Trevan Hetzel" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="canonical" href="/404.html" />
+  <link rel="canonical" href="/why-webkit-browsers-render-unordered-lists-wrong/" />
   <link rel="icon" href="/assets/images/seo/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
@@ -43,7 +43,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Trevan Hetzel" />
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Why Webkit browsers render unordered lists wrong" />
 </head>
 
   <body>
@@ -93,27 +93,43 @@
   </ul> -->
 </div>
 
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      <div class="post">  
+  
 
-<div class="container">
-  <h1>404</h1>
+  <h1>Why Webkit browsers render unordered lists wrong</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p class="date">
+    Posted on May 23, 2012 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>I oftentimes use unordered lists for the main navigation of websites. I’ll style them by floating them, removing the list-style and adding background images. However, I’ve been running into this issue lately where Webkit browsers (like Google Chrome and Rockmelt) don’t render the list properly. They display it stacked vertically, instead of on a single horizontal line like it should be and how most all other browsers display it. And it’s quite random too. If I refresh the page several times, it might render it properly. Or it might not. Regardless, it’s left me mind-boggled and I’ve tried everything I could to it from happening.</p>
+
+<p>It happened to me while I was coding my blog that you’re reading, so I made it a point to find out why. <strong>Here’s why:</strong></p>
+
+<p>Check out the original css, before I figured out what was wrong (shown is just the CSS pertaining to this issue):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ul#nav {margin:54px 0px 0px 0px; padding:0; float:right}
+ul#nav a li {list-style:none; display:inline-block; float:left; margin:0}
+
+</code></pre></div></div>
+
+<p>Now here’s the css after I fixed the problem (again, only showing the CSS pertaining to the Webkit issue):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ul#nav {margin:54px 0px 0px 0px; padding:0}
+ul#nav a li {list-style:none; display:inline-block; float:right; margin:0}
+
+</code></pre></div></div>
+
+<p>The problem I found was that the UL element had the property of <code class="language-plaintext highlighter-rouge">float: right</code> on it to align the entire list to the right. This shouldn’t be an issue, right? Wrong! The float property is what was causing the LI elements to stack up vertically instead of horizontally! Don’t ask me why. All I know is that removing the float property on the UL element caused the LI elements to display horizontally like I wanted them to. In my particular case I was lucky enough that simply changing the LI float property to <code class="language-plaintext highlighter-rouge">float: right</code> aligned the entire list to the right of the surrounding element, which is what I was after in the first place. So I just flipped the order that my LI’s were displayed (or else they would have read backwards), and I was all set. If you’re not so lucky and have to have a float property on your UL element, I would probably recommend just surrounding the UL in a div and float that div accordingly. Hope this helps someone out there who encounters this problem!</p>
+
+  </div>
 </div>
-
 
       <footer class="footer">
   <p>

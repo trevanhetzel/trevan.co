@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; A Pure CSS Approach to Tabs</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="A Pure CSS Approach to Tabs" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/a-pure-css-approach-to-tabs/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="A Pure CSS Approach to Tabs" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/a-pure-css-approach-to-tabs/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="A Pure CSS Approach to Tabs" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>A Pure CSS Approach to Tabs</h1>
+
+  <p class="date">
+    Posted on July 26, 2014 in
+    
+      <a href="/topics/css" aria-label="CSS">CSS</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>I’ve been pretty interested lately in recreating JavaScript-like click events with pure CSS. One good use case for CSS click events is creating tabs. Creating full-featured tabs with current highlighting and having the first shown by default involves some dirty tweaks. Namely, to get it right using only one unordered list, the “first” tab actually needs to come last in the list. I’ll explain why in a bit, but first let’s look at the markup needed to pull this off. There are several ways people mark up pure CSS tabs, but I like the approach below simply becomes it keeps things organized together.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul class="tabs"&gt;
+    &lt;li id="tab2"&gt;
+        &lt;a href="#tab2" class="trigger"&gt;Tab 2&lt;/a&gt;
+        &lt;div class="content"&gt;
+          Content 2
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li id="tab3"&gt;
+        &lt;a href="#tab3" class="trigger"&gt;Tab 3&lt;/a&gt;
+        &lt;div class="content"&gt;
+          Content 3
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li id="tab1"&gt;
+        &lt;a href="#tab1" class="trigger"&gt;Tab 1&lt;/a&gt;
+        &lt;div class="content"&gt;
+          Content 1
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre></div></div>
+
+<p>As you can see, with the layout above there’s no distinction of a tab row and content row. So the first thing to do is to make it appear like there is.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.tabs {
+    position: relative;
+    width: 25em;
+    list-style: none;
+    padding: 0;
+}
+
+.tabs li {
+    float: left;
+}
+
+.trigger {
+    display: block;
+    padding: 0 .5em;
+    width: 4em;
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    padding: 0 .5em;
+}
+
+</code></pre></div></div>
+
+<p>That gives it a more “tab-like” feel. Also, notice how I defined a <code class="language-plaintext highlighter-rouge">width</code> on the <code class="language-plaintext highlighter-rouge">.trigger</code> anchors. I normally don’t like setting explicit widths and heights on things, but in this case we have to use a little hack to move the first item to the end of the list to get it shown by default. So we need widths on the anchors in order to know the exact <code class="language-plaintext highlighter-rouge">margin-left</code> value of the second anchor, since we’re going to position the first absolutely to the left. Again, it’s a hack, but it works pretty well if you can justify using explicit widths.</p>
+
+<h2 id="hooking-it-up">Hooking it up</h2>
+
+<p>To get the tabs to actually work, we’ll utilize the CSS3 <code class="language-plaintext highlighter-rouge">:target</code> pseudo-selector. It works like this: when a URL’s hash matches an element’s ID, that element’s <code class="language-plaintext highlighter-rouge">:target</code> pseudo-class gets activated. So to create a “click event” in CSS with <code class="language-plaintext highlighter-rouge">:target</code>, you set an <code class="language-plaintext highlighter-rouge">href</code> an a “trigger” element equal to that of the ID of the element you wish to modify.</p>
+
+<p>Let’s check it out.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>li:target .content {
+  display: block;
+}
+
+li:target .trigger {
+  color: #000;
+}
+
+</code></pre></div></div>
+
+<p>There’s our functioning tabs! Pretty simple, eh? The thing missing now is showing the first tab by default when the page loads. This is where putting the first item that you want shown in the tab list at the end of the list in the DOM comes in. That way (since CSS can’t traverse up the DOM), we can use CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors">general sibling selectors</a> to target the <code class="language-plaintext highlighter-rouge">last-child</code>. It took a while to figure this out myself, so I’ll try to explain better with code.</p>
+
+<p>First, we need to set the default appearance of the last tab and anchor. That can be done by just piggybacking off of the previous styles that set tabs as active.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>li:target .content,
+li:last-child .content{
+  display: block;
+}
+
+li:target .trigger,
+li:last-child .trigger{
+  color: #000;
+}
+
+</code></pre></div></div>
+
+<p>Now that works to set the first item (technically last in the DOM, but hopefully you get the idea) as active by default, but now the first item is shown all the time, even when you click on another tab. So, here’s <strong>really</strong> where putting the first one last in the DOM comes in.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>li:target ~ li:last-child .content {
+    display: none;
+}
+
+li:target ~ li:last-child .trigger {
+    color: #aaa;
+}
+
+</code></pre></div></div>
+
+<p>Now when an item is targeted (its ID matches the hash in the URL and its <code class="language-plaintext highlighter-rouge">:target</code> pseudo-class is activated), using the general sibling selector we hide/change the appearance of the last item to make it no longer “active”.</p>
+
+<h2 id="final-result">Final result</h2>
+
+<p>See the Pen <a href="http://codepen.io/trevanhetzel/pen/Hmewv/">CSS tabs</a> by Trevan Hetzel (<a href="http://codepen.io/trevanhetzel">@trevanhetzel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+<script async="" src="//codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="whats-your-approach-to-css-tabs">What’s your approach to CSS tabs?</h2>
+
+<p>This is kind of my favorite approach to CSS tabs using <code class="language-plaintext highlighter-rouge">:target</code>, it’d be cool to hear everyone else’s in the comments. Checkboxes? Focus? Maybe you think CSS just sucks for tabs (it clearly has its limitations).</p>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

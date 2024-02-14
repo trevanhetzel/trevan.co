@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Connecting Models in Rails Part 2</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Connecting Models in Rails Part 2" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/connecting-models-in-rails-part-2/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Connecting Models in Rails Part 2" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/connecting-models-in-rails-part-2/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Connecting Models in Rails Part 2" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Connecting Models in Rails Part 2</h1>
+
+  <p class="date">
+    Posted on December 13, 2012 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>Last month, I <a href="http://trevan.co/connecting-two-models-in-ruby-on-rails-3/" title="Connecting models in Ruby on Rails">wrote about</a> the process I discovered to link two models together in Ruby on Rails using a HABTM association. Well, I’ve since learned and am on to bigger and better things, like connecting three models together in one view. So this post will not only hopefully serve as learning material for some other rails n00b, but it’s also going to help me grasp this concept even more by writing about it.</p>
+
+<p>So here’s what we’re going to be doing. We’re going to create a super basic app that allows you to add projects. Inside those projects, you’ll be able to add todo items. And then inside the todo items, you’ll be able to comment on them. So we’ll have projects -&gt; todos -&gt; comments, nested in that order. I’m going to first show you the code to achieve this structure and then go into it more depth and show <em>why it works</em>. Because remember, you shouldn’t ever <a href="http://trevan.co/dont-code-by-accident/" title="Don't code by accident">code by accident or coincidence</a>.</p>
+
+<h2 id="here-we-go">Here we go.</h2>
+
+<p>First things first. Create a new rails app and create the database. I’ll call mine projectapp.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new projectapp
+cd projectapp
+rake db:create
+rails s
+
+</code></pre></div></div>
+
+<p>Next we’ll generate a quick and dirty scaffold to get our M’s, V’s and C’s in place for the projects.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails generate scaffold Project title:string
+rake db:migrate
+
+</code></pre></div></div>
+
+<p>Now you can add, edit, delete and view projects. Go ahead and add one!</p>
+
+<p>We’ll do the same thing for the todos and comments now.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails generate scaffold ProjectTodo title:string project_id:integer
+rake db:migrate
+
+rails generate scaffold ProjectTodoComment comment:string project_todo_id:integer
+rake db:migrate
+
+</code></pre></div></div>
+
+<p>Notice how we created a project_id column in the ProjectTodo database. This will allow us to “connect” with the project model and database. Same with the project_todo_id column; it will allow us to connect the comments with the todos.</p>
+
+<h2 id="model-associations">Model Associations</h2>
+
+<p>Now we have to create the model associations.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Project &lt; ActiveRecord::Base
+  attr_accessible :title
+  has_many :project_todos
+end
+
+class ProjectTodo &lt; ActiveRecord::Base
+  attr_accessible :project_id, :title
+  belongs_to :project
+  has_many :project_todo_comments
+end
+
+class ProjectTodoComment &lt; ActiveRecord::Base
+  attr_accessible :comment, :project_todo_id
+  belongs_to :project_todo
+end
+
+</code></pre></div></div>
+
+<h2 id="throw-a-form-for-the-todos-on-the-project-show-page">Throw a form for the todos on the project show page</h2>
+
+<p>With our model associations in place, we can add a form to add the todos. We’ll add this form right on the project show page like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= form_for @project_todo do |f| %&gt;
+  &lt;%= f.hidden_field :project_id, :value =&gt; @project.id %&gt;
+  &lt;strong&gt;&lt;%= f.label :title, 'Todo' %&gt;:&lt;/strong&gt;
+  &lt;%= f.text_field :title %&gt;
+  &lt;%= f.submit 'Add Todo' %&gt;
+&lt;% end %&gt;
+
+</code></pre></div></div>
+
+<p>Notice the hidden field with the value set to <code class="language-plaintext highlighter-rouge">@project.id</code>. This is essential, because it saves the todo to the database with the correct id of the project set.</p>
+
+<p>You’ll get an error if you try reloading the page because we haven’t created any instance variables inside the controller that will act as our “gateway” for the view and controller. So to do that, we’ll add this single line to the ‘show’ method in projects_controller.rb:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Display the form to create a new todo
+@project_todo = ProjectTodo.new
+
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">@project_todo</code> is an instance variable that allows you to have the ‘new’ form inside the show view (notice how we’re in the show method), because it’s equal to ProjectTodo.new.</p>
+
+<p>At this point, you should be able to add todos to a project. Next we’re going to loop through those todos and actually display them underneath the form.</p>
+
+<h2 id="loop-through-the-todos">Loop through the todos</h2>
+
+<p>To get the todos to show, we need to create a loop on the show page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% @project.project_todos.each do |todo| %&gt;
+  &lt;%= todo.title %&gt;
+&lt;% end %&gt;
+
+</code></pre></div></div>
+
+<p>This will give us the list of all project_todos associated with a project. Since we have declared in our models that a project_todo belongs to a project, this is all we have to do to loop through them.</p>
+
+<h2 id="add-a-form-for-comments-in-the-todo-loop">Add a form for comments in the todo loop</h2>
+
+<p>Now we can nest a form inside the above loop to add comments to a todo. The first thing we’ll do is add the following line to the ProjectsController so we can display the form in our project show page.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Display the form to create a new comment
+@project_todo_comment = ProjectTodoComment.new
+
+</code></pre></div></div>
+
+<p>Now we can insert a form in show.html.erb and loop through the comments, inside our todo loop. So our todo loop becomes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% @project.project_todos.each do |todo| %&gt;
+  &lt;p&gt;&lt;%= todo.title %&gt;&lt;/p&gt;
+
+  &lt;%= form_for(@project_todo_comment) do |f| %&gt;
+      &lt;%= f.hidden_field :project_todo_id, :value =&gt; todo.id %&gt;
+      &lt;%= f.text_area :comment %&gt;
+      &lt;%= f.submit 'Add Comment' %&gt;
+  &lt;% end %&gt;
+
+  &lt;% todo.project_todo_comments.each do |comment| %&gt;
+      &lt;%= comment.comment %&gt;
+  &lt;% end %&gt;
+
+&lt;% end %&gt;
+
+</code></pre></div></div>
+
+<p>Now you can add and show comments to todos. Yay!</p>
+
+<h2 id="tidy-things-up">Tidy things up</h2>
+
+<p>We’ve gotten through the fundamental functionality of adding todo items with comments to a project. Now you’d obviously want to tidy it up by styling your views, but I’ll leave that to you. What I will do though is show you how to redirect back to the project you were on when adding a todo. Right now, if you add a todo it takes you to that todo’s show page. In my case, I don’t really want that. So what I’d do is replace this line in the ProjectTodosController (inside the ‘create’ method):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>format.html { redirect_to @project_todo, :notice =&gt; 'Project todo was successfully created.' }
+
+</code></pre></div></div>
+
+<p>with this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>format.html { redirect_to project_url(@project_todo.project_id), :notice =&gt; 'Project todo was successfully created.' }
+
+</code></pre></div></div>
+
+<p>You can do the same in the <code class="language-plaintext highlighter-rouge">ProjectTodoCommentsController</code> too:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>format.html { redirect_to project_url(@project_todo_comment.project_id), :notice =&gt; 'Project todo comment was successfully created.' }
+
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>While this may or may not be the best way to approach a situation like this, I know that it works. I’m no Ruby or Rails expert, but I’ve done enough research and through trial/error I’ve found the above method to be the best way so far to accomplish what I was after. Super awesome Ruby devs: feel free to leave a comment if you can accomplish this easier or by a different means.</p>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

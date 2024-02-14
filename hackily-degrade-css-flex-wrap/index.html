@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Hackily degrade CSS flex-wrap</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Hackily degrade CSS flex-wrap" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/hackily-degrade-css-flex-wrap/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Hackily degrade CSS flex-wrap" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/hackily-degrade-css-flex-wrap/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Hackily degrade CSS flex-wrap" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Hackily degrade CSS flex-wrap</h1>
+
+  <p class="date">
+    Posted on August 22, 2013 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>The <a href="http://www.w3.org/TR/css3-flexbox/" title="CSS3 Flexbox">CSS Flexible Box Layout Module</a> (flexbox) will solve a lot of pain points for developing flexible box layouts. It’s going above and beyond what we’ve ever been able to do with standard positioning and floats, allowing you to easily code up multiple column responsive layouts that adjust position based on content and without media queries. I say <strong>will solve</strong> because browser support is not there yet. In my opinion, the most powerful property introduced with flexbox is flex-wrap, which when set to wrap or wrap-reverse, allows elements inside a flex container to flow to multiple lines. However, from my tinkering, I’ve found that only the latest versions of Chrome support the flex-wrap property, so we have to gracefully degrade our layouts to provide a similar layout in every other browser.</p>
+
+<p>Let’s look at the code required to make a multiple column layout that shifts list items to new rows when needed in order to always cover the amount of horizontal space our container allows.</p>
+
+<p><strong>HTML</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul class="container"&gt;
+  &lt;li&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li&gt;dolor sit amet&lt;/li&gt;
+  &lt;li&gt;consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Donec molestie&lt;/li&gt;
+  &lt;li&gt;acus sit amet condimentum rhoncus&lt;/li&gt;
+  &lt;li&gt;quam justo &lt;/li&gt;
+  &lt;li&gt;porta lacus, quis luctus urna ante quis sem&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre></div></div>
+
+<p><strong>CSS</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.container {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  padding: 10px 50px;
+  background: #bada55;
+  margin: 10px;
+  text-align: center;
+  flex: auto; // Very important. Needed to tell the browser to take up all the horizontal space it can
+}
+
+</code></pre></div></div>
+
+<h3 id="chrome--opera-result-our-desired-result">Chrome &amp; Opera result (our desired result)</h3>
+
+<p>{}<img src="/content/images/2013/Nov/Screen_Shot_2013_08_23_at_2_16_07_PM.png" alt="" /></p>
+
+<h3 id="firefox-result">Firefox result</h3>
+
+<p>{}<img src="/content/images/2013/Nov/Screen_Shot_2013_08_23_at_2_17_40_PM.png" alt="" /></p>
+
+<h3 id="safari-result">Safari result</h3>
+
+<p>{}<img src="/content/images/2013/Nov/Screen_Shot_2013_08_23_at_2_18_32_PM.png" alt="" /></p>
+
+<p>As you can see, the only desirable result comes from our webkit browsers. Firefox and Safari just don’t render the flex-wrap property, and thus our content is jammed together (in Firefox) or strung out on a super long line (Safari).</p>
+
+<p>So what do we do? Well since Chrome is the only current stable browser besides Opera to support flex-wrap anyway, we can just target it by removing all other vendor prefixed display values and just use display: -webkit-flex. Safari, Firefox, Opera and IE don’t pick this up, so their hacked up rendering of flexbox will be nonexistent.</p>
+
+<p><strong>It would look like this in any browser that doesn’t support -webkit-flex:</strong></p>
+
+<p>{}<img src="/content/images/2013/Nov/Screen_Shot_2013_08_23_at_2_40_22_PM.png" alt="" /></p>
+
+<p><em><strong>Note:</strong> Opera does render flex-wrap well, but only via display: flex, which Firefox also renders, but in a crappy way. So this is not ideal, as we’re preventing Opera from using flexbox. Like I said, this is a hack and Opera only accounts for 1.6% of total browser usage.</em></p>
+
+<h3 id="falling-back">Falling back</h3>
+
+<p>The result above is nothing close to our desired outcome, so here comes the fallback. We’re simply going to add in float and width properties to our list items. Pretty simple! Chrome will ignore the float value because the display of the container is set to display: -webkit-flex. It will however use the width we set as a starting point, so in our instance we’re going for 3 columns so we’ll give it a width of 31% (to account for the margins) and give it a box-sizing property.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.container {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 900px;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+li {
+  padding: 10px 50px;
+  background: #bada55;
+  margin: 10px;
+  text-align: center;
+  flex: auto;
+  float: left;
+  width: 31%;
+  webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+</code></pre></div></div>
+
+<h3 id="final-code">Final code</h3>
+
+<p>See the Pen <a href="http://codepen.io/trevanhetzel/pen/dtKLm">Flex-wrap fallback</a> by Trevan Hetzel (<a href="http://codepen.io/trevanhetzel">@trevanhetzel</a>) on <a href="http://codepen.io">CodePen</a></p>
+
+<script async="" src="http://codepen.io/assets/embed/ei.js"></script>
+
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Trevan Hetzel</title>
+  <title>Trevan Hetzel &mdash; Testing WordPress websites through a virtual machine</title>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
   <meta name="handheldfriendly" content="true" />
   <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
 
-  <meta property="og:title" content="Trevan Hetzel" />
+  <meta property="og:title" content="Testing WordPress websites through a virtual machine" />
   <meta property="og:site_name" content="Trevan Hetzel" />
   <meta
     property="og:description"
@@ -26,16 +26,16 @@
   />
   <meta property="og:image" content="" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="/404.html" />
+  <meta property="og:url" content="/testing-wordpress-websites-through-a-virtual-machine/" />
   <meta property="og:type" content="website" />
 
-  <meta name="twitter:title" content="Trevan Hetzel" />
+  <meta name="twitter:title" content="Testing WordPress websites through a virtual machine" />
   <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
   <meta name="twitter:image" content="" />
   <meta name="twitter:image:alt" content="Trevan Hetzel" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="canonical" href="/404.html" />
+  <link rel="canonical" href="/testing-wordpress-websites-through-a-virtual-machine/" />
   <link rel="icon" href="/assets/images/seo/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
@@ -43,7 +43,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Trevan Hetzel" />
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Testing WordPress websites through a virtual machine" />
 </head>
 
   <body>
@@ -93,27 +93,61 @@
   </ul> -->
 </div>
 
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      <div class="post">  
+  
 
-<div class="container">
-  <h1>404</h1>
+  <h1>Testing WordPress websites through a virtual machine</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p class="date">
+    Posted on June 23, 2013 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>I’m a fan of <a href="http://browserstack.com" title="Browserstack">Browserstack</a> for browser testing, but sometimes it’s just nice to not have to wait around for the Browserstack servers to load. And even more nice is the ability to debug in an actual browser without going through Browserstack’s lagging servers.</p>
+
+<p>Enter <a href="http://virtualbox.org" title="VirtualBox">VirtualBox</a> and <a href="http://modern.ie" title="modern.IE">modern.IE</a>. Internet Explorer is pushing to appeal more to developers and prove that their much hated on browser can actually stand up in a match between Chrome, Safari, Firefox, etc. so they’ve created modern.IE that offers FREE virtual machines to run IE6 – 10 locally on your Mac (or PC).</p>
+
+<p>I’ve used their virtual machines through VirtualBox to test local HTML pages, but never a WordPress site. Until now. There’s a little trick to it, but it’s really not hard at all.</p>
+
+<h2 id="1-download-virtualbox">1. Download <a href="http://virtualbox.org" title="VirtualBox">VirtualBox</a></h2>
+
+<h2 id="2-download-a-virtual-machine-or-2-or-4-or-5-from-modernie">2. Download a <a href="http://www.modern.ie/en-us/virtualization-tools#downloads" title="Download virtual machine">virtual machine</a> (or 2 or 4 or 5…) from modern.IE</h2>
+
+<p>Just follow the steps to get the virtual machine up and running in VirtualBox.</p>
+
+<h2 id="3-set-up-a-mamp-server">3. Set up a MAMP server</h2>
+
+<p>See a <a href="http://trevan.co/how-to-set-up-the-perfect-local-wordpress-development-environment-on-a-mac/" title="Local WordPress development environment">previous post</a> I wrote on this.</p>
+
+<h2 id="4-start-up-your-virtual-machine">4. Start up your virtual machine</h2>
+
+<h2 id="5-open-notepad-as-administrator">5. Open Notepad as administrator</h2>
+
+<p>From the Windows start screen, just start typing “note”. You should see the Notepad application show up. Right-click that and “Run as administrator”.</p>
+
+<h2 id="6-modify-the-hosts-file">6. Modify the hosts file</h2>
+
+<p>Open this file (in Windows 8; not sure the exact location in older Windows versions): c:/windows/system32/drivers/etc/hosts. At the very end of the file, add this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.0.2.2  localhost:8888
+
+</code></pre></div></div>
+
+<p>Replace localhost:8888 with the host name of your server that you set up in MAMP. Save.</p>
+
+<h2 id="7-bask-in-browser-testing-glory">7. Bask in browser testing glory</h2>
+
+<p>Open up Internet Explorer inside your VM and navigate to localhost:8888 (or whatever your host name is). Badabing-badabang!</p>
+
+<p><em>*Note: This method doesn’t just work for WordPress sites. You can test local static files just the same, as long as you have a MAMP server going.</em></p>
+
+  </div>
 </div>
-
 
       <footer class="footer">
   <p>

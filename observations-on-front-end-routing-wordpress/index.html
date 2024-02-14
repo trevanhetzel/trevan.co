@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Observations on Front-end Routing &#038; WordPress</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Observations on Front-end Routing &#038; WordPress" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/observations-on-front-end-routing-wordpress/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Observations on Front-end Routing &#038; WordPress" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/observations-on-front-end-routing-wordpress/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Observations on Front-end Routing &#038; WordPress" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Observations on Front-end Routing &#038; WordPress</h1>
+
+  <p class="date">
+    Posted on January 11, 2015 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>Front-end frameworks are becoming wildly popular as a means of focusing more attention on the client side and giving sites that single page application feel. There are tons of articles on routing and accessing and displaying data for whatever front-end framework you’re using. However, I’ve found there to be a lack of documentation and resources for using front-end frameworks with the most popular CMS in the world: WordPress.</p>
+
+<p>I’ve started to do quite a bit of research on using front-end frameworks with WordPress and the main issue I keep running into is that of routing. While front-end routing issues are not specific to just WordPress, my goal has been to figure out a solid solution to tackle front-end routing specifically related to WordPress.</p>
+
+<h1 id="the-problem-with-front-end-routing">The problem with front-end routing</h1>
+
+<p>Front-end routing works great by default and can be very simple to use with WordPress. That is, <strong>if</strong> you don’t care about SEO and search engine friendly URLs. By default, the routers built in to Backbone, Angular, Ember, etc. usually serve pages by way of hashtags. For example, the route for a super awesome article might be <code class="language-plaintext highlighter-rouge">http://coolsite.com/#super-awesome-article</code>. Using the <a href="http://html5doctor.com/history-api/">History API</a>, the hashtag can be removed to serve a prettier URL like <code class="language-plaintext highlighter-rouge">http://coolsite.com/super-awesome-article</code>.</p>
+
+<p>This is all great and works, like I said, if you don’t care about SEO. <strong>But</strong>, unless you’re building a user authenticated web app that doesn’t care about search engines indexing URLs, you should care about SEO. The thing is, web crawlers from Google and the like can’t see your URLs and the content served up by them because you’re creating it all on the client side with JavaScript, which the crawlers don’t typically run. So all a web crawler sees is whatever content your default page serves up from the server.</p>
+
+<p>You might think (as I did) that <code class="language-plaintext highlighter-rouge">http://coolsite.com/super-awesome-article</code> would totally be crawlable by search engines since it looks, we’ll say, proper. But, while it does look like a proper URL structure, it’s still being created on the client side and JavaScript is just manipulating what the browser shows as the URL (using pixie dust, which is sprinkled into all front-end frameworks).</p>
+
+<h1 id="what-we-can-do-to-overcome-seo-issues">What we can do to overcome SEO issues</h1>
+
+<p>There are, as I see it, two ways to provide web crawlers with content and still get that snappy, SPA feel of front-end routing.</p>
+
+<h2 id="1-combine-server-routes-and-front-end-routes">1. Combine server routes and front-end routes</h2>
+
+<p>The first method, and the one which I <em>thought</em> would work the best, is to essentially use two different technologies to serve the same content: PHP and JavaScript. WordPress would create normal routes and use normal PHP templates, while JavaScript would “take over” once a template has been served.</p>
+
+<p>I’ve been playing around with this method and can say that it’s just a lot of work and duplication of concerns. Here’s an example of what it looks like to serve up a standard WordPress post.</p>
+
+<ol>
+  <li>WordPress serves <code class="language-plaintext highlighter-rouge">/super-awesome-post</code>, pulling from the <code class="language-plaintext highlighter-rouge">page.php</code> template. This is what search engines see.</li>
+  <li>Use a Backbone (replace with your framework of choice) router to serve <code class="language-plaintext highlighter-rouge">/#super-awesome-post</code>, which pulls from a JavaScript template and uses a templating engine like Underscore’s or Handlebars to parse it.</li>
+  <li>Replace all permalinks with something like <code class="language-plaintext highlighter-rouge">&lt;a href="#/&lt;?php echo $post-&gt;post_name;?&gt;"&gt;</code> so clicking on links uses the front-end routing solution.</li>
+</ol>
+
+<h3 id="duplication">Duplication</h3>
+
+<p>While I still think this method has potential and could potentially be fully implemented, I’m finding it has more downsides than upsides to continue pursuing.</p>
+
+<p>Mainly, you have to maintain two sets of templates for each route (PHP and JavaScript). I was actually really hoping to find a way to utilize just one template, like <code class="language-plaintext highlighter-rouge">page.php</code> for single pages, <code class="language-plaintext highlighter-rouge">front-page.php</code> for the home page, etc. Ideally, you would use a templating engine to remove all the PHP tags when rendering it on the client side, and somehow tell WordPress to ignore your templating engine tags when serving templates. Even if you could get that scenario working, your code would still contain lots of duplication. In the simplest form, duplication would look like below. In a more advanced form, you’d be doing logic in both PHP and JavaScript, which is just unwieldly.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h1&gt;
+    &lt;?php the_title(); ?&gt; // What WP would see
+    &lt;%- post.title %&gt; // What the JS templating engine would see
+&lt;/h1&gt;
+
+</code></pre></div></div>
+
+<h2 id="2-serve-html-snapshots-to-crawlers">2. Serve HTML snapshots to crawlers</h2>
+
+<p>The next method that I have yet to fully test out is that of using hashbangs and serving HTML snapshots to crawlers. Google actually has some <a href="https://developers.google.com/webmasters/ajax-crawling/docs/getting-started">really good documentation</a> on doing this, as they’ve recognized the rise of AJAX-y applications and the need to be able to index them.</p>
+
+<p>Essentially, this method works by using <code class="language-plaintext highlighter-rouge">#!</code> (<code class="language-plaintext highlighter-rouge">/#!super-awesome-post</code>) in your URLs, which tells Google that this content is created dynamically on the front-end and to proceed with the next step.</p>
+
+<p>The next step is where it gets tricky. You have to then tell crawlers where your static content actually is. It then reads that, but keeps your hashbang URL as the destination when users click on a search result.</p>
+
+<p>Telling crawlers where your static content lives is done on the server side. My understanding of the process is that once a crawler sees the hashbang, it then requests the same URL, but with <code class="language-plaintext highlighter-rouge">_escaped_fragment_</code> in place of the <code class="language-plaintext highlighter-rouge">#!</code>. Using WordPress, you’d first have to make sure that <code class="language-plaintext highlighter-rouge">/?_escaped_fragment_super-awesome-post</code> maps to <code class="language-plaintext highlighter-rouge">/super-awesome-post</code>. You’d then have to serve an HTML snapshot to <code class="language-plaintext highlighter-rouge">/?_escaped_fragment_super-awesome-post</code> that contains static content.</p>
+
+<p>HTML snapshots can be created in a <a href="http://crawljax.com/">multitude</a> <a href="http://htmlunit.sourceforge.net/">of</a> <a href="http://watij.com/">ways</a>. The thing that makes me cringe about HTML snapshots is that they appear to be pretty manual. Without some sort of server side script in place, it looks like you’d have to literally run a snapshot whenever you update your WordPress site (which can be quite frequent).</p>
+
+<p>Google also <a href="https://developers.google.com/webmasters/ajax-crawling/docs/getting-started">lists</a> a method of using a meta tag if you don’t want to use the hashbang format (<code class="language-plaintext highlighter-rouge">&lt;meta name="fragment" content="!"&gt;</code>).</p>
+
+<h1 id="this-is-complicated">This is complicated</h1>
+
+<p>Both methods I’ve talked about are damn complicated and tedious. But hey, that’s why I’m writing about this: to find the simplest solution for front-end routing with WordPress! I’m probably going to try out the second method with the hashbangs and HTML snapshots in the near future, so stay tuned for a follow-up post with actual code and hopefully a working demo.</p>
+
+<h1 id="oh-yeah-this-is-all-possible-courtesy-of-the-wp-rest-api">Oh yeah, this is all possible courtesy of the WP REST API</h1>
+
+<p>I’ve spent the entirety of this article talking just about front-end routing, but I should note quickly that the use of front-end frameworks wouldn’t even be possible if we couldn’t fetch our WordPress data with AJAX. A project called the <a href="http://wp-api.org/">WP REST API</a> essentially turns your WP data into JSON for easy access with AJAX and front-end frameworks. The plugin can be found <a href="https://wordpress.org/plugins/json-rest-api/">here</a> and will apparently be included in WordPress core coming up very soon.</p>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

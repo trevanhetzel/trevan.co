@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Custom range inputs with CSS &#038; JavaScript</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Custom range inputs with CSS &#038; JavaScript" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/custom-range-inputs-with-css-javascript/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Custom range inputs with CSS &#038; JavaScript" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/custom-range-inputs-with-css-javascript/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Custom range inputs with CSS &#038; JavaScript" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Custom range inputs with CSS &#038; JavaScript</h1>
+
+  <p class="date">
+    Posted on February 19, 2015 in
+    
+      <a href="/topics/css" aria-label="CSS">CSS</a>
+    
+      <a href="/topics/javascript" aria-label="JavaScript">JavaScript</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <blockquote>
+  <p>Styling range inputs is a joke</p>
+
+  <p>— Trevan Hetzel (@trevanhetzel) <a href="https://twitter.com/trevanhetzel/status/567881635342856195">February 18, 2015</a></p>
+</blockquote>
+
+<p>I found out last night that styling HTML5 range inputs is kind of a joke, as I put it. Just a joke in that it’s way more involved to customize them than I feel like it should be, as it requires several vendor prefixes (to be expected I guess) and some JavaScript. So after <a href="http://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">reading</a> a few articles and browsing <a href="http://codepen.io/collection/DgYaMj/">Anna Tudor’s awesome collection</a> of custom ranges on CodePen, I wanted to jot down the solution I came up with.</p>
+
+<p>Starting with a simple element…</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;input type="range" class="range"&gt;</code></p>
+
+<p>We’ll target <code class="language-plaintext highlighter-rouge">.range</code> and first give it a <code class="language-plaintext highlighter-rouge">width</code> (not really required, but good for cross-browser consistency). Then we’ll set <code class="language-plaintext highlighter-rouge">-webkit-appearance</code> to <code class="language-plaintext highlighter-rouge">none</code> to reset the “thumb” in Chrome and Safari (don’t need to do so for Firefox).</p>
+
+<p>Once those basic properties are in, the rest of the styling is done on the thumb and the track using, which are targeted using pseudo-elements.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Thumb
+&amp;::-webkit-slider-thumb {
+    -webkit-appearance: none; // needed again for Chrome &amp; Safari
+    @include rangeThumb;
+}
+
+&amp;::-moz-range-thumb {
+    @include rangeThumb;
+}
+
+&amp;::-ms-thumb {
+    @include rangeThumb;
+}
+
+// Track
+&amp;::-webkit-slider-runnable-track {
+    @include rangeTrack;
+}
+
+&amp;::-moz-range-track {
+    @include rangeTrack;
+}
+
+&amp;::-ms-track {
+    @include rangeTrack;
+}
+
+&amp;:focus { // override outline/background on focus
+    background: none;
+    outline: none;
+}
+
+&amp;::-ms-track { // A little somethin' somethin' for IE
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+</code></pre></div></div>
+
+<p>It’d be much cleaner if we could chain those pseudo-elements together to just end up with one chained selector for the thumb and one for the track, <strong>but</strong> apparently browsers won’t render the styles in this case if it sees a vendor prefix that it doesn’t understand. Since that’s the case, I find it best to use Sass include since the code for the thumb and track is repeated three times. Those just contain your standard properties in the way you’d style any other block level element.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin rangeThumb {
+    border: 1px solid #3498db;
+    width: .875em;
+    height: .875em;
+    border-radius: 4px;
+    background: #eee;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+@mixin rangeTrack {
+    width: 100%;
+    height: .313em;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #fff;
+}
+
+</code></pre></div></div>
+
+<p>That’s it for the CSS! You could stop there, but if you’re wanting to do ranges right you’re going to want to fill the track on either side of the thumb to better indicate the value.</p>
+
+<h3 id="result-with-css-only">Result with CSS only</h3>
+
+<p>{}<img src="/content/images/2015/Feb/range_style_css.png" alt="Styled with CSS only" /></p>
+
+<h3 id="result-with-javascript-enhancement">Result with JavaScript enhancement</h3>
+
+<p>{}<img src="/content/images/2015/Feb/range_style_js.png" alt="Styled with CSS and JavaScript enhancement" /></p>
+
+<p>So let’s add the fill with JavaScript! Again, I feel like you should be able to do this just with CSS, but unfortunately you can’t yet (except for IE which actually supports <code class="language-plaintext highlighter-rouge">::-ms-fill-lower</code> and <code class="language-plaintext highlighter-rouge">::-ms-fill-upper</code>).</p>
+
+<p>Here’s my JavaScript solution I settled on, which again takes inspiration from Anna Tudor’s <a href="http://codepen.io/collection/DgYaMj/">Pens</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var sheet = document.createElement('style'),
+    $rangeInput = $('.range'),
+    prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+document.body.appendChild(sheet);
+
+var getTrackStyle = function (el) {
+    var curVal = el.value,
+        style = '';
+
+    for (var i = 0; i &lt; prefs.length; i++) {
+        style += '.range::-' + prefs[i] + '{background: linear-gradient(to right, #34495e 0%, #34495e ' + curVal + '%, #fff ' + curVal + '%, #fff 100%)}';
+    }
+
+    return style;
+}
+
+$rangeInput.on('input', function () {
+    sheet.textContent = getTrackStyle(this);
+});
+
+</code></pre></div></div>
+
+<p>The point of the above script is to insert a <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> block in the DOM and then insert into it a CSS background gradient for the three vendor prefixed track selectors. Kind of hacky, huh? The reason you can’t just do this in your external stylesheet is because you have to constantly change the background gradient positions when the value of the input changes. There’s actually a way to update styles in an external stylesheet, but from what I found it’s almost impossible to delete/update them without knowing exactly what line number they’re on (which is just a pain). So I’m sticking with the <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> block for now.</p>
+
+<p>To break down the script a bit more, I’m first creating a new stylesheet and saving the range in a variable as a jQuery object and setting an array that contains each vendor prefix name. Next I append the stylesheet to the <code class="language-plaintext highlighter-rouge">body</code> element so it’s actually in the DOM. After that is the function that gets called whenever the <code class="language-plaintext highlighter-rouge">input</code> event is fired on the range element. When that event is fired, <code class="language-plaintext highlighter-rouge">sheet.textContent</code> (kind of like <code class="language-plaintext highlighter-rouge">.html()</code> but for stylesheets) is set equal to the <code class="language-plaintext highlighter-rouge">getTrackStyle</code> function, which returns three vendor prefixed track properties with the background gradient position based on the current value.</p>
+
+<p>Done!</p>
+
+<p>Although…</p>
+
+<p>On the project I was working on, I had multiple range inputs. The above JavaScript won’t work properly with more than one input because whenever one input’s value is changed the rest of the inputs render the same background gradient. To combat that, I ended up setting a unique ID on each input and created a separate <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> block for each one. My event handler then looked like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$rangeInput.on('input', function () {
+    var curId = $(this).parent().attr('id');
+
+    if (curId == 'range-distance') {
+        sheet1.textContent = getTrackStyle(this, curId);
+    } else if (curId == 'range-price') {
+        sheet2.textContent = getTrackStyle(this, curId);
+    }
+});
+
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">curId</code> gets passed into <code class="language-plaintext highlighter-rouge">getTrackStyle</code>, which then uses the unique ID to make the vendor prefixed track selectors more specific:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var getTrackStyle = function (el, curId) {
+    var curVal = el.value,
+        style = '';
+
+    for (var i = 0; i &lt; prefs.length; i++) {
+        style += '#' + curId + ' input::-' + prefs[i] + '{background: linear-gradient(to right, #2c3e50 0%, #2c3e50 ' + curVal + '%, #f4f5f4 ' + curVal + '%, #f4f5f4 100%)}';
+    }
+
+    return style;
+}
+
+</code></pre></div></div>
+
+<p>There you have it! Here’s the Pen I made as well (doesn’t contain support for multiple inputs): <a href="http://codepen.io/trevanhetzel/pen/emMPxa">http://codepen.io/trevanhetzel/pen/emMPxa</a></p>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

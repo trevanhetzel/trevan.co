@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-02-14T14:37:04-06:00</updated><id>/feed.xml</id><title type="html">Trevan Hetzel</title><subtitle>Trevan Hetzel&apos;s personal blog on software development, web design, wellness, business, and life.</subtitle><entry><title type="html">Functional Medicine: Seeing is Believing</title><link href="/new-start-on-wellness-journey" rel="alternate" type="text/html" title="Functional Medicine: Seeing is Believing" /><published>2024-02-11T00:00:00-06:00</published><updated>2024-02-11T00:00:00-06:00</updated><id>/new-start-on-wellness-journey</id><content type="html" xml:base="/new-start-on-wellness-journey"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas dictum enim, sit amet cursus nibh iaculis quis. Morbi luctus nunc at mollis efficitur. Ut pellentesque nisi felis, eu egestas lectus ullamcorper vel. Proin et vulputate urna. Aliquam sollicitudin turpis venenatis, tempor tortor non, tempus ex. Donec nec fermentum tortor, ac rhoncus magna. Ut sit amet dui varius, dignissim mi in, molestie tellus. Sed a metus lorem. Sed eget pharetra sem. Curabitur accumsan enim non erat lacinia, id tincidunt nisi tempus. Nam vel massa massa. Vivamus malesuada turpis quis tellus tempor pharetra. Integer vulputate libero id magna finibus vehicula. Maecenas rutrum risus ut ultricies ullamcorper. Integer iaculis convallis semper.</p>
+
+<p>Mauris sem tortor, tempus id ante id, scelerisque euismod neque. Cras pellentesque eros massa, in vestibulum tellus blandit sed. Fusce vel dignissim enim. Praesent malesuada efficitur risus at euismod. Vivamus eu urna eu ligula sagittis eleifend. Morbi elementum ex ac elit bibendum fermentum. Fusce viverra, tellus quis tempor hendrerit, sapien odio sollicitudin ligula, quis dapibus est ipsum vel magna.</p>
+
+<p>Nullam congue elementum libero, eu pretium nunc rutrum in. Proin volutpat mi facilisis, fermentum eros id, vestibulum augue. Phasellus tellus tortor, bibendum nec nulla in, porttitor facilisis augue. Nulla aliquet suscipit lectus. In pharetra ut lacus at commodo. Donec elementum lacinia turpis, id scelerisque elit imperdiet quis. Donec dictum ornare laoreet.</p>
+
+<p>Donec vel eleifend ex. Curabitur nec est eros. Fusce eu volutpat ipsum. Pellentesque egestas porta lacus eleifend dictum. Morbi non pretium nisl. Fusce ipsum lorem, condimentum at efficitur nec, consequat tincidunt nibh. Nam tempus vitae erat ut cursus. Nam viverra ante vitae massa scelerisque, sit amet bibendum ipsum finibus. In a pellentesque erat. Duis a tempus felis. Proin lectus nisl, consequat sit amet ex sit amet, tempus efficitur augue. Ut bibendum consectetur tempus. Nunc sed velit nec felis blandit tincidunt lacinia a nisi. Morbi condimentum, metus eu venenatis posuere, magna leo pulvinar ligula, at vulputate orci lorem at libero. Etiam mollis sapien velit, sit amet varius lectus ultricies eget. Sed vitae ante ultrices, auctor justo vitae, venenatis nibh.</p>
+
+<p>Cras facilisis lectus ut leo molestie bibendum scelerisque ac orci. Donec justo lectus, blandit interdum aliquet at, venenatis vel lorem. Nam diam tellus, tincidunt at sem a, scelerisque molestie ex. Proin mollis sit amet lectus a efficitur. Nulla facilisi. Integer placerat eros a massa porttitor ornare. Sed vitae condimentum odio.</p>]]></content><author><name></name></author><category term="Wellness" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas dictum enim, sit amet cursus nibh iaculis quis. Morbi luctus nunc at mollis efficitur. Ut pellentesque nisi felis, eu egestas lectus ullamcorper vel. Proin et vulputate urna. Aliquam sollicitudin turpis venenatis, tempor tortor non, tempus ex. Donec nec fermentum tortor, ac rhoncus magna. Ut sit amet dui varius, dignissim mi in, molestie tellus. Sed a metus lorem. Sed eget pharetra sem. Curabitur accumsan enim non erat lacinia, id tincidunt nisi tempus. Nam vel massa massa. Vivamus malesuada turpis quis tellus tempor pharetra. Integer vulputate libero id magna finibus vehicula. Maecenas rutrum risus ut ultricies ullamcorper. Integer iaculis convallis semper.]]></summary></entry><entry><title type="html">My essential front-end extensions for Visual Studio Code</title><link href="/my-essential-front-end-extensions-for-visual-studio-code/" rel="alternate" type="text/html" title="My essential front-end extensions for Visual Studio Code" /><published>2017-05-14T01:00:23-05:00</published><updated>2017-05-14T01:00:23-05:00</updated><id>/my-essential-front-end-extensions-for-visual-studio-code</id><content type="html" xml:base="/my-essential-front-end-extensions-for-visual-studio-code/"><![CDATA[<p>I’ve recently switched from Sublime Text to Visual Studio Code as my primary code editor. As such, I’ve personalized it to feel like home. Here are the most important extensions I use as a front-end developer.</p>
+
+<h2 id="afterglow-remastered"><a href="https://marketplace.visualstudio.com/items?itemName=marvinhagemeister.theme-afterglow-remastered">Afterglow Remastered</a></h2>
+
+<p>This is the color theme I’ve been rocking in Sublime Text for a while, so I was pretty happy to discover it had been ported over to Visual Studio Code.</p>
+
+<h2 id="auto-close-tag"><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto Close Tag</a></h2>
+
+<p>Because who doesn’t want to type <span style="font-family: monospace;"><code class="language-plaintext highlighter-rouge">section + tab</code></span> and have an opening and closing tag ready to use?</p>
+
+<h2 id="autofilename"><a href="https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename">AutoFileName</a></h2>
+
+<p><code class="language-plaintext highlighter-rouge">import thang from 't</code> ?. No more having to traverse directories to remember what a JavaScript file is called.</p>
+
+<h2 id="babel-es6es7"><a href="https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring">Babel ES6/ES7</a></h2>
+
+<p>I don’t know about you, but when I write an arrow function I want it to look as sexy as a normal function. This brings that to VS Code.</p>
+
+<h2 id="debugger-for-chrome"><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome</a></h2>
+
+<p>Honestly, I haven’t been able to use this extension to its fully (ahem) extent due to the way I compile my files with Webpack. But this is a super sweet looking extension that does great things, nonetheless.</p>
+
+<h2 id="eslint"><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></h2>
+
+<p>Instead of pushing your code and getting angry that you forgot to run your linter and it failed the CI build, use this extension to see right inline what doesn’t pass your linter config.</p>
+
+<h2 id="git-history-git-log"><a href="https://github.com/DonJayamanne/gitHistoryVSCode">Git History (git log)</a></h2>
+
+<blockquote>
+  <p>WHO WAS THE CHUCKLEHEAD THAT WROTE THIS?!?!</p>
+</blockquote>
+
+<p>If that’s ever crossed your mind, this plugin is for you. See file by file, line by line who the last modifier was.</p>
+
+<h2 id="material-icon-theme"><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a></h2>
+
+<p>This brings super clean and pretty icons to the file viewer so you can tell what types of files are what quickly.</p>
+
+<h2 id="postcss-sorting"><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-postcss-sorting">PostCSS Sorting</a></h2>
+
+<p>I don’t use PostCSS in any of my projects, but that’s okay because this extension just tells me when I screw up my SCSS property order (based on your <code class="language-plaintext highlighter-rouge">.sass-lint.yml)</code> in real time.</p>
+
+<h2 id="project-manager"><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></h2>
+
+<p>This extension allows me to quickly switch between projects AND open a new terminal window (<code class="language-plaintext highlighter-rouge">cmd +</code>` ).</p>
+
+<h2 id="sass-lint"><a href="https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint">Sass Lint</a></h2>
+
+<p>Similar to the ESLint extension, make sure your Sass is up to par with the standards you set forward in your <code class="language-plaintext highlighter-rouge">.sass-lint.yml</code>.</p>
+
+<h2 id="sublime-text-keymap"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings">Sublime Text Keymap</a></h2>
+
+<p>I was too used to Sublime Text’s keyboard shortcuts that I had to install this. <code class="language-plaintext highlighter-rouge">cmd + 4</code> now opens the fourth tab I have open, like I was used to in Sublime.</p>]]></content><author><name>admin</name></author><category term="CSS" /><category term="JavaScript" /><summary type="html"><![CDATA[I’ve recently switched from Sublime Text to Visual Studio Code as my primary code editor. As such, I’ve personalized it to feel like home. Here are the most important extensions I use as a front-end developer.]]></summary></entry><entry><title type="html">Loading stylesheets in WordPress child themes the fast way</title><link href="/loading-stylesheets-in-wordpress-child-themes-the-fast-way/" rel="alternate" type="text/html" title="Loading stylesheets in WordPress child themes the fast way" /><published>2017-01-21T19:27:37-06:00</published><updated>2017-01-21T19:27:37-06:00</updated><id>/loading-stylesheets-in-wordpress-child-themes-the-fast-way</id><content type="html" xml:base="/loading-stylesheets-in-wordpress-child-themes-the-fast-way/"><![CDATA[<p>Loading stylesheets in WordPress child themes is a pretty straightforward process. According to the <a href="https://codex.wordpress.org/Child_Themes">Codex</a>, you just add a <code class="language-plaintext highlighter-rouge">wp_enqueue_scripts</code> action that loads the parent theme’s stylesheet as well as the child theme’s stylesheet. Easy peasy.</p>
+
+<p>However, you know me and extra asset requests 😉 I hate to request multiple CSS or JS files if I can help it. Loading the parent stylesheet with WordPress’ recommended <code class="language-plaintext highlighter-rouge">wp_enqueue_scripts</code> is going to end up making two calls – one for the parent stylesheet and one for the child. We don’t want none of that!</p>
+
+<h2 id="heres-what-ive-done-to-get-around-loading-both-those-stylesheets">Here’s what I’ve done to get around loading both those stylesheets</h2>
+
+<p>Using Sass, I just <code class="language-plaintext highlighter-rouge">@import</code> the parent theme’s <code class="language-plaintext highlighter-rouge">style.css</code>. That easy!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@import "../twentysixteen/style";
+
+</code></pre></div></div>
+
+<p>I can’t vouch for the reliability of this in all cases (relative paths for fonts or assets might not work in some themes), but it works for at least the Twenty Sixteen theme!</p>]]></content><author><name>admin</name></author><category term="CSS" /><category term="Performance" /><category term="WordPress" /><summary type="html"><![CDATA[Loading stylesheets in WordPress child themes is a pretty straightforward process. According to the Codex, you just add a wp_enqueue_scripts action that loads the parent theme’s stylesheet as well as the child theme’s stylesheet. Easy peasy.]]></summary></entry><entry><title type="html">Our twist on BEM CSS modifiers</title><link href="/our-twist-on-bem-css-modifiers/" rel="alternate" type="text/html" title="Our twist on BEM CSS modifiers" /><published>2017-01-21T19:26:45-06:00</published><updated>2017-01-21T19:26:45-06:00</updated><id>/our-twist-on-bem-css-modifiers</id><content type="html" xml:base="/our-twist-on-bem-css-modifiers/"><![CDATA[<p>Over the past few years, I’ve found that the BEM CSS methodology falls closest in line with my preference for CSS authoring (although I do have a lot of respect for <a href="https://leanpub.com/enduringcss/c/blog">Enduring CSS</a>). The block (parent), element (child/grandchild) and modifier work for nearly every scenario. However, there was always one thing with BEM that drove me nuts – <strong>the way it recommends writing modifiers</strong>.</p>
+
+<p>According to the official <a href="http://getbem.com/naming/">BEM</a> website, the way to declare modifiers is <code class="language-plaintext highlighter-rouge">.block__element--modifier</code>. The reasoning behind that is great, and it works well for short block names, but it leads to huge class strings in markup when you have multiple words in your block. And let’s face it, it’s extremely difficult to never use more than one word in a CSS class name. <code class="language-plaintext highlighter-rouge">.block</code> eventually becomes <code class="language-plaintext highlighter-rouge">.lego-block</code> because such a short ambiguous name is not intuitive. When you throw a modifier on that, the markup already starts to get lengthy – <code class="language-plaintext highlighter-rouge">lego-block lego-block--secondary</code>. If you have more than one modifier, you can definitely see the repetitive implications.</p>
+
+<p>To get around this repetition, I wanted to simply remove the repeated text from the modifier. That would make <code class="language-plaintext highlighter-rouge">lego-block lego-block--secondary</code> simply <code class="language-plaintext highlighter-rouge">lego-block --secondary</code>. The double dashes are great because they visualize the fact that the text succeeding them is a modifier. There was one problem with that approach though – not all browsers support class selectors that don’t start with a letter.</p>
+
+<p>So about a year I complained on Twitter about Safari (being the main culprit) not supporting class names that don’t start with a letter.</p>
+
+<blockquote>
+  <p>I started using standalone CSS state classes. Like .—state &amp; scope them to their main sibling classes. But it doesn’t work in Safari 🙁</p>
+
+  <p>— Trevan Hetzel (@trevanhetzel) <a href="https://twitter.com/trevanhetzel/status/694914983742693376">February 3, 2016</a></p>
+</blockquote>
+
+<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
+
+<p>And I got a brilliant response from <a href="https://twitter.com/dylanbaumann">Dylan Baumann</a> <em>(now a fellow front-end developer on my team at Flywheel)</em>.</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/trevanhetzel">@trevanhetzel</a> <a href="https://twitter.com/agentkyle">@agentkyle</a> you might be able to circumvent it with:</p>
+
+  <p>[class*=’-scope’] { // stuff }</p>
+
+  <p>— Dylan Baumann (@dylanbaumann) <a href="https://twitter.com/dylanbaumann/status/694921669337419777">February 3, 2016</a></p>
+</blockquote>
+
+<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
+
+<p>CSS attribute selectors, of course! With an attribute selector, you can still write <code class="language-plaintext highlighter-rouge">lego-block --secondary</code> in the markup and not have to worry about browsers not reading it.</p>
+
+<p>I contemplated long and hard about officially adopting this for my projects and our projects at Flywheel for the sole fact that attribute selectors are nasty and lengthy and feel like a hack. But you gotta choose your battles and this was one that I was okay with losing a hand in order to not lose a leg. The clarity it’s brought to our markup is well worth any extra bytes in the compiled CSS file. And to further drive home my decision, I experimented and found that gzip does such a great job at compressing repetitive code that the file size implications are very minimal. I also considered selector performance but, after reviewing <a href="https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/">Ben Frain’s tests</a>, realized that shouldn’t be a worry at all.</p>
+
+<h2 id="the-mixin">The mixin</h2>
+
+<p>We use a Sass mixin called <code class="language-plaintext highlighter-rouge">state</code>. The word “state” is something we decided on as a team that we preferred over the word “modifier”.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin state($class, $parent: nil) {
+    &amp;[class*='--#{$class}'] {
+        @content;
+    }
+}
+
+</code></pre></div></div>
+
+<p>The Sass usage is like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.lego-block {
+    @include state(secondary) {
+        // modifying code here
+    }
+}
+
+</code></pre></div></div>
+
+<p>And the HTML usage is simply <code class="language-plaintext highlighter-rouge">&lt;div class="lego-block --secondary"&gt;</code>.</p>]]></content><author><name>admin</name></author><category term="CSS" /><summary type="html"><![CDATA[Over the past few years, I’ve found that the BEM CSS methodology falls closest in line with my preference for CSS authoring (although I do have a lot of respect for Enduring CSS). The block (parent), element (child/grandchild) and modifier work for nearly every scenario. However, there was always one thing with BEM that drove me nuts – the way it recommends writing modifiers.]]></summary></entry><entry><title type="html">Single page WordPress themes with Timber, Twig and Backbone</title><link href="/wordpress-timber-twig-backbone/" rel="alternate" type="text/html" title="Single page WordPress themes with Timber, Twig and Backbone" /><published>2015-12-27T18:14:31-06:00</published><updated>2015-12-27T18:14:31-06:00</updated><id>/wordpress-timber-twig-backbone</id><content type="html" xml:base="/wordpress-timber-twig-backbone/"><![CDATA[<p>I wrote an <a href="http://trevan.co/front-end-wordpress-theme/">article</a> nearly a year ago about building a front-end WordPress theme using Backbone. Since then, I’ve done a lot more research and experimenting and have come up with a pretty solid way of developing “single-page-esque” WordPress themes with Backbone (or React/Flux, Angular, Ember or any other front-end framework).</p>
+
+<p>My big hurdle earlier in the year was the concept of server-side vs. client-side rendering. I couldn’t think of a good way to serve content from the server and the client without having duplicate templates for PHP and JavaScript, which is very cumbersome and repetitive. To reiterate why I think this topic is important, I think it comes down to two things: speed and SEO. On an initial page load, it’s much faster to have all content served directly from the server. And, even though Google supposedly crawls JavaScript now, I still feel safer giving search engines content directly from the server.</p>
+
+<h2 id="enter-timber">Enter Timber</h2>
+
+<p>Luckily, I found a great solution to my rendering problems! It’s called <a href="http://upstatement.com/timber/">Timber</a>, a plugin that nicely pairs the <a href="http://twig.sensiolabs.org/">Twig templating engine</a> with WordPress. Timber alone is a cool way to structure a normal theme with Twig templates. But the key to my use of Timber is the pairing of it with the Twig JavaScript library, <a href="https://github.com/justjohn/twig.js/">Twig.js</a>. Which means, shared templates!</p>
+
+<p>You can use one single Twig template for both the server-side and the client-side rendering. This doesn’t eliminate the different server-side/client-side logic you still have to have to populate the templates with data, but it makes things a lot easier.</p>
+
+<h3 id="php-usage">PHP usage</h3>
+
+<p>Without going terribly in-depth in this article (I have an example for that), the basic jist is that instead of writing WordPress loops in your PHP templates, you utilize Timber for that. A single.php template that was previously littered with logic and templating turns into a very simple file that looks something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php get_header(); ?&gt;
+
+&lt;?php
+$data = Timber::get_context();
+$data['post'] = new TimberPost();
+Timber::render('templates/article.twig', $data);
+?&gt;
+
+&lt;?php get_footer(); ?&gt;
+
+</code></pre></div></div>
+
+<p>Timber does a lot of the heavy lifting of acquiring data for you, which is a huge plus.</p>
+
+<h3 id="javascript-usage">JavaScript usage</h3>
+
+<p>In the same way that you pass data into the .twig template using PHP, you do the same with your JavaScript framework. You don’t actually rely on the Timber plugin at all on the client side of things – just the Twig templates. The big difference is where the data is coming from. I’ve experimented with both using the <a href="http://v2.wp-api.org/">WP REST API</a> and creating my own endpoints with admin-ajx.php. The benefit to using the REST API is that it’s already set up for you. The downfall is that the data structure it outputs doesn’t always align with the way the loop outputs data, making for lots of if/else checks inside the template. I’ve always prescribed to the definition of templates being solely for displaying data and not for logic, so I ultimately decided it best to create my own endpoints using admin ajax. This allows you to customize the output before serving it up, making it match the structure of the loop more closely.</p>
+
+<p>I might do some more research on the REST API in the future and see if I can’t just use it in PHP, which would allow you to use the same data structure both on the server and the client side.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>So far I’ve developed two sites that use the method described in this article: <a href="http://trevan.co">my blog</a> (you’re on it!) and our <a href="https://life.getflywheel.com/">culture blog</a> at Flywheel. Both use Backbone (just plain Backbone, although the next site I build like this will probably utilize Marionette), Timber, twig.js, Gulp and Browserify.</p>
+
+<p>My blog is <a href="https://github.com/trevanhetzel/trevan.co">open sourced on GitHub</a>, so the entire theme is open for you to take a look at it. If you wish to install it locally to play around with, the only requisite (besides Node to run Gulp) is the <a href="https://wordpress.org/plugins/timber-library/">Timber plugin</a>.</p>
+
+<p>With the completion of these two projects and the fact that they’re live and pulling in decent amounts of traffic, I’m pretty excited to develop this idea of WordPress client-side/server-side shared templating even further. Look forward for more detailed technical posts on the matter and maybe even an online course!</p>]]></content><author><name>admin</name></author><category term="Backbone" /><category term="JavaScript" /><category term="WordPress" /><summary type="html"><![CDATA[I wrote an article nearly a year ago about building a front-end WordPress theme using Backbone. Since then, I’ve done a lot more research and experimenting and have come up with a pretty solid way of developing “single-page-esque” WordPress themes with Backbone (or React/Flux, Angular, Ember or any other front-end framework).]]></summary></entry><entry><title type="html">New WordPress plugin: Smooth Directory</title><link href="/new-wordpress-plugin-smooth-directory/" rel="alternate" type="text/html" title="New WordPress plugin: Smooth Directory" /><published>2015-12-09T20:19:58-06:00</published><updated>2015-12-09T20:19:58-06:00</updated><id>/new-wordpress-plugin-smooth-directory</id><content type="html" xml:base="/new-wordpress-plugin-smooth-directory/"><![CDATA[<p>Check out my second ever WordPress plugin, Smooth Directory, now live on <a href="https://wordpress.org/plugins/smooth-directory/">WordPress.org</a>! I’ve kind of been developing this business directory plugin alongside the Smooth Calendar plugin I launched yesterday, working on the same client project. Smooth Directory solved my needs for a simple business directory, so hopefully it can solve yours as well.</p>
+
+<p>Full details are available on the WordPress plugin page or on GitHub, but the quick rundown is that it’s a very simple responsive plugin that outputs a directory of businesses. Each business has optional fields that can be populated, including an image (perfect for company logos). Like Smooth Calendar, this plugin is built using a custom post type, which makes editing and adding businesses a breeze for clients.</p>
+
+<p><a href="https://wordpress.org/plugins/smooth-directory/">Check it out</a>! And contribute as you see fit on <a href="https://github.com/trevanhetzel/smooth-directory">GitHub</a> 🙂</p>]]></content><author><name>admin</name></author><category term="WordPress" /><summary type="html"><![CDATA[Check out my second ever WordPress plugin, Smooth Directory, now live on WordPress.org! I’ve kind of been developing this business directory plugin alongside the Smooth Calendar plugin I launched yesterday, working on the same client project. Smooth Directory solved my needs for a simple business directory, so hopefully it can solve yours as well.]]></summary></entry><entry><title type="html">New WordPress plugin: Smooth Calendar</title><link href="/new-wordpress-plugin-smooth-calendar/" rel="alternate" type="text/html" title="New WordPress plugin: Smooth Calendar" /><published>2015-12-08T19:54:04-06:00</published><updated>2015-12-08T19:54:04-06:00</updated><id>/new-wordpress-plugin-smooth-calendar</id><content type="html" xml:base="/new-wordpress-plugin-smooth-calendar/"><![CDATA[<p>I’m excited to announce that my first ever WordPress plugin is now live on <a href="http://wordpress.org/plugins/smooth-calendar/">WordPress.org</a>! It’s called Smooth Calendar and it’s the smoothest calendar plugin you’ll ever use (see what I did there?).</p>
+
+<p>I built the calendar a while back for a client and just got around to polishing it up to make it public. It’s built using the <a href="http://v2.wp-api.org/">WP REST API</a>, it’s responsive and it…well it just works. As a theme developer myself, I made sure that Smooth Calendar is as extendable as possible and specifically kept the styling to a minimum. That makes it a pretty good choice for developers to use on client sites to keep it in line with their theme.</p>
+
+<p>You can see all the features, along with screenshots, either on the <a href="http://wordpress.org/plugins/smooth-calendar/">WordPress plugin page</a> or on <a href="https://github.com/trevanhetzel/smooth-calendar">GitHub</a> (pull requests and issues are welcome there). I have an article in the works about releasing your first WordPress plugin, so follow me on <a href="https://twitter.com/trevanhetzel">Twitter</a> if you’re interested in hearing about the nitty gritty details.</p>]]></content><author><name>admin</name></author><category term="WordPress" /><summary type="html"><![CDATA[I’m excited to announce that my first ever WordPress plugin is now live on WordPress.org! It’s called Smooth Calendar and it’s the smoothest calendar plugin you’ll ever use (see what I did there?).]]></summary></entry><entry><title type="html">Browser trends from a Shark Tank traffic spike</title><link href="/browser-trends-from-a-shark-tank-traffic-spike/" rel="alternate" type="text/html" title="Browser trends from a Shark Tank traffic spike" /><published>2015-11-18T09:28:15-06:00</published><updated>2015-11-18T09:28:15-06:00</updated><id>/browser-trends-from-a-shark-tank-traffic-spike</id><content type="html" xml:base="/browser-trends-from-a-shark-tank-traffic-spike/"><![CDATA[<p>For the past year I’ve been working with <a href="http://rentlikeachampion.com">Rent Like a Champion</a>, who recently sealed a sweet deal with Mark Cuban and Chris Sacca on <a href="http://abc.go.com/shows/shark-tank/episode-guide/season-07/06-week-6-rent-like-a-champion-hotshot-windcatcher-stem-center-usa">ABC’s Shark Tank</a>. I started contracting with them a little over a year ago by completely redesigning their website and coding up the front-end responsively. We had no idea at this time last year that an airing on the show was in our near future. But fortunately, when word came that Mike Doyle, the CEO, and Drew Mitchell, one of the founders, would be pitching the Sharks earlier this year, we had already spent a good 6 months on the responsive redesign. That was critical because, as you’ll see in this article, the viewing trends from users on the night of the show proved just how important it was to have a device agnostic web application.</p>
+
+<p>In preparation for the airing, we didn’t really know how much traffic we would see the night of the show, but we had a general idea and a goal to aim for. Our CTO and two back-end engineers spent a good month or so prior to the airing setting up a very scalable infrastructure that relied on multiple load balancers and application and database servers. In the end we might have been over-prepared, as we didn’t see one hiccup from the traffic that hit the Server Central infrastructure. One of the biggest things we did was ensured that the server could cache the heck out of the home page and static pages. Aside from that, there wasn’t anything too spectacular done on the front-end in preparation for the show; I basically just made sure there would be no hangups, as I spent quite a bit of time on the front-end performance from the beginning when I started coding it.</p>
+
+<p>The most intriguing part of the whole thing to me was the browser and device statistics. I watched the traffic in Google Analytics in real-time as the show was being aired and saw some pretty interesting trends. Here they are!</p>
+
+<h2 id="80-of-traffic-came-from-phones-and-tablets">80% of traffic came from phones and tablets</h2>
+
+<p>It makes sense that people watching a TV show would be browsing on a mobile device. It makes even more sense now after watching the analytics in real-time and seeing the stats firsthand. The biggest standout for me from that night was the fact that nearly 80% of our traffic came from phones and tablets. You always hear that “mobile is on the raise” but seeing it in action really drives that point home.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mobile</th>
+      <th>60.79%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tablet</td>
+      <td>18.33%</td>
+    </tr>
+    <tr>
+      <td>Desktop</td>
+      <td>20.88%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small>Sessions breakdown from the Shark Tank airing night</small></p>
+
+<p>Almost all of that mobile traffic was from unique visitors who entered the home page. 76.3% of them clicked through to another page, with the most popular being the Notre Dame listing page.</p>
+
+<h2 id="people-like-iphones">People like iPhones</h2>
+
+<p>Out of all the mobile/handheld device traffic, the overwhelmingly most popular device was the iPhone (54.7%), followed by the iPad (19.87%). The other fourth consisted mainly of Samsung S models and Motorola Droid Turbos and Ultras.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Apple iPhone</th>
+      <th>54.70%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple iPad</td>
+      <td>19.87%</td>
+    </tr>
+    <tr>
+      <td>Samsung Galaxy S5</td>
+      <td>3.53%</td>
+    </tr>
+    <tr>
+      <td>Samsung Galaxy S4</td>
+      <td>1.23%</td>
+    </tr>
+    <tr>
+      <td>Samsung Galaxy S6</td>
+      <td>0.96%</td>
+    </tr>
+    <tr>
+      <td>Motorola Droid Turbo</td>
+      <td>0.67%</td>
+    </tr>
+    <tr>
+      <td>Motorola Droid Ultra</td>
+      <td>0.65%</td>
+    </tr>
+    <tr>
+      <td>Plethora of other devices</td>
+      <td>18.39%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small>Most popular mobile devices used to browse the site</small></p>
+
+<h2 id="they-also-like-chrome">They also like Chrome</h2>
+
+<p>Not surprisingly, Chrome was the most popular desktop browser. I was really happy to see that nearly all of the desktop traffic came from pretty modern browsers that can support a lot of the CSS3 properties I used throughout the site. The oldest browser was Internet Explorer 7, with only 2 visits.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrome</th>
+      <th>52.88%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Safari</td>
+      <td>18.34%</td>
+    </tr>
+    <tr>
+      <td>Internet Explorer 11</td>
+      <td>14.13%</td>
+    </tr>
+    <tr>
+      <td>Firefox</td>
+      <td>12.32%</td>
+    </tr>
+    <tr>
+      <td>Internet Explorer 10</td>
+      <td>1.43%</td>
+    </tr>
+    <tr>
+      <td>IE 9, 8, 7 and Opera</td>
+      <td>0.9%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small>Most popular desktop browsers used to browse the site</small></p>
+
+<h2 id="and-they-came-in-droves">And they came in droves</h2>
+
+<p>Out of all the statistics, the sheer volume of traffic within a 20 minute period was the most incredible thing to watch. We saw over a 1,000% increase in visitors compared to the day before the show aired. But like all good things, it came to an end (quickly). Traffic has gone more or less back to normal now (about 2.5 weeks after the airing), with just a bit of an increase in average daily sessions. Desktop visits are now back up to about 45% of the total traffic with Chrome still being the most popular, as homeowners and renters take back over as the majority of our traffic.</p>
+
+<p>In closing, I’ll leave you with this line graph from Google Analytics…</p>
+
+<p><img src="http://trevan.co/wp-content/uploads/2015/11/shark-tank-wave-1024x180.png" alt="Shark Tank wave" /></p>]]></content><author><name>admin</name></author><category term="Performance" /><category term="Responsive" /><summary type="html"><![CDATA[For the past year I’ve been working with Rent Like a Champion, who recently sealed a sweet deal with Mark Cuban and Chris Sacca on ABC’s Shark Tank. I started contracting with them a little over a year ago by completely redesigning their website and coding up the front-end responsively. We had no idea at this time last year that an airing on the show was in our near future. But fortunately, when word came that Mike Doyle, the CEO, and Drew Mitchell, one of the founders, would be pitching the Sharks earlier this year, we had already spent a good 6 months on the responsive redesign. That was critical because, as you’ll see in this article, the viewing trends from users on the night of the show proved just how important it was to have a device agnostic web application.]]></summary></entry><entry><title type="html">Managing critical CSS in a WP theme</title><link href="/managing-critical-css-in-a-wp-theme/" rel="alternate" type="text/html" title="Managing critical CSS in a WP theme" /><published>2015-05-15T20:23:11-05:00</published><updated>2015-05-15T20:23:11-05:00</updated><id>/managing-critical-css-in-a-wp-theme</id><content type="html" xml:base="/managing-critical-css-in-a-wp-theme/"><![CDATA[<p>If you’ve been keeping up with the latest in front-end performance trends, you’ve no doubt heard of, and hopefully played around with, “critical CSS”. If you haven’t, go check out Scott Jehl’s <a href="http://www.filamentgroup.com/lab/performance-rwd.html">article</a> on perceived performance first. Basically, to help with a site’s perceived performance, you can inline in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> only the styles that are critical for rendering the above-the-fold content that a user first sees upon visiting your site. Then, the full stylesheet is loaded in asyncrhonously. It works wonders! But, in all honesty, it kind of sucks to manage. Which is why I’d like to share a little workflow that I use when developing WordPress themes.</p>
+
+<h2 id="generating-critical-css">Generating critical CSS</h2>
+
+<p>The best way to grab critical styles from a page is by using Grunt (or other task runner) paired with a task like <a href="https://github.com/bezoerb/grunt-critical">grunt-critical</a> or <a href="https://github.com/filamentgroup/grunt-criticalcss">grunt-criticalcss</a>. Whenever you finish a page, just run it through the Grunt task and, voila, your critical styles are ready for use.</p>
+
+<p>I don’t always have the greatest luck using the aforementioned tools, however, so lately I’ve just been using the <a href="http://jonassebastianohlsson.com/criticalpathcssgenerator/">Penthouse web generator</a>.</p>
+
+<h2 id="inlining-critical-css">Inlining critical CSS</h2>
+
+<p>If I wasn’t using WordPress (didn’t have to worry about a “global” header), I’d just throw the critical styles in a <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tag and then load in the full stylesheet asynchronously using Filament Group’s <a href="https://github.com/filamentgroup/loadCSS">loadCSS</a>.</p>
+
+<p>Like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;&lt;!-- Critical styles here --&gt;&lt;/style&gt;
+
+&lt;script&gt;
+    // minified loadCSS function
+    function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&amp;&amp;(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t&lt;s.length;t++)s[t].href&amp;&amp;s[t].href.indexOf(e)&gt;-1&amp;&amp;(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+    loadCSS("path/to/style.css");
+&lt;/script&gt;
+&lt;noscript&gt;&lt;link href="path/to/style.css" rel="stylesheet"&gt;&lt;/noscript&gt;
+
+</code></pre></div></div>
+
+<p>Doing this in a WordPress theme is a little more tricky though, because each template is going to have a different set of critical styles. So what I’ve been doing is assigning a variable in each template file to that page’s critical CSS after I generate it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php global $critical;
+$critical = 'your critical styles here'';
+/* Template Name: Whatever */
+get_header(); ?&gt;
+
+</code></pre></div></div>
+
+<p><em>Note: It’s important to set that as a global variable so it can be accessed in the <code class="language-plaintext highlighter-rouge">header.php</code> file.</em></p>
+
+<p>Then in <code class="language-plaintext highlighter-rouge">header.php</code>, I first check that a <code class="language-plaintext highlighter-rouge">$critical</code> variable is available. If it is, that’s where I inline those critical styles and use the loadCSS function. If <code class="language-plaintext highlighter-rouge">$critical</code> is not available, I just load the stylesheet normally using a <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> tag. It’s helpful to have that as a fallback in case you forget to grab the critical styles for a give template or just don’t want to.</p>
+
+<p>The final code in <code class="language-plaintext highlighter-rouge">header.php</code> looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php global $critical;
+    if ($critical): ?&gt;
+        &lt;style&gt;&lt;?php echo $critical ?&gt;&lt;/style&gt;
+
+        &lt;script&gt;
+            // minified loadCSS function
+            function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&amp;&amp;(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t&lt;s.length;t++)s[t].href&amp;&amp;s[t].href.indexOf(e)&gt;-1&amp;&amp;(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+            loadCSS("path/to/style.css");
+        &lt;/script&gt;
+        &lt;noscript&gt;&lt;link href="path/to/style.css" rel="stylesheet"&gt;&lt;/noscript&gt;
+    &lt;?php else: ?&gt;
+        &lt;link href="path/to/style.css" rel="stylesheet"&gt;
+    &lt;?php endif; ?&gt;
+
+</code></pre></div></div>
+
+<h2 id="caching-and-cookies">Caching and cookies</h2>
+
+<p>Depending on how users typically get to your site, the most common thing that happens is that a user comes to your home page, sees content quickly because of the inlined critical CSS, then navigates in to another page. Well, since the full stylesheet will have already been loaded by the time they go to another page in your site, that stylesheet is most likely going to be cached by their browser. Thus, using critical styles on those internal pages actually add <strong>more</strong> weight to the page (albeit not much) because inline styles can’t be cached. This scenario, again, is just the most common one. It’s still good to inline critical styles on internal pages because users will not always go through your home page to get to them and still deserve a snappy experience.</p>
+
+<p>To make sure you’re never inlining critical styles that don’t need to be inlined, you can take advantage of cookies. If a certain cookie is set, don’t inline critical styles. If it’s not set, inline critical styles and set that cookie.</p>
+
+<p>Here’s the <em>final</em> final code I’ve been using:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php if(isset($_COOKIE['critical_css'])): ?&gt;
+    &lt;link href="path/to/style.css" rel="stylesheet"&gt;
+&lt;?php global $critical;
+elseif ($critical): ?&gt;
+    &lt;style&gt;&lt;?php echo $critical ?&gt;&lt;/style&gt;
+
+    &lt;script&gt;
+        // minified loadCSS function
+        function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&amp;&amp;(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t&lt;s.length;t++)s[t].href&amp;&amp;s[t].href.indexOf(e)&gt;-1&amp;&amp;(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+            loadCSS("path/to/style.css");
+    &lt;/script&gt;
+    &lt;noscript&gt;&lt;link href="path/to/style.css" rel="stylesheet"&gt;&lt;/noscript&gt;
+
+    // Set cookie here
+&lt;?php else: ?&gt;
+    &lt;link href="path/to/style.css" rel="stylesheet"&gt;
+&lt;?php endif; ?&gt;
+
+</code></pre></div></div>]]></content><author><name>admin</name></author><category term="Performance" /><category term="WordPress" /><summary type="html"><![CDATA[If you’ve been keeping up with the latest in front-end performance trends, you’ve no doubt heard of, and hopefully played around with, “critical CSS”. If you haven’t, go check out Scott Jehl’s article on perceived performance first. Basically, to help with a site’s perceived performance, you can inline in the &lt;head&gt; only the styles that are critical for rendering the above-the-fold content that a user first sees upon visiting your site. Then, the full stylesheet is loaded in asyncrhonously. It works wonders! But, in all honesty, it kind of sucks to manage. Which is why I’d like to share a little workflow that I use when developing WordPress themes.]]></summary></entry><entry><title type="html">Giving your first technical talk</title><link href="/giving-your-first-technical-talk/" rel="alternate" type="text/html" title="Giving your first technical talk" /><published>2015-04-26T20:22:48-05:00</published><updated>2015-04-26T20:22:48-05:00</updated><id>/giving-your-first-technical-talk</id><content type="html" xml:base="/giving-your-first-technical-talk/"><![CDATA[<p>I did something yesterday that’s always haunted me. I stood in front of an audience and gave a presentation. I was almost crippled by nerves the entire two days leading up to it. It wasn’t fun. I’ve given talks in the past, but only via the internet. Standing in front of a crowd was a whole new level for me. There wasn’t a happy ending for me after doing it either. I screwed up my delivery and stuttered and forgot things and stood like a statue staring into my laptop screen.</p>
+
+<p>At least that’s <em>my</em> perception of how it went down.</p>
+
+<p>While it was extremely uncomfortable and scary, I’m going to talk again. And again. Until I’m good at it. I wanted to write this while the feelings are still strong, to encourage others that even though it probably will suck, you will get through it and want to do it again.</p>
+
+<h2 id="lessons-learned">Lessons learned</h2>
+
+<p>The biggest lesson I learned was simply that life goes on after the talk. I woke up yesterday wanting to throw up, putting everything else aside in fear that I would somehow have a literal heart attack and die right there on stage or something. I woke up this morning feeling invigorated to do it again.</p>
+
+<h3 id="practice-your-slides-the-same-way-that-youll-be-looking-at-them-when-giving-the-talk">Practice your slides the same way that you’ll be looking at them when giving the talk</h3>
+
+<p>I had practiced the week before by looking at Keynote in the editor mode. When I presented, I used the presenter mode. That turned out to be a bad mistake, as I kept getting confused as to what slide or bullet point I was on, which lead to anxiety while giving the talk.</p>
+
+<h3 id="write-out-the-opening-few-slides">Write out the opening few slides</h3>
+
+<p>At the last minute I decided to write out, word for word, the first few slides (my introduction). I don’t think that’s usually advised, but it turned out to really help get the nerves calmed down and adjust to hearing your voice in front of an audience.</p>
+
+<h3 id="use-a-remote">Use a remote</h3>
+
+<p>I stood behind a pedestal with my face down, not showing any emotion or excitement about what I was talking about. Next time, I’ll use a wireless mic and walk around, which will in turn not make me rely on the exact words I wrote down and make for a more sincere presentation.</p>
+
+<h3 id="shake-off-the-mistakes">Shake off the mistakes</h3>
+
+<p>When you make a mistake or forget to say something, only you know. Your audience doesn’t know how your talk is supposed to go. And when you get physically shaken up (stutter or go blank), don’t think that the rest of your presentation is ruined. Just get back in the flow, shake it off and forget about it.</p>
+
+<h3 id="dont-take-it-so-seriously">Don’t take it so seriously</h3>
+
+<p>In reality, giving a talk is not (usually) a make or break thing. You’ll do worse if you put too much pressure on yourself.</p>
+
+<h3 id="relax">Relax</h3>
+
+<p><a href="http://webdevstudios.com/team/lisa-sabin-wilson/">Lisa Sabin-Wilson</a> from WebDev Studios told me something before my talk that I’ll never forget:</p>
+
+<p>(paraphrasing)</p>
+
+<blockquote>
+  <p>“People want you to do well. They’re there to learn and take inspiration from you, not to pick out the flaws in your presentation.”</p>
+</blockquote>
+
+<h2 id="you-did-fine">You did fine</h2>
+
+<p>For the record, even when you feel like you did the worst you could do, you most likely did okay.</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/trevanhetzel">@trevanhetzel</a> excellent job on the presentation yesterday. I learned a lot.</p>
+
+  <p>— mlaulun (@mlaulun) <a href="https://twitter.com/mlaulun/status/592689945929744387">April 27, 2015</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://twitter.com/trevanhetzel">@trevanhetzel</a> Your <a href="https://twitter.com/WordCampMpls">@WordCampMpls</a> was amazing. Couldn’t tell it was your first. Keep on Keeping on! <a href="https://twitter.com/hashtag/FlyThatWheel?src=hash">#FlyThatWheel</a></p>
+
+  <p>— Russell Aaron (@KrashKartMedia) <a href="https://twitter.com/KrashKartMedia/status/592773623963877376">April 27, 2015</a></p>
+</blockquote>
+
+<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>]]></content><author><name>admin</name></author><category term="Business &amp;amp; Tech" /><summary type="html"><![CDATA[I did something yesterday that’s always haunted me. I stood in front of an audience and gave a presentation. I was almost crippled by nerves the entire two days leading up to it. It wasn’t fun. I’ve given talks in the past, but only via the internet. Standing in front of a crowd was a whole new level for me. There wasn’t a happy ending for me after doing it either. I screwed up my delivery and stuttered and forgot things and stood like a statue staring into my laptop screen.]]></summary></entry></feed>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Connecting two models in Ruby on Rails 3</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Connecting two models in Ruby on Rails 3" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/connecting-two-models-in-ruby-on-rails-3/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Connecting two models in Ruby on Rails 3" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/connecting-two-models-in-ruby-on-rails-3/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Connecting two models in Ruby on Rails 3" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Connecting two models in Ruby on Rails 3</h1>
+
+  <p class="date">
+    Posted on November 14, 2012 in
+    
+      <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>*Over the past month or so I have been teaching myself to program. I chose to learn Ruby as my first non-HTML or Javascript language, using Ruby on Rails for the framework. As part of my learning process, I wrote myself a tutorial covering a roadblock I encountered: connecting two models together. I had generated a scaffold for Tutorials and a scaffold for Categories and I wanted to intertwine the two so I could assign tutorials to categories. A few tutorials got me started, but I spent hours upon hours trying to get it to work. Finally, after talking with the super intelligent and awesome guys at <a href="http://bigwheelbrigade.com" title="Talented Ruby on Rails developers">Big Wheel Brigade</a> and <a href="http://noahc.net">Noah Clark</a> getting me started on this Rails path, I came to understand (sort of) how to approach this problem.</p>
+
+<p>So here is the guide I now use when I want to connect two models (be it tutorials to categories, clients to projects, etc.). I am not a Rails expert at all; in fact I barely know anything about programming, but I’m learning as I go and making things actually work, so I encourage anyone smarter than me to critique this all they want. Just don’t make fun of my misunderstanding of Rails 🙂 Hopefully this helps some other beginners out there like me.</p>
+
+<p>Another note: this tutorial assumes you have already created the Category and Tutorial models, views and controllers. I did so by <a href="http://viget.com/extend/rails-3-generators-scaffolding" title="Generating Scaffolds">generating scaffolds.</a>*</p>
+
+<p>Let’s say we have a Category model and a Tutorial model and we want to be able to assign tutorials to categories. Sounds easy enough, right? Let’s get to work.</p>
+
+<h2 id="1-create-the-relationships">1. Create the relationships</h2>
+
+<p>Inside the category model, we’re going to put a HABTM relationship:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>has_and_belongs_to_many :tutorials
+
+</code></pre></div></div>
+
+<p>Then inside the tutorial model, we’re going to do the exact same thing, replacing tutorials with categories:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>has_and_belongs_to_many :categories
+
+</code></pre></div></div>
+
+<h2 id="2-create-a-table-to-link-the-two-models-together">2. Create a table to link the two models together</h2>
+
+<p>Run the following in the command line to create a new table:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails generate migration
+add_categories_tutorials_table
+
+</code></pre></div></div>
+
+<p>This creates an empty migration.</p>
+
+<h2 id="3-create-the-table-in-the-migration-file">3. Create the table in the migration file</h2>
+
+<p>Open up the migration file that was just created (found in the db –&gt; migrate folder). The generate command we ran created two empty methods, so we need to add some code to them to get this thing to work. In the ‘up’ method (starts out as ‘def up’), put the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>create_table :categories_tutorials do |t|
+    t.integer :category_id
+    t.integer :tutorial_id
+end
+
+</code></pre></div></div>
+
+<p>This will create the table with two fields: category_id and tutorial_id.</p>
+
+<p>Next we have to “drop” that table. So in the ‘down’ method, put this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>drop_table :categories_tutorials
+
+</code></pre></div></div>
+
+<h2 id="4-migrate-the-database">4. Migrate the database</h2>
+
+<p>Migrate the database now by running this in the command line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rake db:migrate
+
+</code></pre></div></div>
+
+<p>If you get an error at this point when viewing your interface, you’ll probably have to drop the database altogether and migrate again. You can do that by running this in the command line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rake db:drop
+rake db:migrate
+
+</code></pre></div></div>
+
+<h2 id="5-modify-the-form">5. Modify the form</h2>
+
+<p>Now we need to be able to select with category a tutorial belongs to. So inside the tutorial’s form loop, we want to loop through the categories and add some checkboxes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% Category.all.each do |category| %&gt;
+    &lt;div class="checkboxform"&gt;
+        &lt;%= check_box_tag "tutorial[category_ids][]", category.id %&gt;
+        &lt;label&gt;&lt;%= category.name %&gt;&lt;/label&gt;
+    &lt;/div&gt;
+&lt;% end %&gt;
+
+</code></pre></div></div>
+
+<p>After this, we need to go back into the tutorial model and add this attribute:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:category_ids
+
+</code></pre></div></div>
+
+<p>And in the category model add this attribute:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:tutorial_id
+
+</code></pre></div></div>
+
+<h2 id="6-mess-with-the-controllers">6. Mess with the controllers</h2>
+
+<p>Here comes the part where my brain is still a bit confused as to what the code actually means, but it works and that’s all I know!</p>
+
+<p>So open up tutorials_controller.rb and inside the ‘index’ and ‘show’ methods up top, add this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@cats = Category.select("DISTINCT name, id")
+
+</code></pre></div></div>
+
+<p>Make sure you add it inside both methods.</p>
+
+<p>Now do the same thing in categories_controller.rb. Inside the ‘index’ and ‘show’ methods:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@cats = Category.select("DISTINCT name, id")
+
+</code></pre></div></div>
+
+<h2 id="7-insert-into-your-views">7. Insert into your views</h2>
+
+<p>At this point, you should be able to see a list of categories in your form. Hooray! If not, try restarting your server, migrating the database, or drop/migrate the database.</p>
+
+<p>Once you can add tutorials with categories checked with no errors, it’s time to display them in your views. Let’s say we want to show which categories a tutorial belongs to. You would do something like this inside your ‘show.html.erb’ tutorial file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% @tutorial.categories.each do |category|%&gt;
+    Posted in: &lt;strong&gt;&lt;%= link_to category.name, category_path %&gt;&lt;/strong&gt;
+&lt;% end %&gt;
+
+</code></pre></div></div>
+
+<h2 id="8-write-a-tutorial-assign-it-to-a-category-and-have-a-beer-to-celebrate">8. Write a tutorial, assign it to a category and have a beer to celebrate</h2>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>

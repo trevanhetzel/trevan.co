@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trevan Hetzel &mdash; Building a Front-end WordPress theme</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+
+  <meta property="og:title" content="Building a Front-end WordPress theme" />
+  <meta property="og:site_name" content="Trevan Hetzel" />
+  <meta
+    property="og:description"
+    content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life."
+  />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="/front-end-wordpress-theme/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Building a Front-end WordPress theme" />
+  <meta name="twitter:description" content="Trevan Hetzel’s personal blog on software development, web design, wellness, business, and life." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Trevan Hetzel" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="/front-end-wordpress-theme/" />
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/seo/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="Building a Front-end WordPress theme" />
+</head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+  <a href="">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="176.156" height="51.185" viewBox="0 0 176.156 51.185" class="logo">
+        <g id="Group_17" data-name="Group 17" transform="translate(-504.5 -204)">
+          <g id="Group_6" data-name="Group 6" transform="translate(504.5 204)">
+            <path id="Path_9" data-name="Path 9" d="M673.392,211.855A45.405,45.405,0,0,0,666.408,205l-1.331-1h-145l-1.331,1a45.4,45.4,0,0,0-6.984,6.853c-4.752,5.782-7.264,11.915-7.264,17.737s2.512,11.955,7.264,17.737a45.4,45.4,0,0,0,6.984,6.853l1.331,1h145l1.331-1a45.407,45.407,0,0,0,6.984-6.853c4.752-5.782,7.264-11.915,7.264-17.737S678.144,217.637,673.392,211.855Zm-8.783,39.938-.532.4h-143l-.532-.4c-.533-.4-13.056-9.965-13.056-22.2s12.523-21.8,13.056-22.2l.532-.4h143l.532.4c.533.4,13.056,9.965,13.056,22.2S665.142,251.391,664.609,251.793Z" transform="translate(-504.5 -204)" />
+            <path id="Path_10" data-name="Path 10" d="M583.986,231.736h-1v4.387h1a2.2,2.2,0,0,0,2.433-2.353C586.419,232.135,585.343,231.736,583.986,231.736Z" transform="translate(-530.815 -213.299)" />
+            <path id="Path_11" data-name="Path 11" d="M674.723,231.437l-1.795,10.25h3.59Z" transform="translate(-560.967 -213.198)" />
+            <path id="Path_12" data-name="Path 12" d="M665.925,211.5H524.26S512,220.726,512,232.107s12.26,20.607,12.26,20.607H665.925s12.26-9.226,12.26-20.607S665.925,211.5,665.925,211.5Zm-25.293,19.913v14.278h-7.458V218.172h7.618l4.108,6.979v-6.979h7.458v27.519H644.9v-7.418Zm-9.691,7.538v6.7H624.4l-.718-4.148h-5.863l-.718,4.148h-6.54v-6.7l4.586-20.778h11.207Zm-20.461-20.778v6.78l-5.345,20.7H594.686l-4.467-20.7v-6.78h6.82l3.271,19.383,3.39-19.383ZM587.986,228.9v6.621h-6.94v3.35h7.618v6.78H573.229V218.172h15.435v6.78h-7.618V228.9Zm-17.509,9.97-.04,6.78h-5.823l-4.347-9.811H559.19v9.851h-7.578V218.172h9.971c5.5,0,8.694,2.432,8.694,7.617,0,3.271-1.236,5.424-3.271,6.7Zm-37.172-20.7h16.432v6.78h-4.307v20.7h-7.817v-20.7H533.3Z" transform="translate(-507.014 -206.514)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="/blog" aria-label="Blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="Topics">
+        <a href="/topics">
+          Topics
+        </a>
+      </li>
+
+      <li class="nav__item" aria-label="About Trevan">
+        <a href="/about">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="header-icons">
+    <li class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.95" height="20.95" viewBox="0 0 20.95 20.95"><path d="M20.8,19l-4.9-4.9a8.909,8.909,0,0,0,1.8-5.3A8.85,8.85,0,0,0,0,8.8a8.878,8.878,0,0,0,8.8,8.8A8.747,8.747,0,0,0,14,15.9l4.9,4.9a.483.483,0,0,0,.7,0l1.2-1.2C21,19.5,21,19.2,20.8,19ZM2.6,8.8A6.2,6.2,0,1,1,8.8,15,6.167,6.167,0,0,1,2.6,8.8Z"/></svg>
+    </li>
+  </ul> -->
+</div>
+
+      <div class="post">  
+  
+
+  <h1>Building a Front-end WordPress theme</h1>
+
+  <p class="date">
+    Posted on February 5, 2015 in
+    
+      <a href="/topics/backbone" aria-label="Backbone">Backbone</a>
+    
+      <a href="/topics/javascript" aria-label="JavaScript">JavaScript</a>
+    
+      <a href="/topics/wordpress" aria-label="WordPress">WordPress</a>
+    
+  </p>
+
+  
+
+  <div class="content">
+    <p>A couple weeks ago I <a href="http://trevan.co/front-end-routing-with-wordpress/">wrote an article</a> detailing my observations on front-end routing with WordPress. In order to test and play around with front-end routing, I created a very basic WordPress theme built with Backbone.js using the new <a href="http://wp-api.org">WP REST API</a>. In this article, I’ll walk through the creation of that theme and how to switch your mindset from building themes with PHP to building themes with JavaScript!</p>
+
+<p><a href="http://ferouting.flywheelsites.com">View demo</a></p>
+
+<p><a href="https://github.com/trevanhetzel/backbone-wp">View on GitHub</a></p>
+
+<h2 id="the-backbone-of-our-backbone-app">The backbone of our Backbone app</h2>
+
+<p>Building a WordPress theme that relies more on the front-end than the back-end wouldn’t be possible without the WP REST API (technically it <em>would</em> be possible if you wanted to parse XML). The REST API is a plugin available for use now, lead by some awesome contributors who want to see a modern API in the most popular framework on the web. I actually talked with one of the project leads, Rachel Baker, on the Word-Break Show last week, so if you’re interested in learning more about the API I’d recommend <a href="http://word-break.com/podcast/episode-09-rachel-baker/">giving it a listen</a>.</p>
+
+<h3 id="installing-the-rest-api-plugin">Installing the REST API plugin</h3>
+
+<p>The REST API plugin (called JSON REST API in the plugin directory) is so trivial to set up. Either <a href="https://wordpress.org/plugins/json-rest-api/">download it</a> from the directory or install via your WP dashboard, activate it and you’re set. Seriously, it’s that simple. No configuration!</p>
+
+<p>With the plugin installed, you can now hit its API endpoint (which lives at <code class="language-plaintext highlighter-rouge">/wp-json</code>) and retrieve data in JSON format. A full list of the data you can retrieve can be found on the project’s <a href="http://wp-api.org/#posts_retrieve-posts">documentation site</a>. A simple example AJAX call to retrieve all pages would look like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$.ajax({
+    url: '/wp-json/posts?type=page',
+}).done(function (posts) {
+    console.log(posts);
+});
+
+</code></pre></div></div>
+
+<p>The above would log an array of objects to the console. If, say we wanted to get all the page titles, you could loop through that response and pick out the <code class="language-plaintext highlighter-rouge">title</code> values.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$.ajax({
+    url: '/wp-json/posts?type=page',
+}).done(function (posts) {
+    $.each(posts, function (index, post) {
+        console.log(post.title)
+    });
+});
+
+</code></pre></div></div>
+
+<p>Hopefully you can see now how easily accessible your WordPress data can be with the use of the REST API. Now let’s get everything set up and start building out a site!</p>
+
+<h2 id="theme-structure">Theme structure</h2>
+
+<p>Like any WordPress theme, we’ll need at least a stylesheet and an <code class="language-plaintext highlighter-rouge">index.php</code> file to be recognized as a theme. What I find so intriguing about building “front-end” themes is that there’s very little PHP needed. Only one PHP file is really needed just to serve up your initial markup and assets. I took it a little further and split things into a <code class="language-plaintext highlighter-rouge">header.php</code> and <code class="language-plaintext highlighter-rouge">footer.php</code> and also added a <code class="language-plaintext highlighter-rouge">functions.php</code> for a few things like image cropping.</p>
+
+<p>The full structure of my theme looks like so:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">js/</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">vendor/</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">backbone.min.js</code></li>
+          <li><code class="language-plaintext highlighter-rouge">jquery.min.js</code></li>
+          <li><code class="language-plaintext highlighter-rouge">underscore.min.js</code></li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">app.js</code></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">templates/</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">404.php</code></li>
+      <li><code class="language-plaintext highlighter-rouge">page.php</code></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">footer.php</code></li>
+  <li><code class="language-plaintext highlighter-rouge">functions.php</code></li>
+  <li><code class="language-plaintext highlighter-rouge">header.php</code></li>
+  <li><code class="language-plaintext highlighter-rouge">index.php</code></li>
+  <li><code class="language-plaintext highlighter-rouge">style.css</code></li>
+</ul>
+
+<h3 id="php-templates">PHP templates</h3>
+
+<p>Starting with what the server will serve up to browsers, <code class="language-plaintext highlighter-rouge">index.php</code> looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php get_header(); ?&gt;
+
+    &lt;main id="content" class="wrapper"&gt;&lt;/main&gt;
+
+    &lt;?php get_template_part('templates/page'); ?&gt;
+    &lt;?php get_template_part('templates/404'); ?&gt;
+
+&lt;?php get_footer(); ?&gt;
+
+</code></pre></div></div>
+
+<p>Super simple. It first gets the header template, then declares an empty element that the JavaScript templates will be rendered in, then pulls in the actual page templates, and finally gets the footer template.</p>
+
+<p>The big thing to note here is the two <code class="language-plaintext highlighter-rouge">get_template_part</code> calls to <code class="language-plaintext highlighter-rouge">templates/page</code> and <code class="language-plaintext highlighter-rouge">templates/404</code>. I’m using those for organizational purposes so that the <code class="language-plaintext highlighter-rouge">index.php</code> file itself is nice and slim, but the contents of those templates are ultimately outputted to the browser. Here’s what <code class="language-plaintext highlighter-rouge">templates/page.php</code> looks like.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script id="page" type="text/template"&gt;
+    &lt;h2&gt;&lt;%= data.title %&gt;&lt;/h2&gt;
+
+    &lt;% if (data.featured_image) { %&gt;
+        &lt;img src="&lt;%= data.featured_image.guid %&gt;" class="right"&gt;
+    &lt;% } %&gt;
+
+    &lt;%= data.content %&gt;
+&lt;/script&gt;
+
+</code></pre></div></div>
+
+<p>Notice first that everything is wrapped inside a <code class="language-plaintext highlighter-rouge">script</code> tag. A common way to use Backbone is to put templates inside of <code class="language-plaintext highlighter-rouge">script</code> tags with the <code class="language-plaintext highlighter-rouge">type</code> attribute set to <code class="language-plaintext highlighter-rouge">text/template</code>. Browsers can’t understand that script type so they will just ignore it. Thus, the markup of our theme is actually loaded one time, on initial page load. However, that doesn’t account for the loading of markup generated or switched out by Backbone whenever a view is switched. That is done on the client side using, in this case, Underscore’s templating engine.</p>
+
+<p>Once everything is set up on the JavaScript side, things like <code class="language-plaintext highlighter-rouge">&lt;%= data.content %&gt;</code> will display whatever is in the content field for a particular post or page.</p>
+
+<h3 id="javascript">JavaScript</h3>
+
+<p>I’m using three libraries for this theme: <a href="http://backbonejs.org/">Backbone</a>, <a href="http://underscorejs.org/">Underscore</a> and <a href="http://jquery.com/">jQuery</a>. Underscore is a hard dependency of Backbone and jQuery pretty much is as well (for the router and DOM manipulation with <code class="language-plaintext highlighter-rouge">Backbone.View</code>). Aside from those libraries, the only other JavaScript file we have is <code class="language-plaintext highlighter-rouge">app.js</code> (name it whatever you’d like).</p>
+
+<p>From here on out, the article is going to focus mainly on the contents of the <code class="language-plaintext highlighter-rouge">app.js</code> file, as that’s where all the fun stuff happens.</p>
+
+<h2 id="routing-and-views">Routing and views</h2>
+
+<p>The biggest part of the theme’s JavaScript is the router. It’s used to tell the browser what template to show for a given URL. This isn’t an exhausting article on how the Backbone router works, so it’s good to have a little understanding of it.</p>
+
+<p>To start, we need to create new object extended from <code class="language-plaintext highlighter-rouge">Backbone.Router</code>. It will contain <code class="language-plaintext highlighter-rouge">initialize</code> and <code class="language-plaintext highlighter-rouge">routes</code> methods.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var ApplicationRouter = Backbone.Router.extend({
+    initialize: function (el) { },
+
+    routes: {
+        '': function () {},
+        '*else': function () {}
+    }
+});
+
+// Kick off router
+var router = new ApplicationRouter($('#content'));
+
+// Use history API
+Backbone.history.start();
+
+</code></pre></div></div>
+
+<p>After I created the constructor function <code class="language-plaintext highlighter-rouge">ApplicationRouter</code>, you’ll notice I created a new instance of it (assigned the variable <code class="language-plaintext highlighter-rouge">router</code>) and passed in the element that will contain the application content (<code class="language-plaintext highlighter-rouge">$('#content')</code>), which is then passed in to the <code class="language-plaintext highlighter-rouge">initialize</code> method as <code class="language-plaintext highlighter-rouge">el</code>.</p>
+
+<p>After that, I’m utilizing the history API to manage URL locations (so users can go navigate back and forth between views). I am not, however, passing in <code class="language-plaintext highlighter-rouge">pushState: true</code>, which I’ve seen used quite a bit in articles. <code class="language-plaintext highlighter-rouge">pushState</code> has its place, for this example where we’ll be using a hasbang URL structure, it is not needed.</p>
+
+<p>Now that we have an actual router, it’s time to fill it in. In the code above, I just used <code class="language-plaintext highlighter-rouge">''</code> and <code class="language-plaintext highlighter-rouge">*else</code> in the routes object. <code class="language-plaintext highlighter-rouge">''</code> tells the router what to do when the default route is served. <code class="language-plaintext highlighter-rouge">*else</code> is used for any other route that isn’t set in the <code class="language-plaintext highlighter-rouge">routes</code> object (we’ll use it for our 404 page). We’ll add more for the actual individual pages in a bit, but first let’s actually serve something to the two routes we’ve already defined.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var ApplicationRouter = Backbone.Router.extend({
+    initialize: function (el) {
+        this.el = el;
+
+        // Single page template
+        this.pageView = new view({template: '#page'});
+
+        // 404 template
+        this.notFoundView = new view({template: '#notfound'});
+    },
+
+    routes: {
+        '': function () {
+            this.switchView(this.pageView);
+        },
+        '*else': function () {
+            this.switchView(this.notFoundView);
+        }
+    },
+
+    // Switch out views
+    switchView: function (view) {
+        this.el.html(view.el);
+        view.render();
+    },
+});
+
+// Render views
+var view = Backbone.View.extend({
+    initialize: function (options) {
+        this.template = options.template;
+    },
+
+    render: function (data) {
+        var content = _.template($(this.template).html()),
+        $(this.el).html(content);
+    }
+});
+
+// Kick off router
+var router = new ApplicationRouter($('#content'));
+
+// Use history API
+Backbone.history.start();
+
+</code></pre></div></div>
+
+<p>There’s quite a bit going on here, so bear with me. First, in the <code class="language-plaintext highlighter-rouge">initialize</code> method, I added <code class="language-plaintext highlighter-rouge">this.pageView</code> and <code class="language-plaintext highlighter-rouge">this.notFoundView</code>. They create instances of the new <code class="language-plaintext highlighter-rouge">view</code> object, which is extended from <code class="language-plaintext highlighter-rouge">Backbone.View</code> (a little further down). Note that I’m also passing in a value for <code class="language-plaintext highlighter-rouge">template</code>. The value of this needs to be the ID of the script tag in the markup that contains the corresponding template.</p>
+
+<p>Next, inside the <code class="language-plaintext highlighter-rouge">''</code> and <code class="language-plaintext highlighter-rouge">*else</code> methods of the <code class="language-plaintext highlighter-rouge">routes</code> object, it’s now calling <code class="language-plaintext highlighter-rouge">this.switchView()</code>, passing in <code class="language-plaintext highlighter-rouge">this.pageView</code> and <code class="language-plaintext highlighter-rouge">this.notFoundView</code>, which I just explained. The <code class="language-plaintext highlighter-rouge">switchView</code> method is actually what switches out the templates and calls <code class="language-plaintext highlighter-rouge">render</code> on the view object. That <code class="language-plaintext highlighter-rouge">render</code> method grabs the contents of the script tag in the markup and parses it using Underscore’s templating engine. You’ll see why this is important in a minute, when we actually pass data through.</p>
+
+<p>With all of this in place, if you were to run this in the browser you should have a nice little site with front-end routing. It should display the content inside the <code class="language-plaintext highlighter-rouge">#page</code> script whenever you’re on the index (<code class="language-plaintext highlighter-rouge">/</code>) route and the content inside the <code class="language-plaintext highlighter-rouge">#notfound</code> script on any other route.</p>
+
+<h2 id="retrieving-data">Retrieving data</h2>
+
+<p>Setting up the router and views is required building any Backbone application, so let’s now dive in to making this WordPress specific by pulling and displaying data from the REST API.</p>
+
+<p>For this article, I’m operating under the impression that we know what five pages we want routes for and they’re hard-coded in the nav. I’m also assuming that they all five use the same template (<code class="language-plaintext highlighter-rouge">#page</code>). With that in mind, I’ve modified the <code class="language-plaintext highlighter-rouge">routes</code> object with five more routes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>routes: {
+    '':
+        function () {
+            this.getPageContent(11, this.pageView);
+        },
+
+    '!beanie-baby':
+        function () {
+            this.getPageContent(11, this.pageView);
+        },
+
+    '!98-degrees':
+        function () {
+            this.getPageContent(13, this.pageView);
+        },
+
+    '!warheads':
+        function () {
+            this.getPageContent(5, this.pageView);
+        },
+
+    '!friends':
+        function () {
+            this.getPageContent(7, this.pageView);
+        },
+
+    '!aol':
+        function () {
+            this.getPageContent(9, this.pageView);
+        },
+
+    '*else':
+        function () {
+            this.switchView(this.notFoundView);
+        }
+},
+
+</code></pre></div></div>
+
+<p>You’ll notice something though: I’ve replaced the call to <code class="language-plaintext highlighter-rouge">this.switchView</code> with <code class="language-plaintext highlighter-rouge">this.getPageContent</code>. <code class="language-plaintext highlighter-rouge">getPageContent()</code> is a new function I set up to actually fetch the content from the API. It takes two parameters: <code class="language-plaintext highlighter-rouge">pageID</code> and <code class="language-plaintext highlighter-rouge">view</code>. It’s kind of just an extra step between switching views, because in its success callback we still call <code class="language-plaintext highlighter-rouge">this.switchView</code> to actually do the switching (only this time we have data with us now).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Fetch the actual content from WP API
+getPageContent: function (pageID, view) {
+    var self = this;
+
+    page.fetch({
+        data: $.param({ type: 'page', 'filter[page_id]': pageID }),
+        processData: true,
+        success: function (result) {
+            var page = result.toJSON();
+
+            self.switchView(view, page[0]);
+        }
+    })
+}
+
+</code></pre></div></div>
+
+<p>So, what is <code class="language-plaintext highlighter-rouge">page.fetch</code>? Well, <code class="language-plaintext highlighter-rouge">page</code> is actually a Backbone collection. It also has to be set up, outside of the <code class="language-plaintext highlighter-rouge">ApplicationRouter</code> object.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Pages collection
+var pageCollection = Backbone.Collection.extend({
+    url: '/wp-json/posts'
+});
+
+var page = new pageCollection();
+
+</code></pre></div></div>
+
+<p><strong>Now</strong> we’re talking! We now have a Backbone collection, view and router all working together.</p>
+
+<p>Back to the <code class="language-plaintext highlighter-rouge">getPageContent</code> function, basically what it does is calls <code class="language-plaintext highlighter-rouge">.fetch</code> on the collection, passing in a filter <code class="language-plaintext highlighter-rouge">$.param({ type: 'page', 'filter[page_id]': pageID })</code>. The different options and ways you can fetch data can again be found on the WP API <a href="http://wp-api.org/#posts_retrieve-a-post">documentation site</a>. In this case, I’m just querying for a specific page, <code class="language-plaintext highlighter-rouge">pageID</code>, that is defined back up in the <code class="language-plaintext highlighter-rouge">routes</code> object when we call <code class="language-plaintext highlighter-rouge">this.getPageContent</code>.</p>
+
+<p>So once it fetches and processes the data, I run <code class="language-plaintext highlighter-rouge">.toJSON()</code> on the data sent back and then pass it in to <code class="language-plaintext highlighter-rouge">switchView()</code>, which then calls the <code class="language-plaintext highlighter-rouge">render</code> method on the Backbone view, which then parses the data using Underscore.</p>
+
+<p><em>Phew!</em></p>
+
+<h2 id="displaying-data">Displaying data</h2>
+
+<p>The final piece of this theme is to actually display the data in the script templates. Let’s have a look at the contents of <code class="language-plaintext highlighter-rouge">templates/page.php</code> again:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script id="page" type="text/template"&gt;
+    &lt;h2&gt;&lt;%= data.title %&gt;&lt;/h2&gt;
+
+    &lt;% if (data.featured_image) { %&gt;
+        &lt;img src="&lt;%= data.featured_image.guid %&gt;" class="right"&gt;
+    &lt;% } %&gt;
+
+    &lt;%= data.content %&gt;
+&lt;/script&gt;
+
+</code></pre></div></div>
+
+<p>Basically, <code class="language-plaintext highlighter-rouge">data</code> is in reference to the object that got returned when we fetched it in <code class="language-plaintext highlighter-rouge">getPageContent</code> and then switched the view, passing it along. In the view’s <code class="language-plaintext highlighter-rouge">render</code> method, there’s a variable called <code class="language-plaintext highlighter-rouge">vars</code> that is set to <code class="language-plaintext highlighter-rouge">{data: data}</code> (the second <code class="language-plaintext highlighter-rouge">data</code> being the JSON object passed in here). That tells Underscore to parse anything that uses <code class="language-plaintext highlighter-rouge">data</code> in the template. So in our case, we’re calling <code class="language-plaintext highlighter-rouge">&lt;%= data.title %&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;%= data.featured_image %&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;%= data.content %&gt;</code>, all of which correspond to the WordPress data for a given page. Awesome!</p>
+
+<p>Now the theme is pretty much done. It’s basic, but it’s a “front-end” theme nonetheless. Here is the full code (only addition is that of a current page “tracker”):</p>
+
+<h3 id="full-code">Full code</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var ApplicationRouter = Backbone.Router.extend({
+    initialize: function (el) {
+        this.el = el;
+
+        // Single page template
+        this.pageView = new view({template: '#page'});
+
+        // 404 template
+        this.notFoundView = new view({template: '#notfound'});
+    },
+
+    // Define front-end routes
+    routes: {
+        '':
+            function () {
+                this.setActiveEntry('#!beanie-baby');
+                this.getPageContent(11, this.pageView);
+            },
+
+        '!beanie-baby':
+            function () {
+                this.setActiveEntry('#!beanie-baby');
+                this.getPageContent(11, this.pageView);
+            },
+
+        '!98-degrees':
+            function () {
+                this.setActiveEntry('#!98-degrees');
+                this.getPageContent(13, this.pageView);
+            },
+
+        '!warheads':
+            function () {
+                this.setActiveEntry('#!warheads');
+                this.getPageContent(5, this.pageView);
+            },
+
+        '!friends':
+            function () {
+                this.setActiveEntry('#!friends');
+                this.getPageContent(7, this.pageView);
+            },
+
+        '!aol':
+            function () {
+                this.setActiveEntry('#!aol');
+                this.getPageContent(9, this.pageView);
+            },
+
+        '*else':
+            function () {
+                this.switchView(this.notFoundView);
+            }
+    },
+
+    currentView: null,
+
+    // Switch out views
+    switchView: function (view, data) {
+        if (this.currentView) {
+            this.currentView.remove();
+        }
+
+        this.el.html(view.el);
+        view.render(data);
+        this.currentView = view;
+    },
+
+    // Handle active navigation
+    setActiveEntry: function (url) {
+        $('nav li').css({'font-weight': 'normal'});
+        $("nav li a[href='" + url + "']").parents('li').css({'font-weight': 'bold'});
+    },
+
+    // Fetch the actual content from WP API
+    getPageContent: function (pageID, view) {
+        var self = this;
+
+        page.fetch({
+            data: $.param({ type: 'page', 'filter[page_id]': pageID }),
+            processData: true,
+            success: function (result) {
+                var page = result.toJSON();
+
+                self.switchView(view, page[0]);
+            }
+        })
+    }
+});
+
+// Render views
+var view = Backbone.View.extend({
+    initialize: function (options) {
+        this.template = options.template;
+    },
+
+    render: function (data) {
+        var content = _.template($(this.template).html()),
+            vars = {data: data},
+            html = content(vars);
+
+        $(this.el).html(html);
+    }
+});
+
+// Pages collection
+var pageCollection = Backbone.Collection.extend({
+    url: '/wp-json/posts'
+});
+
+var page = new pageCollection();
+
+// Kick off router
+var router = new ApplicationRouter($('#content'));
+
+// Use history API
+Backbone.history.start();
+
+</code></pre></div></div>
+
+<h2 id="what-about-seo">What about SEO?</h2>
+
+<p>Like I mentioned in the introduction, this whole project is pretty much so I can play around with front-end routing. I have this on a <a href="http://ferouting.flywheelsites.com">Flywheel site </a> and will start to mess around with how Google crawls this and what needs to be done to make it fully crawlable and indexed by search engines. Just know that right now, this whole example theme will most likely not be SEO friendly. Stay tuned for my front-end routing SEO ventures!</p>
+
+  </div>
+</div>
+
+      <footer class="footer">
+  <p>
+    &copy; 2024 Trevan Hetzel&nbsp;&nbsp;|&nbsp;&nbsp;Built with <strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">WordPress</a></strike>&nbsp;<strike><a href="https://github.com/trevanhetzel/personal-site-next" target="_blank">Next.js</a></strike> <a href="">Jekyll</a> (iteration 😙🤌)
+  </p>
+</footer>
+    </div>
+  </body>
+</html>
