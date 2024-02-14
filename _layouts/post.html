@@ -12,7 +12,7 @@ layout: default
   <p class="date">
     Posted on {{ page.date | date: "%B %-d, %Y" }} in
     {% for category in page.categories %}
-      <a href="{{ site.url }}/topics/{{ category | slugify | replace:'-amp','' }}" aria-label="{{ category }}">{{ category }}</a>
+      <a href="/topics/{{ category | slugify | replace:'-amp','' }}" aria-label="{{ category }}">{{ category }}</a>
     {% endfor %}
   </p>
 

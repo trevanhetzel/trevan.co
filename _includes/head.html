@@ -1,7 +1,7 @@
 {% assign title = page.title | default: site.title | strip_html | smartify %}
 {% assign description = page.description | default: site.description | markdownify | strip_html | strip_newlines %}
 {% assign image = page.image | default: site.image | absolute_url %}
-{% assign url = page.url | absolute_url %}
+{% assign url = page.url | prepend: 'https://trevan.co' %}
 
 <head>
   <meta charset="utf-8">
@@ -34,12 +34,14 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="canonical" href="{{ url }}" />
-  <link rel="icon" href="{{ site.url }}/assets/images/seo/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/seo/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/images/seo/favicon-16x16.png">
-  <link rel="apple-touch-icon" type="image/png" href="{{ site.url }}/assets/images/seo/apple-touch-icon.png">
+  <link rel="icon" href="/assets/images/seo/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/seo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/seo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/seo/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#f04923">
+  <meta name="theme-color" content="#ffffff">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link type="application/atom+xml" rel="alternate" href="https://trevan.co/feed.xml" title="{{ title }}" />
 </head>
