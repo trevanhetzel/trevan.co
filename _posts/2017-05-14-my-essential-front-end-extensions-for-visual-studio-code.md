@@ -1,11 +1,8 @@
 ---
-id: 173
 title: 'My essential front-end extensions for Visual Studio Code'
 date: '2017-05-14T06:00:23+00:00'
-author: admin
 layout: post
-guid: 'https://trevan.co/?p=173'
-permalink: /my-essential-front-end-extensions-for-visual-studio-code/
+featured_image: '/assets/images/vscode.jpg'
 categories:
     - CSS
     - JavaScript

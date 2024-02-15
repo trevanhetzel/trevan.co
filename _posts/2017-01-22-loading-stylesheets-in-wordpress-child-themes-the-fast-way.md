@@ -1,11 +1,8 @@
 ---
-id: 151
 title: 'Loading stylesheets in WordPress child themes the fast way'
 date: '2017-01-22T01:27:37+00:00'
-author: admin
 layout: post
-guid: 'http://trevan.co/?p=151'
-permalink: /loading-stylesheets-in-wordpress-child-themes-the-fast-way/
+featured_image: '/assets/images/wordpress-shirt.jpg'
 categories:
     - CSS
     - Performance

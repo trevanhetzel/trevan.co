@@ -1,6 +1,6 @@
 {% assign title = page.title | default: site.title | strip_html | smartify %}
 {% assign description = page.description | default: site.description | markdownify | strip_html | strip_newlines %}
-{% assign image = page.image | default: site.image | absolute_url %}
+{% assign image = page.featured_image | default: site.image | prepend: 'https://trevan.co' %}
 {% assign url = page.url | prepend: 'https://trevan.co' %}
 
 <head>

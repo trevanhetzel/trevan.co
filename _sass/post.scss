@@ -2,7 +2,7 @@
 	width: 1300px;
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 40px 30px 80px;
+	padding: 40px 20px 80px;
 
 	& > h1 {
 		max-width: 1000px;
@@ -15,11 +15,21 @@
 		}
 	}
 
+	.centered + .featured-image {
+		margin-top: 40px;
+	}
+
 	.featured-image {
-		max-width: 100%;
+		width: calc(100% + 60px);
 		height: auto;
-		border-radius: 12px;
-		margin: 0 auto 40px;
+		margin: 0 -30px 40px;
+
+		@media (min-width: 820px) {
+			max-width: 100%;
+			width: auto;
+			margin: 0 auto 40px;
+			border-radius: 12px;
+		}
 	}
 	
 	.date {
