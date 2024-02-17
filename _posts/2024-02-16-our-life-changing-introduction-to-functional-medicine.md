@@ -1,6 +1,6 @@
 ---
 title: "Our life changing introduction to Functional Medicine"
-date: '2024-02-11'
+date: '2024-02-16'
 layout: post
 featured_image: '/assets/images/forest-path.jpg'
 categories: Wellness
