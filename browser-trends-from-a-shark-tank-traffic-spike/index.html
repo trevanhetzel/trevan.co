@@ -101,7 +101,7 @@
   <h1>Browser trends from a Shark Tank traffic spike</h1>
 
   <p class="date">
-    Posted on November 18, 2015 in
+    <span id="time"></span> minute read. Posted on November 18, 2015 in
     
       <a href="/topics/performance" aria-label="Performance">Performance</a>
     
@@ -111,7 +111,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>For the past year I’ve been working with <a href="http://rentlikeachampion.com">Rent Like a Champion</a>, who recently sealed a sweet deal with Mark Cuban and Chris Sacca on <a href="http://abc.go.com/shows/shark-tank/episode-guide/season-07/06-week-6-rent-like-a-champion-hotshot-windcatcher-stem-center-usa">ABC’s Shark Tank</a>. I started contracting with them a little over a year ago by completely redesigning their website and coding up the front-end responsively. We had no idea at this time last year that an airing on the show was in our near future. But fortunately, when word came that Mike Doyle, the CEO, and Drew Mitchell, one of the founders, would be pitching the Sharks earlier this year, we had already spent a good 6 months on the responsive redesign. That was critical because, as you’ll see in this article, the viewing trends from users on the night of the show proved just how important it was to have a device agnostic web application.</p>
 
 <p>In preparation for the airing, we didn’t really know how much traffic we would see the night of the show, but we had a general idea and a goal to aim for. Our CTO and two back-end engineers spent a good month or so prior to the airing setting up a very scalable infrastructure that relied on multiple load balancers and application and database servers. In the end we might have been over-prepared, as we didn’t see one hiccup from the traffic that hit the Server Central infrastructure. One of the biggest things we did was ensured that the server could cache the heck out of the home page and static pages. Aside from that, there wasn’t anything too spectacular done on the front-end in preparation for the show; I basically just made sure there would be no hangups, as I spent quite a bit of time on the front-end performance from the beginning when I started coding it.</p>
@@ -236,7 +236,21 @@
 <p><img src="http://trevan.co/wp-content/uploads/2015/11/shark-tank-wave-1024x180.png" alt="Shark Tank wave" /></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

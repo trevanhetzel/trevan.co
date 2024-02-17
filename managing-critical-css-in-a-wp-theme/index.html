@@ -101,7 +101,7 @@
   <h1>Managing critical CSS in a WP theme</h1>
 
   <p class="date">
-    Posted on May 15, 2015 in
+    <span id="time"></span> minute read. Posted on May 15, 2015 in
     
       <a href="/topics/performance" aria-label="Performance">Performance</a>
     
@@ -111,7 +111,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>If you’ve been keeping up with the latest in front-end performance trends, you’ve no doubt heard of, and hopefully played around with, “critical CSS”. If you haven’t, go check out Scott Jehl’s <a href="http://www.filamentgroup.com/lab/performance-rwd.html">article</a> on perceived performance first. Basically, to help with a site’s perceived performance, you can inline in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> only the styles that are critical for rendering the above-the-fold content that a user first sees upon visiting your site. Then, the full stylesheet is loaded in asyncrhonously. It works wonders! But, in all honesty, it kind of sucks to manage. Which is why I’d like to share a little workflow that I use when developing WordPress themes.</p>
 
 <h2 id="generating-critical-css">Generating critical CSS</h2>
@@ -197,7 +197,21 @@ elseif ($critical): ?&gt;
 </code></pre></div></div>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

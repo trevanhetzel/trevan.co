@@ -101,7 +101,7 @@
   <h1>Celebrity Cruises Responsive Redesign</h1>
 
   <p class="date">
-    Posted on June 18, 2014 in
+    <span id="time"></span> minute read. Posted on June 18, 2014 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,13 +109,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>For one of the first times since I started at <a href="http://appendto.com">appendTo</a> a year ago, I can actually talk about a client project I was heavily involved in! In fact, I wrote a case study on some of the development practices we used to create the new <a href="http://celebrity.com">Celebrity.com</a>.</p>
 
 <p><a href="http://appendto.com/2014/06/celebrity-cruises-responsive-website-redesign/">Check out the case study on the appendTo blog</a>.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

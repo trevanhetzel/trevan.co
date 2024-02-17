@@ -101,7 +101,7 @@
   <h1>Testing WordPress websites through a virtual machine</h1>
 
   <p class="date">
-    Posted on June 23, 2013 in
+    <span id="time"></span> minute read. Posted on June 23, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’m a fan of <a href="http://browserstack.com" title="Browserstack">Browserstack</a> for browser testing, but sometimes it’s just nice to not have to wait around for the Browserstack servers to load. And even more nice is the ability to debug in an actual browser without going through Browserstack’s lagging servers.</p>
 
 <p>Enter <a href="http://virtualbox.org" title="VirtualBox">VirtualBox</a> and <a href="http://modern.ie" title="modern.IE">modern.IE</a>. Internet Explorer is pushing to appeal more to developers and prove that their much hated on browser can actually stand up in a match between Chrome, Safari, Firefox, etc. so they’ve created modern.IE that offers FREE virtual machines to run IE6 – 10 locally on your Mac (or PC).</p>
@@ -149,7 +149,21 @@
 <p><em>*Note: This method doesn’t just work for WordPress sites. You can test local static files just the same, as long as you have a MAMP server going.</em></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

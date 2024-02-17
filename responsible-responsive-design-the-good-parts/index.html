@@ -101,7 +101,7 @@
   <h1>Responsible Responsive Design: The Good Parts</h1>
 
   <p class="date">
-    Posted on January 4, 2015 in
+    <span id="time"></span> minute read. Posted on January 4, 2015 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -111,7 +111,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>If you’re a front-end developer and haven’t read <a href="http://scottjehl.com/">Scott Jehl</a>‘s <a href="http://www.abookapart.com/products/responsible-responsive-design">Responsible Responsive Design</a>, you need to do it now. The latest from the <a href="http://www.abookapart.com/">A Book Apart</a> library, Responsible Responsive Design covers some of the most relevant topics facing developers in 2015. So, after underlining a bunch of lines in my book, I decided to compile some of them into a list.</p>
 
 <p>Here are what I found to be the “good parts” (really just my takeaways) of the book.</p>
@@ -195,7 +195,21 @@
 </ul>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

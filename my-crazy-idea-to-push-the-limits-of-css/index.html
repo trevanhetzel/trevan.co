@@ -101,7 +101,7 @@
   <h1>My crazy idea to push the limits of CSS</h1>
 
   <p class="date">
-    Posted on December 9, 2013 in
+    <span id="time"></span> minute read. Posted on December 9, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>CSS is for styling websites. JavaScript is for, amongst other things, interacting with DOM elements. We’ve long relied on JavaScript to come in when the extent of what can be done with CSS stops (think click events, DOM traversing, etc.). So wouldn’t it be super cool if we could push the limitations of CSS just a little bit further, so we don’t have to rely on JS for toggling classes, selecting DOM elements, and other things on the “presentational” layer? Kind of like closing the chasm between style and function.</p>
 
 <p>##I have an idea…</p>
@@ -174,7 +174,21 @@
 <p>At any rate, I’m going to start looking into the technical details of doing something like this, probably by way of a Compass plugin. I’m not really sure if the way I am proposing can be done, but we’ll find out! Watch for another post if I make any headway, and please discuss in the comments!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

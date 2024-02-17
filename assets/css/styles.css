@@ -389,6 +389,14 @@ p {
   .post > h1 {
     max-width: 1000px;
     margin: 0 auto; }
+  .post h2 {
+    font-size: 30px; }
+    @media (min-width: 600px) {
+      .post h2 {
+        font-size: 38px; } }
+    @media (min-width: 820px) {
+      .post h2 {
+        font-size: 48px; } }
   .post .centered h1, .post .centered .date {
     text-align: center; }
   .post .centered + .featured-image {
@@ -522,6 +530,9 @@ p {
       float: left;
       margin-right: 24px; } }
 
+#disqus_thread {
+  margin-top: 60px; }
+
 .page {
   width: 1000px;
   max-width: 100%;
@@ -577,7 +588,7 @@ p {
     width: 100%; }
     @media (min-width: 700px) {
       .gallery.one-col {
-        width: 50%; } }
+        width: 66%; } }
   .gallery.two-col {
     grid-template-columns: repeat(2, 1fr); }
   .gallery.three-col {
@@ -620,4 +631,12 @@ p {
   width: 100%; }
   .gallery-item img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    display: block; }
+
+.gallery-description {
+  margin: 0;
+  background: #ececec;
+  color: #636e72;
+  padding: 6px 10px;
+  font-size: 15px; }

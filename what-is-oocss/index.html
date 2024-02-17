@@ -101,7 +101,7 @@
   <h1>What is OOCSS?</h1>
 
   <p class="date">
-    Posted on April 1, 2014 in
+    <span id="time"></span> minute read. Posted on April 1, 2014 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -111,13 +111,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Before I get started, I just want to make it clear that this review of OOCSS is simply my take on the methodology and my method of comprehending it. There seems to be a lot of different views on the topic, and I’m sure I don’t have the perfect answer, but hopefully this article will help others struggling to comprehend OOCSS in one way or another.</p>
 
 <p><a href="http://appendto.com/2014/04/oocss/">Read the full post on the appendTo blog</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

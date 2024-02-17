@@ -101,7 +101,7 @@
   <h1>My Alternative Bachelor&#8217;s Degree</h1>
 
   <p class="date">
-    Posted on June 15, 2012 in
+    <span id="time"></span> minute read. Posted on June 15, 2012 in
     
       <a href="/topics/the-big-picture" aria-label="The Big Picture">The Big Picture</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>In 2014 the people I spent the majority of my life with will be receiving a piece of paper that says they earned a degree from a place of higher education. I received my high school diploma from a very small school with a graduating class of about 40. I’d say 15-20 of those will get the coveted “Bachelor’s degree” in a couple of years and start their conventional lives at conventional entry-level jobs. Same goes for the vast majority of high school graduates around the country. They go to college because it’s the next logical step after high school. But is it really? Does attaining that Bachelor’s degree really give you a one-up on the rest of the world? In some instances, yes it does.</p>
 
 <p>I wouldn’t receive medical treatment or get my contracts written from someone who didn’t go through medical schooling or pass the Bar exam. But for the rest of us, college is a place where we get the concept of conformity and obedience engrained in our minds. Good test takers with obedient attitudes thrive in college. We’re taught “formal education”. We learn how to please future bosses and be good employees. We’re taught how to get by in our field of choice by being mediocre. But we don’t learn the stuff that matters. We don’t learn how to live out our passions, follow our dreams and change the world. We’re simply another cog in the machine that keeps the system moving along.</p>
@@ -152,7 +152,21 @@
 <p>Much of this blog post is inspired by an incredible guy whose books I’ve been reading lately: <a href="http://chrisguillebeau.com/">Chris Guillebeau</a>. This guy walks the walk. I highly recommend his book <strong><em><a href="http://www.amazon.com/The-Art-Non-Conformity-Rules-Change/dp/0399536108">The Art of Non Conformity</a></em></strong>. In it he lists his own “Grad School Alternative” which can be found <a href="http://www.bethkobliner.com/beths-blog/2010/11/17/the-grad-school-alternative-for-10k-or-less.html">here</a> in a recap of the book by Beth Kobliner. One last great piece of media for those who seek more purpose in their life can be found <a href="http://www.youtube.com/watch?v=e5qUR3tpEdA">here</a> in a TEDx talk by Charlie Hoehn.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

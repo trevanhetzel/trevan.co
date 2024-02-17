@@ -101,7 +101,7 @@
   <h1>Custom range inputs with CSS &#038; JavaScript</h1>
 
   <p class="date">
-    Posted on February 19, 2015 in
+    <span id="time"></span> minute read. Posted on February 19, 2015 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -111,7 +111,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <blockquote>
   <p>Styling range inputs is a joke</p>
 
@@ -269,7 +269,21 @@ $rangeInput.on('input', function () {
 <p>There you have it! Here’s the Pen I made as well (doesn’t contain support for multiple inputs): <a href="http://codepen.io/trevanhetzel/pen/emMPxa">http://codepen.io/trevanhetzel/pen/emMPxa</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

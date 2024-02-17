@@ -101,7 +101,7 @@
   <h1>Bret Victor &#8211; Inventing on Principle</h1>
 
   <p class="date">
-    Posted on May 31, 2012 in
+    <span id="time"></span> minute read. Posted on May 31, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,13 +109,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p><a href="http://worrydream.com" title="Bret Victor">Bret Victor</a> has an amazing mind. He comes up with incredible solutions to problems we never even knew we had. He’s worked with companies like <a href="http://apple.com" title="Apple">Apple</a> and <a href="http://www.alesis.com/en/index.php" title="Alesis">Alesis</a>. This video is of an amazing presentation he gave on “Inventing on Principle”. You don’t have to be a programmer to appreciate the stuff he talks about!</p>
 
 <iframe allowfullscreen="" frameborder="0" height="506" loading="lazy" mozallowfullscreen="" src="http://player.vimeo.com/video/36579366?byline=0" webkitallowfullscreen="" width="900"></iframe>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>A responsive approach to image scaling with CSS</h1>
 
   <p class="date">
-    Posted on March 10, 2014 in
+    <span id="time"></span> minute read. Posted on March 10, 2014 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -111,13 +111,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>There was a popular article written a few weeks ago called “<a href="http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/">Vertical align anything with just 3 lines of CSS</a>“. This approach to vertically aligning things with top and translateY is something we’ve used recently, but in a little different context. We had to fit images into responsive containers that had fluid widths and set heights, and all we knew were the widths of the images.</p>
 
 <p><a href="http://appendto.com/2014/03/responsive-approach-image-scaling-css/">Read the full post on the appendTo blog</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>Purposeful Procrastination: Does it Lead to Better Productivity?</h1>
 
   <p class="date">
-    Posted on August 8, 2012 in
+    <span id="time"></span> minute read. Posted on August 8, 2012 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>As humans, we’re naturally inclined to procrastinate. We put off the doing of work in order to play. We have to push ourselves to do work, even if it’s not noticeable outside our subconscious minds, whereas existing leisurely requires no motivation. We come ready to play. So since work is hard and leisure is easy, we always tend to our nonwork feelings ahead of our work duties and deadlines. Is it easier to sit on the couch or take out the trash? To cruise Facebook or combat a large unread email inbox? Hopefully you get that I’m speaking in the most primitive way in terms of how we’re wired as human beings. After all, a lot of us enjoy to work (myself included) and thrive off the crossing off’s on our to-do lists. But the human brain is naturally wired to enjoy non-strenuous tasks over strenuous tasks. (Don’t quote me on this, I’m not a psychologist…)</p>
 
 <h2 id="productivity-increases-as-deadlines-near">Productivity increases as deadlines near</h2>
@@ -129,7 +129,21 @@
 <p>Maybe this is just me looking for an excuse for my procrastination, but I think there’s something of value to purposely procrastinating…</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>Beautiful Responsive SaaS Sites</h1>
 
   <p class="date">
-    Posted on September 3, 2014 in
+    <span id="time"></span> minute read. Posted on September 3, 2014 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I couldn’t sleep last night, so I decided for some reason to find the most beautiful, modern (usually “flat”) “product” sites I could find. Here are the top 15* I found that serve the purpose of selling a SaaS application and are responsive.</p>
 
 <p>** Judged solely on the wow factor*</p>
@@ -147,7 +147,21 @@
 <p><a href="https://www.acorns.com/"><img src="/content/images/2014/Sep/acorns.jpg" alt="Acorns" /></a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

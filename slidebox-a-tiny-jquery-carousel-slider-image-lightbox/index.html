@@ -101,7 +101,7 @@
   <h1>Slidebox: A tiny jQuery carousel slider &#038; image lightbox</h1>
 
   <p class="date">
-    Posted on November 19, 2013 in
+    <span id="time"></span> minute read. Posted on November 19, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’ve open sourced a little jQuery plugin I wrote recently for use on a couple client projects. It’s an image carousel with lightbox-esque image enlargement. The demo, JavaScript file and instructions are on GitHub: https://github.com/trevanhetzel/slidebox/.</p>
 
 <h2 id="features">Features</h2>
@@ -139,7 +139,21 @@
 <p>So that’s it for now! I’m sure I’ll be adding more features as projects and needs arise. And if you’d like to see anything added or have questions, just comment below.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

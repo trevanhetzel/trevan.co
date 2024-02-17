@@ -101,7 +101,7 @@
   <h1>A Pure CSS Approach to Tabs</h1>
 
   <p class="date">
-    Posted on July 26, 2014 in
+    <span id="time"></span> minute read. Posted on July 26, 2014 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’ve been pretty interested lately in recreating JavaScript-like click events with pure CSS. One good use case for CSS click events is creating tabs. Creating full-featured tabs with current highlighting and having the first shown by default involves some dirty tweaks. Namely, to get it right using only one unordered list, the “first” tab actually needs to come last in the list. I’ll explain why in a bit, but first let’s look at the markup needed to pull this off. There are several ways people mark up pure CSS tabs, but I like the approach below simply becomes it keeps things organized together.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul class="tabs"&gt;
@@ -226,7 +226,21 @@ li:target ~ li:last-child .trigger {
 <p>This is kind of my favorite approach to CSS tabs using <code class="language-plaintext highlighter-rouge">:target</code>, it’d be cool to hear everyone else’s in the comments. Checkboxes? Focus? Maybe you think CSS just sucks for tabs (it clearly has its limitations).</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

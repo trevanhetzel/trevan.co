@@ -101,7 +101,7 @@
   <h1>Make your site blazing fast: Focus on front-end performance</h1>
 
   <p class="date">
-    Posted on March 22, 2015 in
+    <span id="time"></span> minute read. Posted on March 22, 2015 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -113,13 +113,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I wrote a mini series about optimizing WordPress themes for speed and performance over on Flywheel’s blog, The Layout. The first part on focusing on the front-end can be <a href="https://getflywheel.com/layout/wordpress-site-fast-front-end-performance/">found here</a>.</p>
 
 <p>Stay tuned for part two, where I drop some tips on back-end performance.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

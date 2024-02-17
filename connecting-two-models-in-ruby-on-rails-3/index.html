@@ -101,7 +101,7 @@
   <h1>Connecting two models in Ruby on Rails 3</h1>
 
   <p class="date">
-    Posted on November 14, 2012 in
+    <span id="time"></span> minute read. Posted on November 14, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>*Over the past month or so I have been teaching myself to program. I chose to learn Ruby as my first non-HTML or Javascript language, using Ruby on Rails for the framework. As part of my learning process, I wrote myself a tutorial covering a roadblock I encountered: connecting two models together. I had generated a scaffold for Tutorials and a scaffold for Categories and I wanted to intertwine the two so I could assign tutorials to categories. A few tutorials got me started, but I spent hours upon hours trying to get it to work. Finally, after talking with the super intelligent and awesome guys at <a href="http://bigwheelbrigade.com" title="Talented Ruby on Rails developers">Big Wheel Brigade</a> and <a href="http://noahc.net">Noah Clark</a> getting me started on this Rails path, I came to understand (sort of) how to approach this problem.</p>
 
 <p>So here is the guide I now use when I want to connect two models (be it tutorials to categories, clients to projects, etc.). I am not a Rails expert at all; in fact I barely know anything about programming, but I’m learning as I go and making things actually work, so I encourage anyone smarter than me to critique this all they want. Just don’t make fun of my misunderstanding of Rails 🙂 Hopefully this helps some other beginners out there like me.</p>
@@ -235,7 +235,21 @@ rake db:migrate
 <h2 id="8-write-a-tutorial-assign-it-to-a-category-and-have-a-beer-to-celebrate">8. Write a tutorial, assign it to a category and have a beer to celebrate</h2>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

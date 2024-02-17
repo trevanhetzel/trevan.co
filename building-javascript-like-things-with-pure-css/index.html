@@ -101,7 +101,7 @@
   <h1>Building JavaScript-like Things with Pure CSS</h1>
 
   <p class="date">
-    Posted on July 29, 2014 in
+    <span id="time"></span> minute read. Posted on July 29, 2014 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’m giving a talk next week at the <a href="http://modernwebconf.com/trevan-hetzel.html">Modern Web Conference</a> titled “CSS Can do THAT?”. So, in preparation for the content, I was given an opportunity to write an article for <a href="modernweb.com">ModernWeb.com</a> covering some of the things I’m going to be speaking about.</p>
 
 <p>Give it a look-see 😉</p>
@@ -117,7 +117,21 @@
 <p><a href="http://modernweb.com/2014/07/30/5-things-wont-believe-built-css/">5 things you won’t believe are built with CSS</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

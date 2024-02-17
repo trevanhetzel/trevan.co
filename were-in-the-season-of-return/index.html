@@ -101,7 +101,7 @@
   <h1>We&#8217;re in the season of return</h1>
 
   <p class="date">
-    Posted on June 6, 2012 in
+    <span id="time"></span> minute read. Posted on June 6, 2012 in
     
       <a href="/topics/the-big-picture" aria-label="The Big Picture">The Big Picture</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>##My background</p>
 
 <p>I was raised in a Christian home and taught everything I thought there was to know about God, Jesus and Christianity. I attended Church every Sunday with my parents, went to youth groups, Bible camps and so on. But until recently, that knowledge was just sitting in an empty void in my mind. I was practically told “this is what you are to believe and act like”. But recently I’ve wanted more. I’ve had a yearning to search for the truth on my own. So I’ve been doing just that. I’ve been reading, watching, listening and praying for “proof” that God exists and that the only way to not suffer in a burning pit for eternity when you die is to have faith in and love His son Jesus. I’ve been blessed in that I feel God has shown me “proof” through sparking my interest in the end times (and some other ways too). Now I realize finding proof that a physically unseen being exists is impossible because we can’t see Him face to face. However, through his handprints on this earth, miracles he’s performed and prophecies he declared and proven, <strong>I believe</strong>. Without a shadow of a doubt I have a renewed peace that God is indeed alive and ever present in this world and in my life.</p>
@@ -198,7 +198,21 @@
 <p>I’m not aiming for this to be an “oh he’s one of those crazies” type of posts. As many of my blog posts in this “The Big Picture” category will be, I’m just putting my thoughts and beliefs out there. These are the things that I believe and I encourage others to share what they believe. I always like hearing the other side(s) to further back my beliefs, so by all means chime in and leave your comments below!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>Installing WordPress plugins locally through the GUI</h1>
 
   <p class="date">
-    Posted on November 12, 2013 in
+    <span id="time"></span> minute read. Posted on November 12, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I do a lot of local WordPress development (running MAMP Pro on my MacBook Air with Mavericks). One thing that I’ve always just kind of bypassed was downloading and installing plugins directly from the WP admin area, as it requires you to provide FTP credentials. I wasn’t ever sure how to set up FTP locally until recently. It’s actually super easy!</p>
 
 <p>All you have to do is add this line in <code class="language-plaintext highlighter-rouge">wp-config.php</code>:</p>
@@ -123,7 +123,21 @@
 <p>Then you’ll have to go into MAMP and give “others” directory write privileges. That’s it!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>Giving your first technical talk</h1>
 
   <p class="date">
-    Posted on April 26, 2015 in
+    <span id="time"></span> minute read. Posted on April 26, 2015 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I did something yesterday that’s always haunted me. I stood in front of an audience and gave a presentation. I was almost crippled by nerves the entire two days leading up to it. It wasn’t fun. I’ve given talks in the past, but only via the internet. Standing in front of a crowd was a whole new level for me. There wasn’t a happy ending for me after doing it either. I screwed up my delivery and stuttered and forgot things and stood like a statue staring into my laptop screen.</p>
 
 <p>At least that’s <em>my</em> perception of how it went down.</p>
@@ -170,7 +170,21 @@
 
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

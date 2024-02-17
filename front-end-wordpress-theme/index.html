@@ -101,7 +101,7 @@
   <h1>Building a Front-end WordPress theme</h1>
 
   <p class="date">
-    Posted on February 5, 2015 in
+    <span id="time"></span> minute read. Posted on February 5, 2015 in
     
       <a href="/topics/backbone" aria-label="Backbone">Backbone</a>
     
@@ -113,7 +113,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>A couple weeks ago I <a href="http://trevan.co/front-end-routing-with-wordpress/">wrote an article</a> detailing my observations on front-end routing with WordPress. In order to test and play around with front-end routing, I created a very basic WordPress theme built with Backbone.js using the new <a href="http://wp-api.org">WP REST API</a>. In this article, I’ll walk through the creation of that theme and how to switch your mindset from building themes with PHP to building themes with JavaScript!</p>
 
 <p><a href="http://ferouting.flywheelsites.com">View demo</a></p>
@@ -537,7 +537,21 @@ Backbone.history.start();
 <p>Like I mentioned in the introduction, this whole project is pretty much so I can play around with front-end routing. I have this on a <a href="http://ferouting.flywheelsites.com">Flywheel site </a> and will start to mess around with how Google crawls this and what needs to be done to make it fully crawlable and indexed by search engines. Just know that right now, this whole example theme will most likely not be SEO friendly. Stay tuned for my front-end routing SEO ventures!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

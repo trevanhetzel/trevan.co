@@ -103,7 +103,7 @@
   <h1>Loading stylesheets in WordPress child themes the fast way</h1>
 
   <p class="date">
-    Posted on January 21, 2017 in
+    <span id="time"></span> minute read. Posted on January 21, 2017 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -118,7 +118,7 @@
     <img src="/assets/images/wordpress-shirt.jpg" class="featured-image" />
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Loading stylesheets in WordPress child themes is a pretty straightforward process. According to the <a href="https://codex.wordpress.org/Child_Themes">Codex</a>, you just add a <code class="language-plaintext highlighter-rouge">wp_enqueue_scripts</code> action that loads the parent theme’s stylesheet as well as the child theme’s stylesheet. Easy peasy.</p>
 
 <p>However, you know me and extra asset requests 😉 I hate to request multiple CSS or JS files if I can help it. Loading the parent stylesheet with WordPress’ recommended <code class="language-plaintext highlighter-rouge">wp_enqueue_scripts</code> is going to end up making two calls – one for the parent stylesheet and one for the child. We don’t want none of that!</p>
@@ -134,7 +134,21 @@
 <p>I can’t vouch for the reliability of this in all cases (relative paths for fonts or assets might not work in some themes), but it works for at least the Twenty Sixteen theme!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

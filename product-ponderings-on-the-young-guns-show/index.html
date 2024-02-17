@@ -101,7 +101,7 @@
   <h1>Product Ponderings on the Young Guns Show</h1>
 
   <p class="date">
-    Posted on April 9, 2013 in
+    <span id="time"></span> minute read. Posted on April 9, 2013 in
     
       <a href="/topics/the-big-picture" aria-label="The Big Picture">The Big Picture</a>
     
@@ -109,13 +109,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I had a wonderful time recording with Galen Gidman on the Young Guns Show. We talked about racing motocross, building products and selling value to small-town clients.</p>
 
 <p>http://younggunsshow.com/episode/20/</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

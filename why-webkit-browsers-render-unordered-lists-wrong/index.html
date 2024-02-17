@@ -101,7 +101,7 @@
   <h1>Why Webkit browsers render unordered lists wrong</h1>
 
   <p class="date">
-    Posted on May 23, 2012 in
+    <span id="time"></span> minute read. Posted on May 23, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I oftentimes use unordered lists for the main navigation of websites. I’ll style them by floating them, removing the list-style and adding background images. However, I’ve been running into this issue lately where Webkit browsers (like Google Chrome and Rockmelt) don’t render the list properly. They display it stacked vertically, instead of on a single horizontal line like it should be and how most all other browsers display it. And it’s quite random too. If I refresh the page several times, it might render it properly. Or it might not. Regardless, it’s left me mind-boggled and I’ve tried everything I could to it from happening.</p>
 
 <p>It happened to me while I was coding my blog that you’re reading, so I made it a point to find out why. <strong>Here’s why:</strong></p>
@@ -131,7 +131,21 @@ ul#nav a li {list-style:none; display:inline-block; float:right; margin:0}
 <p>The problem I found was that the UL element had the property of <code class="language-plaintext highlighter-rouge">float: right</code> on it to align the entire list to the right. This shouldn’t be an issue, right? Wrong! The float property is what was causing the LI elements to stack up vertically instead of horizontally! Don’t ask me why. All I know is that removing the float property on the UL element caused the LI elements to display horizontally like I wanted them to. In my particular case I was lucky enough that simply changing the LI float property to <code class="language-plaintext highlighter-rouge">float: right</code> aligned the entire list to the right of the surrounding element, which is what I was after in the first place. So I just flipped the order that my LI’s were displayed (or else they would have read backwards), and I was all set. If you’re not so lucky and have to have a float property on your UL element, I would probably recommend just surrounding the UL in a div and float that div accordingly. Hope this helps someone out there who encounters this problem!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

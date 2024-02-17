@@ -101,7 +101,7 @@
   <h1>Single page WordPress themes with Timber, Twig and Backbone</h1>
 
   <p class="date">
-    Posted on December 27, 2015 in
+    <span id="time"></span> minute read. Posted on December 27, 2015 in
     
       <a href="/topics/backbone" aria-label="Backbone">Backbone</a>
     
@@ -113,7 +113,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I wrote an <a href="http://trevan.co/front-end-wordpress-theme/">article</a> nearly a year ago about building a front-end WordPress theme using Backbone. Since then, I’ve done a lot more research and experimenting and have come up with a pretty solid way of developing “single-page-esque” WordPress themes with Backbone (or React/Flux, Angular, Ember or any other front-end framework).</p>
 
 <p>My big hurdle earlier in the year was the concept of server-side vs. client-side rendering. I couldn’t think of a good way to serve content from the server and the client without having duplicate templates for PHP and JavaScript, which is very cumbersome and repetitive. To reiterate why I think this topic is important, I think it comes down to two things: speed and SEO. On an initial page load, it’s much faster to have all content served directly from the server. And, even though Google supposedly crawls JavaScript now, I still feel safer giving search engines content directly from the server.</p>
@@ -157,7 +157,21 @@ Timber::render('templates/article.twig', $data);
 <p>With the completion of these two projects and the fact that they’re live and pulling in decent amounts of traffic, I’m pretty excited to develop this idea of WordPress client-side/server-side shared templating even further. Look forward for more detailed technical posts on the matter and maybe even an online course!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

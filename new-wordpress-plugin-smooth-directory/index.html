@@ -101,7 +101,7 @@
   <h1>New WordPress plugin: Smooth Directory</h1>
 
   <p class="date">
-    Posted on December 9, 2015 in
+    <span id="time"></span> minute read. Posted on December 9, 2015 in
     
       <a href="/topics/wordpress" aria-label="WordPress">WordPress</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Check out my second ever WordPress plugin, Smooth Directory, now live on <a href="https://wordpress.org/plugins/smooth-directory/">WordPress.org</a>! I’ve kind of been developing this business directory plugin alongside the Smooth Calendar plugin I launched yesterday, working on the same client project. Smooth Directory solved my needs for a simple business directory, so hopefully it can solve yours as well.</p>
 
 <p>Full details are available on the WordPress plugin page or on GitHub, but the quick rundown is that it’s a very simple responsive plugin that outputs a directory of businesses. Each business has optional fields that can be populated, including an image (perfect for company logos). Like Smooth Calendar, this plugin is built using a custom post type, which makes editing and adding businesses a breeze for clients.</p>
@@ -117,7 +117,21 @@
 <p><a href="https://wordpress.org/plugins/smooth-directory/">Check it out</a>! And contribute as you see fit on <a href="https://github.com/trevanhetzel/smooth-directory">GitHub</a> 🙂</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>Looking Ahead to 2013</h1>
 
   <p class="date">
-    Posted on December 31, 2012 in
+    <span id="time"></span> minute read. Posted on December 31, 2012 in
     
       <a href="/topics/the-big-picture" aria-label="The Big Picture">The Big Picture</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>There have been a fair share of “year in review” posts popping up on blogs lately, and while I do think it’s important to reflect on the successes and failures of this past year, I’m going to instead focus on what’s to come. 2012 was indeed a great year for me personally and professionally. I learned a lot, laughed a lot, <em>tripled</em> Hetzel Creative’s revenue, made some great new relationships and more, but <strong>here’s what I’m going to do in 2013</strong>:</p>
 
 <ul>
@@ -132,7 +132,21 @@
 <p>I’m ready to cross off all of these and more (opportunities always arise in the most unexpected of ways!) starting today. Join me this year as we tackle the world!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

@@ -101,7 +101,7 @@
   <h1>How to edit a site&#8217;s server information in Coda 2</h1>
 
   <p class="date">
-    Posted on February 11, 2013 in
+    <span id="time"></span> minute read. Posted on February 11, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p><img src="/content/images/2013/Nov/disconnect_coda_site.png" alt="" /></p>
 
 <p>Coda 2 is my go-to text editor for Mac OS X, partly due to its built-in FTP client. But there’s always been one flaw I <em>thought</em> it had, until some kind folks on the twittersphere pointed out my naivety. I never could figure out why you couldn’t edit an FTP site’s details (like change the protocol, username, password, etc.) once you added it. I would always delete the site and re-add it to change just the password or protocol. But I just found out how!</p>
@@ -117,7 +117,21 @@
 <p>It’s real simple. You have to disconnect the site before editing the details. To disconnect, you simply right click the icon in the top left of the application and click ‘Close XXXX Site’. That’s it. Now you can right click a site, click ‘Edit…’ and change your server details.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

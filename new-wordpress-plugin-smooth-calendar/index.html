@@ -101,7 +101,7 @@
   <h1>New WordPress plugin: Smooth Calendar</h1>
 
   <p class="date">
-    Posted on December 8, 2015 in
+    <span id="time"></span> minute read. Posted on December 8, 2015 in
     
       <a href="/topics/wordpress" aria-label="WordPress">WordPress</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’m excited to announce that my first ever WordPress plugin is now live on <a href="http://wordpress.org/plugins/smooth-calendar/">WordPress.org</a>! It’s called Smooth Calendar and it’s the smoothest calendar plugin you’ll ever use (see what I did there?).</p>
 
 <p>I built the calendar a while back for a client and just got around to polishing it up to make it public. It’s built using the <a href="http://v2.wp-api.org/">WP REST API</a>, it’s responsive and it…well it just works. As a theme developer myself, I made sure that Smooth Calendar is as extendable as possible and specifically kept the styling to a minimum. That makes it a pretty good choice for developers to use on client sites to keep it in line with their theme.</p>
@@ -117,7 +117,21 @@
 <p>You can see all the features, along with screenshots, either on the <a href="http://wordpress.org/plugins/smooth-calendar/">WordPress plugin page</a> or on <a href="https://github.com/trevanhetzel/smooth-calendar">GitHub</a> (pull requests and issues are welcome there). I have an article in the works about releasing your first WordPress plugin, so follow me on <a href="https://twitter.com/trevanhetzel">Twitter</a> if you’re interested in hearing about the nitty gritty details.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

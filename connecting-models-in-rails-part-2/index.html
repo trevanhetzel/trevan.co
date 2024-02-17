@@ -101,7 +101,7 @@
   <h1>Connecting Models in Rails Part 2</h1>
 
   <p class="date">
-    Posted on December 13, 2012 in
+    <span id="time"></span> minute read. Posted on December 13, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Last month, I <a href="http://trevan.co/connecting-two-models-in-ruby-on-rails-3/" title="Connecting models in Ruby on Rails">wrote about</a> the process I discovered to link two models together in Ruby on Rails using a HABTM association. Well, I’ve since learned and am on to bigger and better things, like connecting three models together in one view. So this post will not only hopefully serve as learning material for some other rails n00b, but it’s also going to help me grasp this concept even more by writing about it.</p>
 
 <p>So here’s what we’re going to be doing. We’re going to create a super basic app that allows you to add projects. Inside those projects, you’ll be able to add todo items. And then inside the todo items, you’ll be able to comment on them. So we’ll have projects -&gt; todos -&gt; comments, nested in that order. I’m going to first show you the code to achieve this structure and then go into it more depth and show <em>why it works</em>. Because remember, you shouldn’t ever <a href="http://trevan.co/dont-code-by-accident/" title="Don't code by accident">code by accident or coincidence</a>.</p>
@@ -261,7 +261,21 @@ end
 <p>While this may or may not be the best way to approach a situation like this, I know that it works. I’m no Ruby or Rails expert, but I’ve done enough research and through trial/error I’ve found the above method to be the best way so far to accomplish what I was after. Super awesome Ruby devs: feel free to leave a comment if you can accomplish this easier or by a different means.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

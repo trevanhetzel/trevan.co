@@ -101,7 +101,7 @@
   <h1>Quit getting punched in the face</h1>
 
   <p class="date">
-    Posted on May 23, 2012 in
+    <span id="time"></span> minute read. Posted on May 23, 2012 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Ever feel like you’re being abused by your clients? Like they don’t value your time for what it’s worth? Like you spend countless hours fixing their problems or giving them advice without charging them? If you have, then it’s time to quit. That is, if you plan on making any money.</p>
 
 <p>You know you’re good at what you do. You know in your mind that you’re time is valuable. You have good advice to offer and people should respect that. Instead, and I’ve seen this countless times in my own business and others, you give in to clients because you don’t want to make them mad or lose their business. You tend to their every need in order to maintain your relationship and make yourself feel like the expert. Here’s the deal though: you ARE the expert. You have the knowledge that they don’t. So you have the upper hand! Don’t let your clients bully you around because they have what could potentially be your money in their hands.</p>
@@ -119,7 +119,21 @@
 <p>So quit getting punched in the face and start fresh if you have to. Update your contracts with existing clients to reflect your new billing policies. Don’t sign on new contracts unless you’re getting paid for what you’re worth, whatever that may be. Good luck and don’t forget: your time is your most valuable resource, so don’t throw it away!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

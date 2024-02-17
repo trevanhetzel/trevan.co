@@ -101,7 +101,7 @@
   <h1>Smashing Mag: Selling to Small-Town Clients</h1>
 
   <p class="date">
-    Posted on July 28, 2014 in
+    <span id="time"></span> minute read. Posted on July 28, 2014 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -109,13 +109,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’m pretty pumped to say that an article I wrote for Smashing Magazine went live this morning. Smashing approached me to write on the topic of selling “value” to small-town clients and of course I couldn’t turn them down. I’m not as involved in selling to clients as I was the past few years, but I hope that the things I learned can help a few other folks out too.</p>
 
 <p>http://www.smashingmagazine.com/2014/07/29/selling-to-small-town-clients/</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

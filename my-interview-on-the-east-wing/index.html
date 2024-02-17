@@ -101,7 +101,7 @@
   <h1>My interview on The East Wing</h1>
 
   <p class="date">
-    Posted on February 10, 2013 in
+    <span id="time"></span> minute read. Posted on February 10, 2013 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -109,13 +109,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I was honored to be the featured guest of last week’s The East Wing podcast, where I talked with Tim Smith about life, selling value and creating products.</p>
 
 <p>http://theeastwing.net/episodes/41-trevan</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

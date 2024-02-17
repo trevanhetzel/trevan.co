@@ -101,7 +101,7 @@
   <h1>Don&#8217;t Code by Accident</h1>
 
   <p class="date">
-    Posted on December 11, 2011 in
+    <span id="time"></span> minute read. Posted on December 11, 2011 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’ve been a front-end developer for about 6 years now and feel like I pretty much understand every line of HTML or CSS that I write. However, now that I’m teaching myself a server-side programming language (Ruby on Rails), I find my self understanding only a measly portion of the code I’m writing. And that’s wrong.</p>
 
 <p>I just finished reading The Pragmatic Programmer and in it the author talks about “programming by coincidence”. There are a number of reasons why coding by accident or by coincidence is a terrible way to write software or web applications, but here’s the biggest one that I’m finding out firsthand: <strong>it’s almost impossible to fix things when you don’t even know how you created them in the first place!</strong></p>
@@ -127,7 +127,21 @@
 <p>Slow down and grasp what the code you’re writing is doing before you move on to the next feature set. It gets more fun when you actually understand it. And unfortunately for me, I’m not the king of the coding playground just yet, so fun is many times replaced with frustration as I learn to code more deliberately. Happy coding!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

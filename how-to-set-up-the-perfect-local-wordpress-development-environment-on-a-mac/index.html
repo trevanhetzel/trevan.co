@@ -101,7 +101,7 @@
   <h1>How to set up the perfect local WordPress development environment on a Mac</h1>
 
   <p class="date">
-    Posted on June 4, 2012 in
+    <span id="time"></span> minute read. Posted on June 4, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I use WordPress for the majority of my clients’ websites and, until recently, was doing separate installs of WordPress on my live server, under a subdomain. I finally sat down and learned how to take advantage of two of WordPress’s finer features: multisite and local installations. It was a snap to get WordPress up and running locally, but took me a little while to figure out the multisite feature. So I’ve documented the process that I took to get it working in hopes I can help at least one Mac user out there who wants to speed up their WordPress development by working locally.</p>
 
 <h2 id="step-1-download--install-mamp-and-download-wordpress">STEP 1: Download &amp; install <a href="http://www.mamp.info/en/index.html" title="MAMP download">MAMP</a> and download <a href="http://wordpress.org/download/" title="Wordpress download">WordPress</a></h2>
@@ -185,7 +185,21 @@
 <p>Make sure your servers are started in MAMP!</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

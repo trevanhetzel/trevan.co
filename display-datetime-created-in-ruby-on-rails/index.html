@@ -101,7 +101,7 @@
   <h1>Display date/time created in Ruby on Rails</h1>
 
   <p class="date">
-    Posted on April 19, 2013 in
+    <span id="time"></span> minute read. Posted on April 19, 2013 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Displaying the time and date something was created is a super simple thing to do in Rails, once you find out how! Took me a while to find the solution from Googling, so I figured I’d write a short little tutorial here on how to do it.</p>
 
 <p>So basically I am coding the tutorials section of <a href="http://sidecarhq.com">Sidecar</a> and wanted to show when a tutorial was created. Here’s how to do it without touching the model or controller:</p>
@@ -119,7 +119,21 @@
 <p>You can find a list of all the strftime formats <a href="http://apidock.com/ruby/DateTime/strftime">here</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

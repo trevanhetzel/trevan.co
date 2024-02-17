@@ -101,7 +101,7 @@
   <h1>Dreamweaver vs TextMate vs Coda 2 vs Sublime Text 2</h1>
 
   <p class="date">
-    Posted on May 30, 2012 in
+    <span id="time"></span> minute read. Posted on May 30, 2012 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p><a href="http://jordanhoff.com/" title="Jordan Hoff">Jordan Hoff</a> was making fun of me the other day for using Dreamweaver as my text editor. I’ll admit, I may be a little behind on the technologies I use in my development process but I’m starting to get on the bandwagon and use the latest and greatest. Like Terminal and Git. I hate them, but am learning to use them. So I decided to take Jordan’s advice and buy a copy of <a href="http://macromates.com/" title="TextMate">TextMate</a> to up my coding game. I’ve always had an ideal coding environment in my head, but never really made the time to make it a priority in my development process. I’ve always stuck to using the code editor in Adobe Dreamweaver along with its FTP client. Which is super slow and time consuming. So after playing around with TextMate, I found some really cool features that I now can’t believe I was living without by using Dreamweaver. But it still wasn’t the ideal solution I was looking for. So I then downloaded <a href="http://panic.com/coda/" title="Coda 2">Coda 2</a> and <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a> to compare and see if they had all the pieces to my coding puzzle.</p>
 
 <p>Here are the pros and cons I’ve encountered with the 4:</p>
@@ -199,7 +199,21 @@
 <p>I’d love to hear which code editor others use and why you chose it over the others.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

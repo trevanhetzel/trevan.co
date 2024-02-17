@@ -101,7 +101,7 @@
   <h1>On Freelancing: Hosting &#038; Domains</h1>
 
   <p class="date">
-    Posted on January 18, 2015 in
+    <span id="time"></span> minute read. Posted on January 18, 2015 in
     
       <a href="/topics/business-tech" aria-label="Business &amp; Tech">Business &amp; Tech</a>
     
@@ -111,7 +111,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>I’ve freelanced for about 8 years now, either full-time at times or part-time (like now). While I don’t claim to know everything about selling your design/development services, I have learned a lot of lessons over those years. I realized a couple years ago where I stand on hosting and buying domain names for clients, so thought I’d share my stance on it here.</p>
 
 <h2 id="my-1-rule">My #1 rule</h2>
@@ -157,7 +157,21 @@
 <p>Whatever you choose to do, <strong>don’t</strong> host email.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

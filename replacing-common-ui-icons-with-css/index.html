@@ -101,7 +101,7 @@
   <h1>Replacing Common UI Icons with CSS</h1>
 
   <p class="date">
-    Posted on March 10, 2014 in
+    <span id="time"></span> minute read. Posted on March 10, 2014 in
     
       <a href="/topics/code-design" aria-label="Code & Design">Code & Design</a>
     
@@ -111,13 +111,27 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Let’s be honest, dealing with images on the web is kind of a pain. They’re a pain to modify, load slowly and require all sorts of progressive techniques in a responsive environment. But, unfortunately, images are here to stay; there’s no better way to capture a moment in time than with an image. However, we can significantly reduce our use of images by using CSS to recreate elements. But how can we do this while still keeping our designs visually appealing?</p>
 
 <p><a href="http://appendto.com/2014/03/replacing-common-ui-icons-with-css/">Read the full post on the appendTo blog</a></p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>

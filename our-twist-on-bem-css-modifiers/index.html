@@ -101,7 +101,7 @@
   <h1>Our twist on BEM CSS modifiers</h1>
 
   <p class="date">
-    Posted on January 21, 2017 in
+    <span id="time"></span> minute read. Posted on January 21, 2017 in
     
       <a href="/topics/css" aria-label="CSS">CSS</a>
     
@@ -109,7 +109,7 @@
 
   
 
-  <div class="content">
+  <div class="content" id="article">
     <p>Over the past few years, I’ve found that the BEM CSS methodology falls closest in line with my preference for CSS authoring (although I do have a lot of respect for <a href="https://leanpub.com/enduringcss/c/blog">Enduring CSS</a>). The block (parent), element (child/grandchild) and modifier work for nearly every scenario. However, there was always one thing with BEM that drove me nuts – <strong>the way it recommends writing modifiers</strong>.</p>
 
 <p>According to the official <a href="http://getbem.com/naming/">BEM</a> website, the way to declare modifiers is <code class="language-plaintext highlighter-rouge">.block__element--modifier</code>. The reasoning behind that is great, and it works well for short block names, but it leads to huge class strings in markup when you have multiple words in your block. And let’s face it, it’s extremely difficult to never use more than one word in a CSS class name. <code class="language-plaintext highlighter-rouge">.block</code> eventually becomes <code class="language-plaintext highlighter-rouge">.lego-block</code> because such a short ambiguous name is not intuitive. When you throw a modifier on that, the markup already starts to get lengthy – <code class="language-plaintext highlighter-rouge">lego-block lego-block--secondary</code>. If you have more than one modifier, you can definitely see the repetitive implications.</p>
@@ -167,7 +167,21 @@
 <p>And the HTML usage is simply <code class="language-plaintext highlighter-rouge">&lt;div class="lego-block --secondary"&gt;</code>.</p>
 
   </div>
+
+  
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
 
       <footer class="footer">
   <p>
