@@ -9,6 +9,18 @@
 		margin: 0 auto;
 	}
 
+	h2 {
+		font-size: 30px;
+
+		@media (min-width: 600px) {
+			font-size: 38px;
+		}
+
+		@media (min-width: 820px) {
+			font-size: 48px;
+		}
+	}
+
 	.centered {
 		h1, .date {
 			text-align: center;
@@ -190,4 +202,9 @@
 			margin-right: 24px;
 		}
 	}
+}
+
+
+#disqus_thread {
+	margin-top: 60px;
 }

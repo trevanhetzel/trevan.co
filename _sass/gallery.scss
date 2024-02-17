@@ -7,7 +7,7 @@
     width: 100%;
 
     @media (min-width: 700px) {
-      width: 50%;
+      width: 66%;
     }
   }
 
@@ -74,5 +74,14 @@
   img {
     width: 100%;
     height: auto;
+    display: block;
   }
+}
+
+.gallery-description {
+  margin: 0;
+  background: #ececec;
+  color: #636e72;
+  padding: 6px 10px;
+  font-size: 15px;
 }

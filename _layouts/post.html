@@ -10,7 +10,7 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <p class="date">
-    Posted on {{ page.date | date: "%B %-d, %Y" }} in
+    <span id="time"></span> minute read. Posted on {{ page.date | date: "%B %-d, %Y" }} in
     {% for category in page.categories %}
       <a href="/topics/{{ category | slugify | replace:'-amp','' }}" aria-label="{{ category }}">{{ category }}</a>
     {% endfor %}
@@ -21,7 +21,41 @@ layout: default
     <img src="{{page.featured_image}}" class="featured-image" />
   {% endif %}
 
-  <div class="content">
+  <div class="content" id="article">
     {{ content }}
   </div>
+
+  {% if page.comments %}
+    <div class="content" id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://hetzel.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% endif %}
 </div>
+
+<script>
+  function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 300;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById('time').innerText = time;
+  }
+
+  readingTime();
+</script>
