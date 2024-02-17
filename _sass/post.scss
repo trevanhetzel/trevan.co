@@ -28,13 +28,15 @@
 	}
 
 	.centered + .featured-image {
-		margin-top: 40px;
+		@media (min-width: 820px) {
+			margin-top: 40px;
+		}
 	}
 
 	.featured-image {
-		width: calc(100% + 60px);
+		width: calc(100% + 40px);
 		height: auto;
-		margin: 0 -30px 40px;
+		margin: 0 -20px 20px;
 
 		@media (min-width: 820px) {
 			max-width: 100%;
