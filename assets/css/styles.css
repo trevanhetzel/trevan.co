@@ -592,7 +592,10 @@ p {
   .gallery.two-col {
     grid-template-columns: repeat(2, 1fr); }
   .gallery.three-col {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 700px) {
+      .gallery.three-col {
+        grid-template-columns: repeat(3, 1fr); } }
   .gallery.multiline {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 220px); }
@@ -638,5 +641,9 @@ p {
   margin: 0;
   background: #ececec;
   color: #636e72;
-  padding: 6px 10px;
-  font-size: 15px; }
+  padding: 10px;
+  font-size: 13px;
+  line-height: 1.3; }
+  @media (min-width: 700px) {
+    .gallery-description {
+      font-size: 15px; } }
