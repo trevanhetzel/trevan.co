@@ -27,7 +27,7 @@ a {
 
 h1 {
   margin: 0;
-  font-size: 42px; }
+  font-size: 41px; }
   @media (min-width: 600px) {
     h1 {
       font-size: 50px; } }
@@ -399,12 +399,13 @@ p {
         font-size: 48px; } }
   .post .centered h1, .post .centered .date {
     text-align: center; }
-  .post .centered + .featured-image {
-    margin-top: 40px; }
+  @media (min-width: 820px) {
+    .post .centered + .featured-image {
+      margin-top: 40px; } }
   .post .featured-image {
-    width: calc(100% + 60px);
+    width: calc(100% + 40px);
     height: auto;
-    margin: 0 -30px 40px; }
+    margin: 0 -20px 20px; }
     @media (min-width: 820px) {
       .post .featured-image {
         max-width: 100%;
