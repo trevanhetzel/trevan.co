@@ -27,6 +27,9 @@ url: "https://trevan.co" # the base hostname & protocol for your site, e.g. http
 image: /assets/images/seo/opengraph.png
 twitter_username: trevanhetzel
 github_username:  trevanhetzel
+author_name: Trevan Hetzel
+author_first_name: Trevan
+author_last_name: Hetzel
 
 # Build settings
 theme: minima

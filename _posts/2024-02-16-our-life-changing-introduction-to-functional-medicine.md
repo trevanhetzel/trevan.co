@@ -5,7 +5,8 @@ layout: post
 featured_image: '/assets/images/forest-path.jpg'
 categories: Wellness
 comments: true
-description: 'Detailing our weeklong visit at a functional medicine clinic that helped my wife's chronic lyme and pain'
+tags: ['Functional Medicine', 'Chronic Lyme Disease', 'Chronic Pain', 'Hyperbaric Oxygen Therapy', 'Gluten Free', 'Dairy Free', 'Bio Feedback', 'Frequency Healing']
+description: "Detailing our weeklong visit at a functional medicine clinic that helped my wife's chronic lyme and pain"
 ---
 
 Two weeks ago, I sat hopelessly in yet another hospital room trying to console my wife who was in the most agonizing pain to date. Katie's medical records are thousands of pages long, with diagnoses like fibromyalgia, endometriosis, Lyme disease, non-epileptic seizures, functional neurological disorder, lupus, and more. We've been together for 15 years and not one of them has been free from chronic pain for her. We never wanted to, but we started to come to accept that she just "wasn't normal" and never would be. It seemed like our only option.
