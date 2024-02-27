@@ -286,6 +286,7 @@ DEPENDENCIES
   jekyll (~> 3.9.4)
   jekyll-feed (~> 0.17)
   jekyll-paginate-v2
+  jekyll-sitemap
   minima (~> 2.5.1)
   tzinfo (>= 1, < 3)
   tzinfo-data

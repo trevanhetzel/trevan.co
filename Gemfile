@@ -19,6 +19,7 @@ gem "github-pages", "229"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-paginate-v2"
+  gem 'jekyll-sitemap'
 end
 
 gem "webrick"
