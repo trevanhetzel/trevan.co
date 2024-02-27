@@ -23,7 +23,7 @@ email: trevan@hetzelcreative.com
 description: >- # this means to ignore newlines until "baseurl:"
   Trevan Hetzel's personal blog on software development, web design, wellness, business, and life.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://trevan.co" # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/images/seo/opengraph.png
 twitter_username: trevanhetzel
 github_username:  trevanhetzel
