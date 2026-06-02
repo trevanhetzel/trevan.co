@@ -547,6 +547,31 @@ p {
       padding: 80px 30px; } }
   .page p + h2 {
     margin-top: 40px; }
+  .page p a,
+  .page li a {
+    color: #fc4501;
+    transition: transform .2s; }
+    .page p a:hover,
+    .page li a:hover {
+      text-decoration: underline; }
+  .page .clients {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    font-size: 16px; }
+    @media (min-width: 600px) {
+      .page .clients {
+        grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 820px) {
+      .page .clients {
+        font-size: 19px; } }
+    .page .clients li {
+      line-height: 1.4; }
+    .page .clients a {
+      font-weight: 500; }
 
 .blog-list {
   margin: 80px 0 0; }
