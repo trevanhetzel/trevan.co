@@ -11,4 +11,40 @@
 	p + h2 {
 		margin-top: 40px;
 	}
+
+	p a,
+	li a {
+		color: #fc4501;
+		transition: transform .2s;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.clients {
+		list-style: none;
+		padding: 0;
+		margin: 24px 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 12px;
+		font-size: 16px;
+
+		@media (min-width: 600px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (min-width: 820px) {
+			font-size: 19px;
+		}
+
+		li {
+			line-height: 1.4;
+		}
+
+		a {
+			font-weight: 500;
+		}
+	}
 }

@@ -277,6 +277,7 @@ PLATFORMS
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin-23
+  arm64-darwin-25
   x86-linux-android
   x86_64-linux-android
 
